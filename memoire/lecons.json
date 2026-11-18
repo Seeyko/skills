@@ -1,0 +1,184 @@
+{
+  "lessons": [
+    {
+      "key": "work.agents/present-work",
+      "topic": "work.agents",
+      "rule": "Quand tu finis un travail, présente-le pour un non-technique : un titre humain qui dit ce qui change (pas de jargon), une description courte qui commence par ce que l'humain doit faire, des captures ou un diagramme (ils priment toujours), puis le lien vers le détail (session, document de conception).",
+      "when": "à la fin de chaque tâche, à l'ouverture ou la mise à jour d'une PR, dans un rapport de fin",
+      "why": "La personne qui relit doit comprendre en une minute, comme un chef de produit, même si elle est technique.",
+      "check": "Le titre se comprend sans le code ; les images sont là ; le lien vers le détail est en bas.",
+      "source": "playbook:work.agents/present-work · skills/present-work"
+    },
+    {
+      "key": "work.agents/strong-model-decides",
+      "topic": "work.agents",
+      "rule": "Fais analyser, relire et trancher par le modèle le plus fort (sous-agents) ; un modèle de code pour coder ; un petit modèle pour les sous-agents nombreux. Pour une référence (vidéo, app), fais une analyse de ton côté et une par un agent qui n'a que la matière brute, et garde ce qui converge.",
+      "when": "quand une tâche demande une étude, une revue, une décision de design, ou l'analyse d'une référence",
+      "why": "Une question ouverte tranchée par le meilleur modèle évite d'interrompre l'humain, et deux analyses indépendantes évitent l'effet de confirmation.",
+      "check": "Le rendu dit qui a tranché et ce qui a convergé.",
+      "source": "playbook:work.agents/strong-model-decides · methode/orchestration.md"
+    },
+    {
+      "key": "work.agents/one-thread-per-workstream",
+      "topic": "work.agents",
+      "rule": "Mène un gros chantier dans un projet : un coordinateur, un fil par chantier (étude d'audience, onboarding, ASO, vidéo, TestFlight). Une étude va dans un agent dédié qui revient avec « ce qu'on garde, ce qu'on retire, ce qu'on améliore ». Une analyse demandée sans action ne donne qu'un document, jamais une PR.",
+      "when": "quand on lance une app, un onboarding, une refonte, ou qu'on demande seulement une analyse",
+      "why": "Un fil par chantier garde chaque contexte propre, et une analyse ne doit jamais se fusionner toute seule.",
+      "check": "Chaque chantier a son fil et son livrable ; une analyse sans action n'a pas de PR.",
+      "source": "playbook:work.agents/one-thread-per-workstream · methode/orchestration.md"
+    },
+    {
+      "key": "work.agents/real-speed-proof",
+      "topic": "work.agents",
+      "rule": "Prouve un écran touché par des captures avant et après, et un parcours par une vidéo à vitesse réelle (pas en accéléré), à 60 fps, avec des données réalistes et sans texte qui décrit. Pour un travail payant (génération d'images), un seul essai d'abord.",
+      "when": "avant de rendre un travail d'interface, une vidéo ou une génération d'images",
+      "why": "Une vidéo accélérée ou pauvre en données cache les vrais défauts ; un lot payant raté coûte cher.",
+      "check": "Le rendu montre les captures et une vidéo fluide à vitesse réelle ; un seul essai payant avant le lot.",
+      "source": "playbook:work.agents/real-speed-proof · methode/gout.md"
+    },
+    {
+      "key": "work.agents/autonomy",
+      "topic": "work.agents",
+      "rule": "Fais tout toi-même par l'API, le CLI ou le navigateur ; ne donne jamais un copier-coller à l'humain. Demande tous les accès en une fois, tôt. Ne pose pas une question dont la réponse est « l'option recommandée » : prends-la et dis-le en une ligne.",
+      "when": "quand tu es tenté de demander une action ou une confirmation à l'humain",
+      "why": "Chaque question bloque le travail pendant des heures, et un copier-coller est une tâche que l'agent pouvait faire.",
+      "check": "Le fil ne contient aucune commande à taper pour l'humain, et au plus une demande d'accès groupée.",
+      "source": "playbook:work.agents/autonomy · methode/regles.md"
+    },
+    {
+      "key": "app.create/playbook",
+      "topic": "app.create",
+      "rule": "Pour une nouvelle app, suis le skill new-mobile-app : une maquette d'abord, une conception courte puis un go, l'onboarding avec app-onboarding, la fiche avec app-store-optimization, TestFlight aux proches pendant la review.",
+      "when": "quand on demande « crée une app » ou « une app avec un onboarding »",
+      "why": "Une app doit sortir avec un onboarding et une fiche de première classe dès sa première version.",
+      "check": "L'app a un onboarding qui suit app-onboarding et une fiche complète avant sa première review.",
+      "source": "playbook:app.create/playbook · skills/new-mobile-app"
+    },
+    {
+      "key": "app.onboarding/read-skill",
+      "topic": "app.onboarding",
+      "rule": "Lis en entier le skill app-onboarding et son étude de cas avant de concevoir ou de changer un onboarding. Commence par une étude d'audience dans un agent dédié.",
+      "when": "avant de concevoir, écrire ou changer un onboarding, un paywall ou un premier lancement",
+      "why": "Sans étude d'audience, le texte parle avec les mots de l'app et pas ceux des gens.",
+      "check": "La conception cite l'étude d'audience, le moment aha choisi et la séquence du skill.",
+      "source": "playbook:app.onboarding/read-skill · skills/app-onboarding"
+    },
+    {
+      "key": "app.onboarding/aha-early",
+      "topic": "app.onboarding",
+      "rule": "Fais vivre le moment aha au 3e écran au plus tard, avant toute question longue. Il marche partout, en moins d'une minute, sans le son : compris en moins de 2 s, une transformation visible, un effort minimal.",
+      "when": "quand on ordonne les écrans d'un onboarding",
+      "why": "Personne ne retient les fonctions montrées à l'accueil ; la valeur se sent, elle ne s'explique pas (Chris Raroque, sound-off test de David Attias).",
+      "check": "Compter les écrans avant le aha : 3 au plus. Le aha se comprend son coupé.",
+      "source": "playbook:app.onboarding/aha-early · skills/app-onboarding"
+    },
+    {
+      "key": "app.onboarding/cat-feels-tiger",
+      "topic": "app.onboarding",
+      "rule": "Le premier geste est petit, mais il doit se sentir énorme : le chat doit se sentir tigre. Fête la réussite par le dessin, le mouvement et l'haptique, et projette la personne dans son résultat.",
+      "when": "quand on conçoit l'écran de réussite du premier geste",
+      "why": "Au paywall, la personne doit vouloir devenir celle « d'après ».",
+      "check": "L'écran après le premier geste a une récompense visible et sentie, sans paragraphe.",
+      "source": "playbook:app.onboarding/cat-feels-tiger · skills/app-onboarding"
+    },
+    {
+      "key": "app.onboarding/cut-slop",
+      "topic": "app.onboarding",
+      "rule": "Retire 75 % de ce qui fait « IA » : pas d'eyebrow, pas de sous-titre gris, pas de texte d'aide, peu d'emoji, un titre et au plus une ligne courte par écran. Fais relire la copy par deux agents en parallèle (la grille de suppression ; le récit et le ressenti), puis passe-la par humanizer.",
+      "when": "quand on écrit ou relit les textes d'un onboarding ou d'un paywall",
+      "why": "Le texte en trop dilue la seule chose que l'écran doit dire.",
+      "check": "Cacher chaque texte avec le doigt : si l'écran se comprend encore, le texte part.",
+      "source": "playbook:app.onboarding/cut-slop · skills/app-onboarding/references/copy.md"
+    },
+    {
+      "key": "app.onboarding/promise-feeling",
+      "topic": "app.onboarding",
+      "rule": "Promets un ressenti, un accompagnement, une régularité ; jamais un résultat médical ou chiffré. Une seule histoire du début au paywall.",
+      "when": "quand on écrit la promesse, les témoignages ou la timeline d'un onboarding",
+      "why": "Une promesse de résultat fait refuser l'app et trahit la personne.",
+      "check": "Aucune phrase ne promet un chiffre ou une guérison ; l'histoire se lit d'un trait.",
+      "source": "playbook:app.onboarding/promise-feeling · skills/app-onboarding/references/copy.md"
+    },
+    {
+      "key": "app.onboarding/fixed-screen",
+      "topic": "app.onboarding",
+      "rule": "L'écran ne change jamais vraiment : un contenu en remplace un autre sur place par un fondu flou, le bouton reste fixe, peu de cartes. Rien ne glisse sur le côté sans raison. Montre au lieu d'expliquer.",
+      "when": "quand on anime les passages d'un écran d'onboarding à l'autre",
+      "why": "C'est ce qui rend un onboarding « clean » et calme.",
+      "check": "Sur la vidéo, le bouton ne bouge pas d'un écran à l'autre, et aucun écran ne glisse.",
+      "source": "playbook:app.onboarding/fixed-screen · skills/app-onboarding"
+    },
+    {
+      "key": "app.onboarding/no-settings-on-aha",
+      "topic": "app.onboarding",
+      "rule": "Ne mets aucun réglage lourd sur l'écran de l'expérience (pas d'interrupteur, pas de choix d'options) : un petit bouton rond suffit, le reste vit derrière un tap.",
+      "when": "quand on ajoute un contrôle à l'écran du aha ou d'un exercice",
+      "why": "Un interrupteur détourne l'attention du geste.",
+      "check": "L'écran du aha n'a qu'un seul CTA.",
+      "source": "playbook:app.onboarding/no-settings-on-aha · skills/app-onboarding"
+    },
+    {
+      "key": "app.onboarding/paywall",
+      "topic": "app.onboarding",
+      "rule": "Termine par un paywall dur et honnête : l'annuel présélectionné, 7 jours d'essai, une frise qui dit quand on prévient et quand on débite, le prix réel. Après le paywall, l'usage tout de suite, ou un seul rappel selon l'heure (après 17 h, demain). Le compte le plus tard possible.",
+      "when": "quand on conçoit la fin d'un onboarding d'app payante",
+      "why": "Le paywall dur convertit mieux que le freemium (RevenueCat), et la frise répond à la peur du piège à abonnement.",
+      "check": "Le paywall montre l'annuel sélectionné, l'essai, la frise et le prix ; aucun compte avant.",
+      "source": "playbook:app.onboarding/paywall · skills/app-onboarding/references/paywall.md"
+    },
+    {
+      "key": "app.onboarding/measure",
+      "topic": "app.onboarding",
+      "rule": "Livre la V1 à son meilleur, puis laisse l'analytique décider : onboarding_step_completed par écran, onboarding_completed, un funnel dans l'ordre réel. Aucune donnée de santé. Un retour d'utilisateur se discute, il ne s'applique pas tel quel.",
+      "when": "quand on livre un onboarding ou qu'un retour arrive",
+      "why": "On mesure avant de changer.",
+      "check": "Le funnel existe et ses propriétés n'ont rien de médical.",
+      "source": "playbook:app.onboarding/measure · skills/app-onboarding"
+    },
+    {
+      "key": "app.aso/read-skill",
+      "topic": "app.aso",
+      "rule": "Pour une fiche App Store, suis le skill app-store-optimization : la fiche fait vivre le moment aha, tout passe par l'API ou le CLI asc, et une page de suivi tient la fiche à jour.",
+      "when": "avant d'écrire un nom, un sous-titre, des mots-clés, des captures ou une page produit personnalisée",
+      "why": "La fiche est le premier écran de l'onboarding.",
+      "check": "Chaque champ a été écrit par asc ou l'API, et la page de suivi liste ce qui est fait.",
+      "source": "playbook:app.aso/read-skill · skills/app-store-optimization"
+    },
+    {
+      "key": "app.aso/locales",
+      "topic": "app.aso",
+      "rule": "Remplis les mots-clés de chaque locale lue par le pays visé : en France, l'anglais (R.-U.) est aussi lu, donc mets-y d'autres mots-clés français. Ne répète pas un mot du nom ou du sous-titre.",
+      "when": "quand on écrit les mots-clés d'une fiche",
+      "why": "Ça double les mots-clés indexés.",
+      "check": "Les locales en-GB, fr-FR (et en-AU, en-US, fr-CA) ont chacune des mots-clés différents.",
+      "source": "playbook:app.aso/locales · skills/app-store-optimization"
+    },
+    {
+      "key": "app.aso/screenshots",
+      "topic": "app.aso",
+      "rule": "Une capture = un titre court qui dit le bénéfice, sur le fond de la marque. Jamais le paywall ni un prix. Les trois premières portent les mots-clés : Apple lit les légendes et la plupart des gens s'arrêtent là.",
+      "when": "quand on fait les captures d'une fiche",
+      "why": "Les légendes comptent pour la recherche et la conversion.",
+      "check": "Les trois premières captures se comprennent seules et contiennent les mots-clés.",
+      "source": "playbook:app.aso/screenshots · skills/app-store-optimization"
+    },
+    {
+      "key": "app.aso/custom-pages",
+      "topic": "app.aso",
+      "rule": "Crée des pages produit personnalisées par intention et par canal (avec un lien ct=), des événements in-app sur une vraie nouveauté, des codes d'offre, et une nomination pour la mise en avant avant chaque sortie.",
+      "when": "après la première fiche, et avant chaque version",
+      "why": "Ce sont des leviers gratuits qui ne demandent souvent pas de nouvelle version.",
+      "check": "asc liste les pages perso, et une nomination existe pour la version.",
+      "source": "playbook:app.aso/custom-pages · skills/app-store-optimization"
+    },
+    {
+      "key": "web.create/playbook",
+      "topic": "web.create",
+      "rule": "Pour un nouveau site, suis le skill new-website : statique si possible, nginx sur Dokploy, un sous-domaine changé par le CLI du registrar après un instantané de la zone, PostHog EU, une page de confidentialité.",
+      "when": "quand on demande un site, une landing page ou une page statique",
+      "why": "Simple, peu cher, tout au même endroit.",
+      "check": "Le site tourne sur Dokploy et le DNS a été changé par le CLI.",
+      "source": "playbook:web.create/playbook · skills/new-website"
+    }
+  ]
+}
