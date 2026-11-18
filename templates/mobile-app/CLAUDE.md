@@ -18,7 +18,7 @@
 - **Mac de build partagé** : on code à l'aveugle. Un seul build et un seul simulateur à la fois, à la fin, avec `nice`, sur le disque externe.
 - **Aucun secret dans le dépôt.** `SECRETS.md` dit où vit chaque clé.
 - **Confidentialité** : <ce que promet la politique>. Aucune donnée de santé ou personnelle dans PostHog. Toute évolution qui y touche se répercute dans `web/www/confidentialite`.
-- **Une PR par étape**, merge quand la CI est verte. Le code d'un build envoyé au store est sur `main`.
+- **Une PR par étape**, merge quand la CI est verte, sauf une PR qui touche la sécurité, le paiement, une migration, la CI ou le contrat d'API : elle attend l'accord écrit. Le code d'un build envoyé au store est sur `main`.
 - **Présente chaque travail fini** pour un non-technique : un titre humain, une description courte, des captures ou un diagramme, puis le lien vers le détail (skill `present-work`).
 - **Pas de commentaire dans le code, pas de code mort.**
 - **Outils** : le CLI `asc` pour App Store Connect, le MCP Moonjar pour les captures, PostHog EU.

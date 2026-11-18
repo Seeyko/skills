@@ -24,7 +24,7 @@ Pars de [`../../templates/mobile-app/`](../../templates/mobile-app/) : `CLAUDE.m
 - Aucun secret dans le dépôt : `SECRETS.md` nomme les variables et dit où elles vivent.
 
 ## 3. Construire
-- Une PR par étape. Fusion quand la CI est verte.
+- Une PR par étape. Fusion quand la CI est verte, sauf une surface sensible ([`work-with-agents`](../work-with-agents/SKILL.md), point 5).
 - Les builds iOS se font sur le Mac de build, un seul à la fois, avec `nice`, sur le disque externe. Une session cloud code à l'aveugle et passe la main au Mac.
 - Installe l'app sur un vrai iPhone dès le premier build (Wi-Fi, puis TestFlight). On la juge sur l'usage réel, l'entrée naturelle d'abord.
 - La suppression du compte et la déconnexion sont prévues dès la première conception (Apple 5.1.1(v)).

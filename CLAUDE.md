@@ -12,7 +12,7 @@ Ce dépôt décrit une façon de travailler avec des agents. Il est en français
 - Une leçon fausse est changée ou retirée, jamais gardée à côté de sa correction.
 
 ## La forme
-- Rangé comme un plugin : `skills/<nom>/SKILL.md` et ses `references/`, `agents/<nom>.md`, `templates/`, `memory/`, et `scripts/` pour la vérification. Pas d'autre dossier.
+- Rangé comme un plugin : `skills/<nom>/SKILL.md` et ses `references/`, `agents/<nom>.md`, `templates/`, `memory/`, `scripts/` pour la vérification et `.github/` pour la CI. Pas d'autre dossier.
 - Minimal : un sujet vit à un seul endroit. Pas de doublon, pas de page d'index en plus du `README.md`.
 
 ## Ce dépôt reste partageable

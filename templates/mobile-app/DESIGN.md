@@ -11,7 +11,7 @@ typography:
 
 # <Nom de l'app> : le système de design
 
-Format `DESIGN.md` de Google Labs (https://github.com/google-labs-code/design.md). Ce fichier gagne sur tout skill de design. Une correction du propriétaire devient une règle ici, avec sa date (skill `learn-taste`).
+Format `DESIGN.md` de Google Labs (https://github.com/google-labs-code/design.md). Ce fichier gagne sur tout skill de design. Une correction du propriétaire devient une règle ici, avec sa raison (skill `learn-taste`).
 
 ## Overview
 <L'univers en trois phrases. Ce qu'il est, ce qu'il n'est jamais.>

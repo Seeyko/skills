@@ -34,7 +34,7 @@
       "when": "avant de rendre un travail d'interface, une vidéo ou une génération d'images",
       "why": "Une vidéo accélérée ou pauvre en données cache les vrais défauts ; un lot payant raté coûte cher.",
       "check": "Le rendu montre les captures et une vidéo fluide à vitesse réelle ; un seul essai payant avant le lot.",
-      "source": "playbook:work.agents/real-speed-proof · skills/work-with-agents"
+      "source": "playbook:work.agents/real-speed-proof · skills/design-interface"
     },
     {
       "key": "work.agents/autonomy",
@@ -61,7 +61,7 @@
       "when": "quand on livre un parcours, ou qu'un retour d'utilisateur arrive",
       "why": "On mesure avant de changer, et un retour isolé n'est pas une décision.",
       "check": "Le funnel existe, suit l'ordre réel, et ses propriétés n'ont rien de médical ni de personnel.",
-      "source": "playbook:work.agents/ship-then-measure · skills/work-with-agents"
+      "source": "playbook:work.agents/ship-then-measure · skills/app-onboarding"
     },
     {
       "key": "copy/cut-slop",
@@ -167,7 +167,7 @@
       "topic": "app.onboarding",
       "rule": "Lis en entier le skill app-onboarding et son étude de cas avant de concevoir ou de changer un onboarding. Il renvoie à write-copy, design-interface et app-paywall pour le texte, l'interface et le paywall.",
       "when": "avant de concevoir, écrire ou changer un onboarding ou un premier lancement",
-      "why": "Sans étude d'audience, le texte parle avec les mots de l'app et pas ceux des gens.",
+      "why": "Le skill porte la séquence, le aha et ce qui a déjà été refusé ; sans lui, on refait un onboarding trop long.",
       "check": "La conception cite l'étude d'audience, le moment aha choisi et la séquence du skill.",
       "source": "playbook:app.onboarding/read-skill · skills/app-onboarding"
     },
@@ -177,7 +177,7 @@
       "rule": "Fais vivre le moment aha au 3e écran au plus tard, avant toute question longue. Il marche partout, en moins d'une minute, sans le son : compris en moins de 2 s, une transformation visible, un effort minimal. Le geste est petit, la fête est grande.",
       "when": "quand on ordonne les écrans d'un onboarding",
       "why": "Personne ne retient les fonctions montrées à l'accueil ; la valeur se sent, elle ne s'explique pas (Chris Raroque, sound-off test de David Attias).",
-      "check": "Compter les écrans avant le aha : 3 au plus. Le aha se comprend son coupé.",
+      "check": "Le aha est au 3e écran au plus tard, et se comprend son coupé.",
       "source": "playbook:app.onboarding/aha-early · skills/app-onboarding"
     },
     {
@@ -237,10 +237,10 @@
     {
       "key": "app.aso/custom-pages",
       "topic": "app.aso",
-      "rule": "Crée des pages produit personnalisées par intention et par canal (avec un lien ct=), des événements in-app sur une vraie nouveauté, des codes d'offre, et une nomination pour la mise en avant avant chaque sortie.",
+      "rule": "Crée des pages produit personnalisées par intention et par canal (avec un lien ct=), des codes d'offre, et pour chaque vraie nouveauté de l'app un événement in-app et une nomination pour la mise en avant.",
       "when": "après la première fiche, et avant chaque version",
       "why": "Ce sont des leviers gratuits qui ne demandent souvent pas de nouvelle version.",
-      "check": "asc liste les pages perso, et une nomination existe pour la version.",
+      "check": "asc liste les pages perso ; chaque vraie nouveauté a son événement et sa nomination.",
       "source": "playbook:app.aso/custom-pages · skills/app-store-optimization"
     },
     {

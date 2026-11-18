@@ -19,4 +19,4 @@ Le but : des agents autonomes. On lance la tâche depuis son téléphone, les ag
 6. **Une PR par étape**, suivie jusqu'à un état final : fusionnée, verte et laissée au propriétaire, ou rouge avec un verdict. Jamais de fusion sur un rouge.
 7. **Prouve** : des captures avant et après, une vidéo à vitesse réelle, des tests qui échoueraient sans la fonction.
 8. **Rends ton travail** comme le dit [`present-work`](../present-work/SKILL.md).
-9. **Garde ce que tu apprends** : chaque correction devient une règle dans le skill du sujet, avec sa raison, dans la même PR ([`memory-first`](../memory-first/SKILL.md)).
+9. **Garde ce que tu apprends** : chaque correction devient une règle dans le skill du sujet, avec sa raison, dans la même PR ([`memory-first`](../memory-first/SKILL.md)). Une règle qui vaut pour tous les projets va dans un skill général, pas dans celui d'une étape.
