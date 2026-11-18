@@ -39,11 +39,9 @@
 - Un retour d'utilisateur se discute, il ne s'applique pas tel quel.
 - On ne casse pas une review App Store en cours pour un petit correctif : la version suivante attend, les testeurs utilisent TestFlight.
 
-## Le texte
-- **Moins de texte.** Pas d'eyebrow, pas de sous-titre gris, pas de texte d'aide. Retire 75 % de ce qui fait « IA » sur un écran.
-- Tout texte publié passe par un skill de ton (`humanizer`, les marketingskills de Corey Haines, le skill de wording du projet).
-- FR et EN ensemble, tutoiement, phrases courtes.
-- Quand on réécrit un texte de quelqu'un : exactement le même ton, avec le bon contenu.
+## Le texte et l'interface
+- Tout texte visible suit [`write-copy`](../../write-copy/SKILL.md) : la règle des 75 %, les mots de la personne, FR et EN, tutoiement.
+- Tout écran suit [`design-interface`](../../design-interface/SKILL.md) et le `DESIGN.md` du projet.
 
 ## La sécurité et les secrets
 - Aucun secret dans un dépôt ni dans une conversation. Un secret vit dans un fichier `chmod 600` sur la machine qui s'en sert, ou dans l'environnement d'un conteneur. Un fichier `SECRETS.md` nomme les variables et dit où elles vivent, jamais leur valeur.
@@ -53,7 +51,7 @@
 - Aucune donnée de santé ni personnelle dans l'analytique. La politique de confidentialité suit chaque changement.
 
 ## Parler à l'humain
-- **Présente chaque travail fini comme le dit [`present-work`](../skills/present-work/SKILL.md)** : un titre humain, une description courte, des captures ou un diagramme, puis le lien vers le détail. Règle absolue.
+- **Présente chaque travail fini comme le dit [`present-work`](../../present-work/SKILL.md)** : un titre humain, une description courte, des captures ou un diagramme, puis le lien vers le détail. Règle absolue.
 - Court, en commençant par ce qu'il doit faire, ou en disant qu'il n'a rien à faire.
 - Dans sa langue. Les identifiants de code, les règles et les skills en anglais.
 - Préviens-le de chaque sortie sur les stores.

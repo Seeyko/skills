@@ -1,0 +1,256 @@
+{
+  "lessons": [
+    {
+      "key": "work.agents/present-work",
+      "topic": "work.agents",
+      "rule": "Quand tu finis un travail, présente-le pour un non-technique : un titre humain qui dit ce qui change (pas de jargon), une description courte qui commence par ce que l'humain doit faire, des captures ou un diagramme (ils priment toujours), puis le lien vers le détail (session, document de conception).",
+      "when": "à la fin de chaque tâche, à l'ouverture ou la mise à jour d'une PR, dans un rapport de fin",
+      "why": "La personne qui relit doit comprendre en une minute, comme un chef de produit, même si elle est technique.",
+      "check": "Le titre se comprend sans le code ; les images sont là ; le lien vers le détail est en bas.",
+      "source": "playbook:work.agents/present-work · skills/present-work"
+    },
+    {
+      "key": "work.agents/strong-model-decides",
+      "topic": "work.agents",
+      "rule": "Fais analyser, relire et trancher par le modèle le plus fort (sous-agents) ; un modèle de code pour coder ; un petit modèle pour les sous-agents nombreux. Pour une référence (vidéo, app), fais une analyse de ton côté et une par un agent qui n'a que la matière brute, et garde ce qui converge.",
+      "when": "quand une tâche demande une étude, une revue, une décision de design, ou l'analyse d'une référence",
+      "why": "Une question ouverte tranchée par le meilleur modèle évite d'interrompre l'humain, et deux analyses indépendantes évitent l'effet de confirmation.",
+      "check": "Le rendu dit qui a tranché et ce qui a convergé.",
+      "source": "playbook:work.agents/strong-model-decides · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/one-thread-per-workstream",
+      "topic": "work.agents",
+      "rule": "Mène un gros chantier dans un projet : un coordinateur, un fil par chantier (étude d'audience, onboarding, ASO, vidéo, TestFlight). Une étude va dans un agent dédié qui revient avec « ce qu'on garde, ce qu'on retire, ce qu'on améliore ». Une analyse demandée sans action ne donne qu'un document, jamais une PR.",
+      "when": "quand on lance une app, un onboarding, une refonte, ou qu'on demande seulement une analyse",
+      "why": "Un fil par chantier garde chaque contexte propre, et une analyse ne doit jamais se fusionner toute seule.",
+      "check": "Chaque chantier a son fil et son livrable ; une analyse sans action n'a pas de PR.",
+      "source": "playbook:work.agents/one-thread-per-workstream · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/real-speed-proof",
+      "topic": "work.agents",
+      "rule": "Prouve un écran touché par des captures avant et après, et un parcours par une vidéo à vitesse réelle (pas en accéléré), à 60 fps, avec des données réalistes et sans texte qui décrit. Pour un travail payant (génération d'images), un seul essai d'abord.",
+      "when": "avant de rendre un travail d'interface, une vidéo ou une génération d'images",
+      "why": "Une vidéo accélérée ou pauvre en données cache les vrais défauts ; un lot payant raté coûte cher.",
+      "check": "Le rendu montre les captures et une vidéo fluide à vitesse réelle ; un seul essai payant avant le lot.",
+      "source": "playbook:work.agents/real-speed-proof · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/autonomy",
+      "topic": "work.agents",
+      "rule": "Fais tout toi-même par l'API, le CLI ou le navigateur ; ne donne jamais un copier-coller à l'humain. Demande tous les accès en une fois, tôt. Ne pose pas une question dont la réponse est « l'option recommandée » : prends-la et dis-le en une ligne.",
+      "when": "quand tu es tenté de demander une action ou une confirmation à l'humain",
+      "why": "Chaque question bloque le travail pendant des heures, et un copier-coller est une tâche que l'agent pouvait faire.",
+      "check": "Le fil ne contient aucune commande à taper pour l'humain, et au plus une demande d'accès groupée.",
+      "source": "playbook:work.agents/autonomy · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/general-first",
+      "topic": "work.agents",
+      "rule": "Une règle qui vaut pour tous les projets (texte, interface, preuve, façon de travailler) va dans un skill général, pas dans le skill d'une étape (onboarding, paywall, ASO). Le skill d'une étape renvoie au skill général au lieu de le recopier.",
+      "when": "quand tu écris une leçon ou une règle apprise sur une étape d'une app",
+      "why": "Une leçon tirée de l'onboarding (la règle des 75 %) vaut aussi pour le site, la fiche et chaque écran : rangée dans l'onboarding, les autres projets ne la voient pas.",
+      "check": "La règle vit à un seul endroit, et les skills d'étape y renvoient.",
+      "source": "playbook:work.agents/general-first · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/ship-then-measure",
+      "topic": "work.agents",
+      "rule": "Livre la V1 au mieux, puis laisse l'analytique décider : un événement par étape d'un parcours, un funnel dans l'ordre réel. Aucune donnée de santé ou personnelle. Un retour d'utilisateur se discute, il ne s'applique pas tel quel.",
+      "when": "quand on livre un parcours, ou qu'un retour d'utilisateur arrive",
+      "why": "On mesure avant de changer, et un retour isolé n'est pas une décision.",
+      "check": "Le funnel existe, suit l'ordre réel, et ses propriétés n'ont rien de médical ni de personnel.",
+      "source": "playbook:work.agents/ship-then-measure · skills/work-with-agents"
+    },
+    {
+      "key": "copy/cut-slop",
+      "topic": "copy",
+      "rule": "Sur chaque écran, retire 75 % de ce qui sonne « IA » : pas d'eyebrow, pas de sous-titre gris, pas de texte d'aide, peu d'emoji. Un titre et au plus une ligne courte. Applique l'échelle de suppression (doit-il apparaître ? le libellé doit-il exister ? anticipe-t-il une inquiétude ? réécris ou retire), puis humanizer et les marketingskills.",
+      "when": "quand tu écris ou relis un texte visible : app, site, fiche, e-mail, post",
+      "why": "Le texte en trop dilue la seule chose que l'écran doit dire. Si l'écran ne se comprend pas sans texte, c'est le dessin qu'il faut corriger.",
+      "check": "Cacher chaque texte avec le doigt : si l'écran se comprend encore, le texte part.",
+      "source": "playbook:copy/cut-slop · skills/write-copy"
+    },
+    {
+      "key": "copy/their-words",
+      "topic": "copy",
+      "rule": "Écris avec les mots de la personne, jamais le vocabulaire de l'app. Dis pourquoi en une phrase. Des phrases de 20 mots au plus, à l'actif, tutoiement, FR et EN ensemble. Les écrans d'un parcours forment une seule histoire, sans texte répété.",
+      "when": "quand tu écris un parcours, une consigne, une question ou un bouton",
+      "why": "Peu de texte ne veut pas dire texte codé : une image de l'univers non expliquée bloque la personne.",
+      "check": "Les titres se lisent à la suite comme une histoire ; aucun mot de l'app n'est utilisé sans être dit en clair une première fois.",
+      "source": "playbook:copy/their-words · skills/write-copy"
+    },
+    {
+      "key": "copy/sell-the-after",
+      "topic": "copy",
+      "rule": "Un chat doit se sentir tigre : montre la personne qu'elle va devenir, pas l'interface. Nomme sa réussite seulement après qu'elle l'a confirmée. Dis ce qu'elle a réussi, jamais ce qu'elle a manqué.",
+      "when": "quand tu écris un onboarding, un paywall, une fiche App Store ou une page de site",
+      "why": "Au moment de payer ou de télécharger, elle doit vouloir devenir la personne « d'après ».",
+      "check": "Le texte parle d'elle et de ce qu'elle vivra, pas des fonctions.",
+      "source": "playbook:copy/sell-the-after · skills/write-copy"
+    },
+    {
+      "key": "copy/true-promise",
+      "topic": "copy",
+      "rule": "Promets fort ce que la personne vivra dans le produit (ressenti, accompagnement, régularité). Ne promets jamais un résultat que le produit ne garantit pas : pas de chiffre, pas de caution d'un pro, pas de « scientifiquement prouvé ». Classe chaque promesse vert, orange, rouge. Un bouton ne promet que ce que l'écran suivant donne.",
+      "when": "quand tu écris une promesse, un titre de fiche, une légende de capture ou le bouton avant un paywall",
+      "why": "Une promesse fausse trahit la personne et fait refuser l'app.",
+      "check": "Aucune phrase de la liste rouge ; chaque bouton mène à ce qu'il annonce.",
+      "source": "playbook:copy/true-promise · skills/write-copy"
+    },
+    {
+      "key": "design/screen-speaks",
+      "topic": "design",
+      "rule": "L'écran parle tout seul : si on doit l'expliquer, on corrige le dessin, la couleur ou le geste. Une seule chose mise en avant, un seul CTA, peu de cartes, pas de bordures. Montre au lieu d'expliquer.",
+      "when": "avant de concevoir ou de relire un écran d'app ou de site",
+      "why": "Une phrase d'aide cache un défaut de dessin au lieu de le corriger.",
+      "check": "L'écran a un seul CTA et se comprend sans son texte.",
+      "source": "playbook:design/screen-speaks · skills/design-interface"
+    },
+    {
+      "key": "design/fixed-screen",
+      "topic": "design",
+      "rule": "Dans un parcours, l'écran ne change jamais vraiment : le bouton reste fixe, un contenu en remplace un autre sur place par un fondu flou, le libellé du bouton se fond sur place. Rien ne glisse sur le côté sans raison.",
+      "when": "quand tu animes le passage d'un écran à l'autre (onboarding, assistant, formulaire en étapes)",
+      "why": "C'est ce qui rend un parcours calme et « clean ».",
+      "check": "Sur la vidéo, le bouton ne bouge pas d'un écran à l'autre et aucun écran ne glisse.",
+      "source": "playbook:design/fixed-screen · skills/design-interface"
+    },
+    {
+      "key": "design/no-settings-in-experience",
+      "topic": "design",
+      "rule": "Aucun réglage lourd sur un écran où la personne vit le produit (un exercice, le aha, une lecture) : ni interrupteur ni formulaire. Un petit bouton rond suffit, le reste vit ailleurs.",
+      "when": "quand tu ajoutes un contrôle à un écran d'expérience",
+      "why": "Un interrupteur détourne l'attention du geste.",
+      "check": "L'écran d'expérience n'a qu'un seul CTA et au plus un bouton rond.",
+      "source": "playbook:design/no-settings-in-experience · skills/design-interface"
+    },
+    {
+      "key": "design/feel-every-gesture",
+      "topic": "design",
+      "rule": "Chaque bouton, chaque choix et chaque temps d'un rythme a son haptique. Chaque contrôle a sa cible de 44 pt et son libellé VoiceOver. Chaque mouvement a sa version « Réduire les animations ». N'anime que la transformation et l'opacité.",
+      "when": "avant de livrer un écran ou une animation",
+      "why": "Le toucher remplace du texte, et l'accessibilité n'est pas une option.",
+      "check": "Vérifié sur l'appareil, en FR et en EN, avec VoiceOver et « Réduire les animations ».",
+      "source": "playbook:design/feel-every-gesture · skills/design-interface"
+    },
+    {
+      "key": "design/mockup-first",
+      "topic": "design",
+      "rule": "Avant de coder un parcours, fais une maquette HTML jouable : les écrans en vrai format côte à côte, avec sous chacun les repères Haptique, Animation, Navigation. Essaie-la sur un téléphone, fais-la valider, puis code exactement ce qu'elle montre. Une référence s'analyse deux fois, dont une par un agent qui n'a que la matière brute.",
+      "when": "quand on conçoit un onboarding, un paywall ou un nouvel écran important",
+      "why": "Valider sur une maquette coûte une heure ; refaire un écran codé coûte une PR.",
+      "check": "La maquette existe, est validée, et l'app la suit.",
+      "source": "playbook:design/mockup-first · skills/design-interface"
+    },
+    {
+      "key": "audience/study-first",
+      "topic": "audience",
+      "rule": "Avant d'écrire un onboarding, une fiche, un site ou une campagne, fais l'étude d'audience dans un agent dédié (le modèle le plus fort) : état d'esprit à l'arrivée, profils et qui ils veulent devenir, leurs mots, leurs méfiances, les promesses vertes, orange, rouges.",
+      "when": "au début d'un produit, ou avant d'écrire pour un public qu'on n'a pas étudié",
+      "why": "Sans elle, le texte parle avec les mots de l'app et pas ceux des gens.",
+      "check": "L'étude existe dans le dépôt du projet, et les textes la citent.",
+      "source": "playbook:audience/study-first · skills/audience-study"
+    },
+    {
+      "key": "app.create/playbook",
+      "topic": "app.create",
+      "rule": "Pour une nouvelle app, suis le skill new-mobile-app : une maquette d'abord, une conception courte puis un go, l'étude d'audience, l'onboarding avec app-onboarding, le paywall avec app-paywall, la fiche avec app-store-optimization, TestFlight aux proches pendant la review.",
+      "when": "quand on demande « crée une app » ou « une app avec un onboarding »",
+      "why": "Une app doit sortir avec un onboarding et une fiche de première classe dès sa première version.",
+      "check": "L'app a un onboarding qui suit app-onboarding et une fiche complète avant sa première review.",
+      "source": "playbook:app.create/playbook · skills/new-mobile-app"
+    },
+    {
+      "key": "app.onboarding/read-skill",
+      "topic": "app.onboarding",
+      "rule": "Lis en entier le skill app-onboarding et son étude de cas avant de concevoir ou de changer un onboarding. Il renvoie à write-copy, design-interface et app-paywall pour le texte, l'interface et le paywall.",
+      "when": "avant de concevoir, écrire ou changer un onboarding ou un premier lancement",
+      "why": "Sans étude d'audience, le texte parle avec les mots de l'app et pas ceux des gens.",
+      "check": "La conception cite l'étude d'audience, le moment aha choisi et la séquence du skill.",
+      "source": "playbook:app.onboarding/read-skill · skills/app-onboarding"
+    },
+    {
+      "key": "app.onboarding/aha-early",
+      "topic": "app.onboarding",
+      "rule": "Fais vivre le moment aha au 3e écran au plus tard, avant toute question longue. Il marche partout, en moins d'une minute, sans le son : compris en moins de 2 s, une transformation visible, un effort minimal. Le geste est petit, la fête est grande.",
+      "when": "quand on ordonne les écrans d'un onboarding",
+      "why": "Personne ne retient les fonctions montrées à l'accueil ; la valeur se sent, elle ne s'explique pas (Chris Raroque, sound-off test de David Attias).",
+      "check": "Compter les écrans avant le aha : 3 au plus. Le aha se comprend son coupé.",
+      "source": "playbook:app.onboarding/aha-early · skills/app-onboarding"
+    },
+    {
+      "key": "app.onboarding/after-paywall",
+      "topic": "app.onboarding",
+      "rule": "Après le paywall, ouvre vraiment l'usage (« Ma première séance »), sinon programme un seul rappel choisi selon l'heure (après 17 h, demain). Le tour complet vit dans l'app. Le compte arrive le plus tard possible, « Continuer avec Apple » d'abord.",
+      "when": "quand on conçoit la fin d'un onboarding",
+      "why": "Personne ne retient un tour ; repousser l'inscription garde plus de monde (Duolingo, environ +20 %).",
+      "check": "La dernière action ouvre l'usage ; aucun compte n'est demandé avant la fin.",
+      "source": "playbook:app.onboarding/after-paywall · skills/app-onboarding"
+    },
+    {
+      "key": "app.onboarding/measure",
+      "topic": "app.onboarding",
+      "rule": "Pose onboarding_step_completed (step, action) à chaque écran et onboarding_completed à la fin, puis un funnel dans l'ordre réel des étapes, remis à jour quand l'ordre change. Une réponse qui est une donnée de santé ne part pas.",
+      "when": "quand on livre ou réordonne un onboarding",
+      "why": "L'analytique décide de la suite de l'onboarding.",
+      "check": "Le funnel existe et ses propriétés n'ont rien de médical.",
+      "source": "playbook:app.onboarding/measure · skills/app-onboarding"
+    },
+    {
+      "key": "app.paywall/honest-hard-paywall",
+      "topic": "app.paywall",
+      "rule": "Termine l'onboarding par un paywall dur et honnête, sans croix ni freemium : l'annuel présélectionné avec 7 jours d'essai, le mensuel sans essai, une frise qui dit quand on prévient et quand on débite, le prix après l'essai écrit sous le bouton. Des codes à vie pour les premières utilisatrices.",
+      "when": "quand on conçoit ou change le paywall d'une app payante",
+      "why": "Le paywall dur convertit bien plus que le freemium (RevenueCat), et la frise répond à la peur du piège à abonnement.",
+      "check": "Le paywall montre l'annuel sélectionné, l'essai, la frise et le prix ; Restaurer et J'ai un code sont là.",
+      "source": "playbook:app.paywall/honest-hard-paywall · skills/app-paywall"
+    },
+    {
+      "key": "app.aso/read-skill",
+      "topic": "app.aso",
+      "rule": "Pour une fiche App Store, suis le skill app-store-optimization : la fiche fait vivre le moment aha, tout passe par l'API ou le CLI asc, et une page de suivi tient la fiche à jour.",
+      "when": "avant d'écrire un nom, un sous-titre, des mots-clés, des captures ou une page produit personnalisée",
+      "why": "La fiche est le premier écran de l'onboarding.",
+      "check": "Chaque champ a été écrit par asc ou l'API, et la page de suivi liste ce qui est fait.",
+      "source": "playbook:app.aso/read-skill · skills/app-store-optimization"
+    },
+    {
+      "key": "app.aso/locales",
+      "topic": "app.aso",
+      "rule": "Remplis les mots-clés de chaque locale lue par le pays visé : en France, l'anglais (R.-U.) est aussi lu, donc mets-y d'autres mots-clés français. Ne répète pas un mot du nom ou du sous-titre.",
+      "when": "quand on écrit les mots-clés d'une fiche",
+      "why": "Ça double les mots-clés indexés.",
+      "check": "Les locales en-GB, fr-FR (et en-AU, en-US, fr-CA) ont chacune des mots-clés différents.",
+      "source": "playbook:app.aso/locales · skills/app-store-optimization"
+    },
+    {
+      "key": "app.aso/screenshots",
+      "topic": "app.aso",
+      "rule": "Une capture = un titre court qui dit le bénéfice, sur le fond de la marque. Jamais le paywall ni un prix. Les trois premières portent les mots-clés : Apple lit les légendes et la plupart des gens s'arrêtent là.",
+      "when": "quand on fait les captures d'une fiche",
+      "why": "Les légendes comptent pour la recherche et la conversion.",
+      "check": "Les trois premières captures se comprennent seules et contiennent les mots-clés.",
+      "source": "playbook:app.aso/screenshots · skills/app-store-optimization"
+    },
+    {
+      "key": "app.aso/custom-pages",
+      "topic": "app.aso",
+      "rule": "Crée des pages produit personnalisées par intention et par canal (avec un lien ct=), des événements in-app sur une vraie nouveauté, des codes d'offre, et une nomination pour la mise en avant avant chaque sortie.",
+      "when": "après la première fiche, et avant chaque version",
+      "why": "Ce sont des leviers gratuits qui ne demandent souvent pas de nouvelle version.",
+      "check": "asc liste les pages perso, et une nomination existe pour la version.",
+      "source": "playbook:app.aso/custom-pages · skills/app-store-optimization"
+    },
+    {
+      "key": "web.create/playbook",
+      "topic": "web.create",
+      "rule": "Pour un nouveau site, suis le skill new-website : statique si possible, nginx sur Dokploy, un sous-domaine changé par le CLI du registrar après un instantané de la zone, PostHog EU, une page de confidentialité.",
+      "when": "quand on demande un site, une landing page ou une page statique",
+      "why": "Simple, peu cher, tout au même endroit.",
+      "check": "Le site tourne sur Dokploy et le DNS a été changé par le CLI.",
+      "source": "playbook:web.create/playbook · skills/new-website"
+    }
+  ]
+}

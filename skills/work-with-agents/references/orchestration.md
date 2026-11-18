@@ -12,9 +12,9 @@ Le but : des agents autonomes. Tu lances la tâche depuis ton téléphone ou ton
 | Tâche | Comment l'orchestrer |
 |---|---|
 | Un gros chantier produit (une app, un onboarding, l'ASO) | Un **projet Claude** : un coordinateur dans le chat, **un fil par chantier** (étude d'audience, onboarding, ASO, vidéo, TestFlight). Les fils se passent leurs résultats. Le fil qui code renvoie une étude au coordinateur, qui ouvre un fil dédié. |
-| Une étude (audience, études de cas, concurrents) | Un agent Fable dédié, qui revient avec « ce qu'on garde, ce qu'on retire, ce qu'on améliore ». |
+| Une étude (audience, études de cas, concurrents) | Un agent Fable dédié ([`audience-researcher`](../../../agents/audience-researcher.md) pour l'audience), qui revient avec « ce qu'on garde, ce qu'on retire, ce qu'on améliore ». |
 | Un regard neuf sur une référence (une vidéo, une app) | Deux analyses : la tienne, et un Fable qui n'a **que la matière brute**. Garde ce qui converge. |
-| Relire un texte | Deux relecteurs Fable en parallèle, un par angle (la grille de suppression ; le récit et le ressenti). L'agent principal arbitre. |
+| Relire un texte | Deux relecteurs Fable en parallèle, un par angle : [`copy-cutter`](../../../agents/copy-cutter.md) (la grille de suppression) et [`story-reviewer`](../../../agents/story-reviewer.md) (le récit et le ressenti). L'agent principal arbitre. |
 | Une liste d'erreurs ou de bugs (analytique, issues) | Un sous-agent par erreur pour trier (vraie ou non, fermée avec un commentaire), puis un sous-agent par erreur pour corriger, le tout en workflow. |
 | Plusieurs PR rouges | Un sous-agent Opus par PR pour la rendre verte. |
 | Accélérer une CI, une migration technique | Un agent par techno, puis un autre agent relit chaque branche en cherchant ce qui casse. Petites PR, chiffres avant et après. |
@@ -27,7 +27,7 @@ Le but : des agents autonomes. Tu lances la tâche depuis ton téléphone ou ton
 | Une analyse sans action | Seulement un document d'analyse. Pas de PR. Un plan ou une analyse ne se fusionne jamais tout seul. |
 
 ## Le suivi d'une PR
-- Le titre et la description suivent [`present-work`](../skills/present-work/SKILL.md) : lisibles par un chef de produit, captures d'abord.
+- Le titre et la description suivent [`present-work`](../../present-work/SKILL.md) : lisibles par un chef de produit, captures d'abord.
 - L'agent qui ouvre une PR la suit jusqu'à un état final : **fusionnée**, **verte et laissée au propriétaire**, ou **rouge avec un verdict**. Puis il se désabonne et s'arrête.
 - Petite PR verte : l'agent la fusionne (squash). Une surface sensible (paiement, sécurité, migration, CI, contrat d'API mobile) ou un plan : « prête pour relecture ».
 - Une relance par panne d'infra. Deuxième panne : un verdict, pas de boucle.
@@ -45,4 +45,4 @@ Le but : des agents autonomes. Tu lances la tâche depuis ton téléphone ou ton
 ## Garder ce qu'on apprend
 - Chaque correction devient une règle dans le skill, la règle ou le `DESIGN.md` du sujet, avec sa raison, dans la même PR.
 - Les fils d'un projet déposent leurs leçons en cours dans un fichier partagé par sujet, puis les rangent dans le skill à la fin de la PR.
-- Une mémoire MCP garde les leçons courtes (voir [`../memoire/`](../memoire/README.md)).
+- Une mémoire MCP garde les leçons courtes (voir [`../../../memory/`](../../../memory/README.md)).

@@ -21,7 +21,7 @@ Les points qu'on oublie le plus :
 - Ce qui défile horizontalement ne défile qu'horizontalement.
 
 ## Les skills du dépôt
-`swiftui-expert-skill`, `emil-design-eng`, `choreograph`, `review-animations`, `apple-design`, `learn-taste`. Ils donnent la méthode ; `DESIGN.md` donne le style et gagne en cas de désaccord.
+`design-interface` et `write-copy` (ce playbook), `swiftui-expert-skill`, `emil-design-eng`, `choreograph`, `review-animations`, `apple-design`, `learn-taste`. Ils donnent la méthode ; `DESIGN.md` donne le style et gagne en cas de désaccord.
 
 ## Quand le design change
 Mets `DESIGN.md` à jour dans le même commit. Une correction du propriétaire devient une règle dans `DESIGN.md`, avec sa raison.

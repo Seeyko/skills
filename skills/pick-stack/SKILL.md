@@ -1,3 +1,8 @@
+---
+name: pick-stack
+description: Choisir la stack, l'hébergement et les services d'un nouveau projet (app iOS, app iOS + web, plateforme, site), et savoir quelle machine fait quoi. À utiliser au démarrage d'un projet, avant d'ajouter un service, ou pour migrer depuis Vercel ou Supabase.
+---
+
 # La stack
 
 Une stack de développeur solo : peu chère, auto-hébergée quand c'est simple, et que les agents savent piloter par API ou CLI. Aucun secret ici : ils vivent sur les machines (fichiers `chmod 600`) ou dans l'environnement des services.
@@ -26,7 +31,7 @@ Une stack de développeur solo : peu chère, auto-hébergée quand c'est simple,
 | Réseaux sociaux | Postiz (auto-hébergé) pour programmer ; construire en public sur X |
 | Captures et vidéos App Store | Moonjar (MCP), Playwright, Cap à 60 fps pour les vidéos d'écran |
 | App Store Connect | Le CLI `asc` de rudrank, l'API (clé `.p8` dans un fichier local), le navigateur en dernier recours |
-| La mémoire des agents | Un MCP de mémoire qui garde des leçons par sujet (voir [`../memoire/`](../memoire/README.md)) |
+| La mémoire des agents | Un MCP de mémoire qui garde des leçons par sujet (voir [`../../memory/`](../../memory/README.md)) |
 
 ## Les stacks par type de projet
 

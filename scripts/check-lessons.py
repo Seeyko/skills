@@ -30,6 +30,6 @@ def problems(path):
 
 
 if __name__ == "__main__":
-    found = list(problems(sys.argv[1] if len(sys.argv) > 1 else "memoire/lecons.json"))
-    print("\n".join(found) or "lecons.json ok")
+    found = list(problems(sys.argv[1] if len(sys.argv) > 1 else "memory/lessons.json"))
+    print("\n".join(found) or "lessons.json ok")
     sys.exit(1 if found else 0)

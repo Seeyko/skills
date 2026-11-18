@@ -5,7 +5,7 @@ description: Démarrer un nouveau site (site d'app, landing page, page statique,
 
 # Un nouveau site
 
-Avant tout : skill [`memory-first`](../memory-first/SKILL.md) (sujets `work.agents`, `web.create`).
+Avant tout : skill [`memory-first`](../memory-first/SKILL.md) (sujets `work.agents`, `web.create`, `copy`, `design`). Lis aussi [`pick-stack`](../pick-stack/SKILL.md).
 
 ## 1. Choisir le plus simple
 - **Statique d'abord** : du HTML et du CSS, sans build si possible. GSAP pour l'animation quand il le faut.
@@ -16,8 +16,8 @@ Avant tout : skill [`memory-first`](../memory-first/SKILL.md) (sujets `work.agen
 ## 2. Le dépôt
 Pars de [`../../templates/website/`](../../templates/website/) : un `Dockerfile` nginx, une conf nginx, un `CLAUDE.md`.
 - Une branche, une PR. Une fusion sur `main` déploie en prod.
-- Le design suit l'univers de l'app (son `DESIGN.md`) ou un thème fort. Pas de « site IA » : pas d'eyebrow, pas de cartes partout, un seul CTA par écran.
-- Le texte passe par `humanizer` (ou le skill de wording du projet), FR et EN.
+- Le design suit [`design-interface`](../design-interface/SKILL.md) et l'univers de l'app (son `DESIGN.md`) ou un thème fort.
+- Le texte suit [`write-copy`](../write-copy/SKILL.md), FR et EN.
 - Vérifie dans un vrai navigateur (Playwright, Chrome MCP), sur téléphone et sur ordinateur, avec des captures avant et après.
 
 ## 3. Mettre en ligne

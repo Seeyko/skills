@@ -5,20 +5,20 @@ description: Écrire et optimiser la fiche App Store d'une app (nom, sous-titre,
 
 # La fiche App Store (ASO)
 
-Un plan complet, avec ses tableaux de mots-clés et son calendrier, est dans [`references/plan-aso.md`](references/plan-aso.md). Le gabarit de la page de suivi est dans [`references/suivi-fiche.md`](references/suivi-fiche.md).
+Un plan complet, avec ses tableaux de mots-clés et son calendrier, est dans [`references/aso-plan.md`](references/aso-plan.md). Le gabarit de la page de suivi est dans [`references/listing-tracker.md`](references/listing-tracker.md). Le texte suit [`write-copy`](../write-copy/SKILL.md), les visuels suivent [`design-interface`](../design-interface/SKILL.md).
 
 ## Avant de commencer
-1. Si une mémoire MCP est branchée, lis ses leçons `app.aso` et `app.store-release` (skill [`memory-first`](../memory-first/SKILL.md)).
-2. Lis l'étude d'audience de l'app (skill [`app-onboarding`](../app-onboarding/SKILL.md), étape 1) : la fiche parle avec ses mots.
-3. Les skills de copy : `humanizer`, les marketingskills de Corey Haines (`aso`, `copywriting`, `marketing-psychology`), les règles de [`../app-onboarding/references/copy.md`](../app-onboarding/references/copy.md).
+1. Si une mémoire MCP est branchée, lis ses leçons `app.aso`, `app.store-release` et `copy` (skill [`memory-first`](../memory-first/SKILL.md)).
+2. Lis l'étude d'audience de l'app ([`audience-study`](../audience-study/SKILL.md)) : la fiche parle avec ses mots.
+3. Ajoute le skill `aso` des marketingskills de Corey Haines à ceux de [`write-copy`](../write-copy/SKILL.md).
 
 ## Les principes
-1. **La fiche fait vivre le moment aha avant le téléchargement.** La personne doit s'y voir en train de réussir, en mieux. Un chat doit se sentir tigre. La fiche montre la personne qu'elle va devenir, pas l'interface.
+1. **La fiche fait vivre le moment aha avant le téléchargement.** La personne doit s'y voir en train de réussir, en mieux : elle vend la personne d'après ([`write-copy`](../write-copy/SKILL.md)), pas l'interface.
 2. **Quatre leviers ensemble** : la fiche qui fait se voir réussir, une direction artistique qui se démarque, des mots-clés qui font remonter dans la recherche, et un onboarding réussi derrière.
 3. **Tout par l'API ou le CLI.** Le CLI `asc` de rudrank et l'API App Store Connect, depuis la machine qui a la clé. Jamais de « colle ça dans App Store Connect » pour l'humain.
 4. **Utilise les nouveautés d'App Store Connect** : en-tête image ou vidéo 21:9, image des résultats de recherche, bibliothèque d'éléments, pages produit personnalisées liées à des mots-clés, tests de page produit, événements in-app, codes d'offre, nominations, messages de rétention. Va voir ce qui est sorti depuis la dernière fois (WWDC, notes d'Apple) et suis-le.
-5. **Une promesse vraie.** Les légendes et la description promettent le ressenti et l'accompagnement, jamais un résultat médical. Elles ne promettent que ce que le build fait (Apple refuse pour 2.3.1 sinon).
-6. **Suis la fiche dans une page tenue à jour** : une colonne par version et par langue, les captures, l'en-tête, les pages perso, les chiffres, un journal. Un relevé automatique deux fois par semaine ([`references/suivi-fiche.md`](references/suivi-fiche.md)).
+5. **Une promesse vraie** : vert seulement ([`write-copy`](../write-copy/SKILL.md)). Les légendes et la description ne promettent que ce que le build fait (Apple refuse pour 2.3.1 sinon).
+6. **Suis la fiche dans une page tenue à jour** : une colonne par version et par langue, les captures, l'en-tête, les pages perso, les chiffres, un journal. Un relevé automatique deux fois par semaine ([`references/listing-tracker.md`](references/listing-tracker.md)).
 7. **Préviens à chaque sortie**, et dis clairement à l'humain s'il a quelque chose à faire, ou qu'il n'a rien à faire.
 
 ## Les champs (limites Apple)
@@ -50,7 +50,7 @@ Nom 30, sous-titre 30, texte promotionnel 170, mots-clés 100 octets (virgules, 
 - Les codes promo ne se créent qu'une fois l'achat intégré validé par Apple.
 
 ## Trouver les premiers utilisateurs sans pub
-Voir le tableau des canaux de [`references/plan-aso.md`](references/plan-aso.md) : les premières utilisatrices (avis et bouche-à-oreille), les professionnels du domaine, les réseaux, le site et la recherche Google ou IA, les communautés, la presse, le parrainage. Chaque canal a sa première action et sa mesure. Rien n'est publié ni envoyé sans accord.
+Voir le tableau des canaux de [`references/aso-plan.md`](references/aso-plan.md) : les premières utilisatrices (avis et bouche-à-oreille), les professionnels du domaine, les réseaux, le site et la recherche Google ou IA, les communautés, la presse, le parrainage. Chaque canal a sa première action et sa mesure. Rien n'est publié ni envoyé sans accord.
 
 ## Avant de soumettre
 - [ ] Toutes les langues créées (dont en-GB, en-AU, en-US, fr-CA), mots-clés sans doublon, ≤ 100 octets.

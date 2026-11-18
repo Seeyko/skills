@@ -1,9 +1,6 @@
-# Le paywall et les écrans qui l'entourent
+# Étude de cas : le paywall et les écrans qui l'entourent
 
-Les écrans validés de l'étude de cas, de l'expérience du aha jusqu'au premier usage. Chaque écran est décrit avec son haptique et son animation : c'est le niveau de précision à donner à l'agent qui code.
-
-## Valider avant de coder : la maquette HTML
-Fais une page HTML jouable avec les écrans en vrai format iPhone (393 × 852), côte à côte dans une rangée qui défile à l'horizontale (en colonne sur téléphone). Sous chaque téléphone, des repères étiquetés « Haptique », « Animation », « Navigation », hors de l'écran. Les paywalls sont cliquables (annuel ou mensuel), la démo tourne en boucle, « Réduire les animations » est respecté. On valide cette page, puis on code.
+Les écrans validés d'une app de santé payante, de l'expérience du aha jusqu'au premier usage. Chaque écran est décrit avec son haptique et son animation : c'est le niveau de précision à donner à l'agent qui code.
 
 ## Les écrans
 
@@ -46,11 +43,3 @@ Fais une page HTML jouable avec les écrans en vrai format iPhone (393 × 852), 
 ### 12 · Après le lancement de l'essai
 - Titre « C'est parti », ligne « On te prévient 2 jours avant la fin de l'essai. », bouton « Ma première séance ».
 - Un arrosoir se penche en boucle (3,2 s), les gouttes tombent sur la pousse. Notification success à l'arrivée.
-
-## Les règles du paywall
-- Paywall dur à la fin de l'onboarding, sans croix, sans freemium.
-- L'annuel présélectionné avec l'essai ; le mensuel sans essai, plus cher par mois.
-- La frise de l'essai sur l'annuel seulement. Elle répond à la peur du « piège à abonnement ».
-- Des codes à vie pour les premières utilisatrices (« J'ai un code »), qui donnent les premiers avis.
-- La demande d'avis seulement aux abonnées, après le premier paiement et une séance réussie (« Tu aimes ton jardin ? » → Oui / Pas encore), 3 fois par an au plus.
-- Le fichier de configuration StoreKit a un pays fixé, sinon les prix passent de € à $ sur les captures.

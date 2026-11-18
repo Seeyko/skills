@@ -1,22 +1,8 @@
-# L'étude d'audience : gabarit et exemple
+# Exemple d'étude d'audience : une app d'exercices du périnée (grossesse et post-partum)
 
-À faire avant d'écrire un mot de l'onboarding ou de la fiche. Un agent dédié lit ce que disent les vraies personnes (forums, podcasts, avis des concurrents, études), puis répond aux sections ci-dessous. Chaque citation est courte, avec ses fautes d'origine, et à revérifier avant tout usage public.
+Le [gabarit](../SKILL.md) rempli pour une app de santé payante. Les citations sont courtes, avec leurs fautes d'origine.
 
-## Le gabarit
-1. **L'essentiel** : ce qu'est « le tigre » de ces personnes (qui elles veulent devenir), en une phrase, et 3 ou 4 constats.
-2. **Les problèmes** : un tableau « problème · leurs mots · ce que l'app apporte vraiment ».
-3. **Leur état d'esprit quand elles tombent sur l'app** : le moment qui les fait chercher, les émotions (avec une citation chacune), ce qu'elles veulent.
-4. **Leurs méfiances avant de payer** et la réponse de l'app à chacune.
-5. **Les profils** : qui, son état, qui elle veut devenir, ce qu'on lui dit, ce qu'on ne dit pas, ce que dit la science. Désigner le cœur de cible.
-6. **Ce qu'on promet, ce qu'on ne promet pas** : vert, orange, rouge. Les mots réglementés.
-7. **Les moments d'ego** : quand l'app la nourrit.
-8. **Le ton et les mots** : un tableau « on dit · on ne dit pas · pourquoi ».
-9. **Ce que ça change** dans l'onboarding et sur la fiche : un tableau « où · aujourd'hui · proposition ».
-10. **Les sources et le niveau de confiance** : ce qui a été lu, ce qui ne l'a pas été.
-
-## L'exemple : une app d'exercices du périnée (grossesse et post-partum)
-
-### L'essentiel
+## L'essentiel
 Le tigre de ces femmes, c'est elle-même redevenue normale, plus qu'une femme plus forte. Leur définition du succès : « I just feel like me again ». Juste avant vient le besoin de savoir qu'elle fait bien le geste.
 - Elle arrive avec de la honte et de la culpabilité, souvent après avoir entendu « c'est normal ». On commence par la croire, puis on lui fait réussir quelque chose en moins d'une minute.
 - « Tu l'as trouvé » répond au doute le plus répété : « I really don't know if I'm doing them right ».
@@ -34,7 +20,7 @@ Le tigre de ces femmes, c'est elle-même redevenue normale, plus qu'une femme pl
 | Corps devenu étranger | « mon corps est toujours un étranger qui n'est plus vraiment mien » | Reprendre contact avec cette zone, en douceur. |
 | La sonde, le prix | « j'ai la trouille !!! Rééducation avec sonde ? » | Sans sonde ni matériel. Plusieurs femmes aiment leur sonde : on ne la critique pas. |
 
-### Son état d'esprit quand elle tombe sur l'app
+## Son état d'esprit quand elle tombe sur l'app
 Elle cherche après un moment précis : une fuite en éternuant ou en riant, la première course, le miroir, la reprise du travail ou des rapports, une consultation où on lui a dit que tout allait bien alors qu'elle sent que non.
 - Le choc et la gêne : « je me suis dit, c'est pas normal, je suis dégoûtante. »
 - La colère de ne pas avoir été prévenue : « Ça, on n'en avait pas du tout parlé. »
@@ -52,7 +38,7 @@ Elle veut qu'on la croie, savoir qu'elle fait bien, un geste faisable aujourd'hu
 | « Mes séances sont remboursées, pourquoi payer ? » (hypothèse) | L'app sert les jours entre les séances et après la dernière. Elle ne les remplace pas. |
 | « Ça passera tout seul. » | Souvent vrai dans les trois premiers mois (86 %, CNGOF 2015). On parle à celle qui veut s'en occuper, sans lui faire peur. |
 
-### Les cinq profils
+## Les cinq profils
 Le cœur de cible est le troisième : en séances ou juste après, motivée mais seule à la maison.
 
 | Qui | Son état | Qui elle veut devenir | Ce qu'on lui dit | À ne pas dire | Ce que dit la science |
@@ -65,7 +51,7 @@ Le cœur de cible est le troisième : en séances ou juste après, motivée mais
 
 Deux cas à part. Après une césarienne, la cicatrice domine le récit. En anglais, on ne suppose pas de séances prescrites : hors de France, il n'y en a souvent pas.
 
-### Ce qu'on promet, ce qu'on ne promet pas
+## Ce qu'on promet, ce qu'on ne promet pas
 On promet ce qu'elle va vivre dans l'app : un ressenti, un accompagnement, une régularité. On ne promet aucun résultat sur un symptôme.
 
 | Niveau | Phrases |
@@ -81,7 +67,7 @@ Les trois moments d'ego :
 2. **Elle réussit.** Après son « oui, je l'ai senti » : « Tu l'as trouvé. »
 3. **Elle tient.** Le jardin qui pousse est la preuve visible qu'elle s'en occupe.
 
-### Le ton et les mots
+## Le ton et les mots
 On la croit, on parle du corps avant l'image, on dit ce qu'elle a réussi et jamais ce qu'elle a manqué.
 
 | On dit | On ne dit pas | Pourquoi |
@@ -99,7 +85,7 @@ On la croit, on parle du corps avant l'image, on dit ce qu'elle a réussi et jam
 
 Une maman se moque des consignes abstraites : « on s'imagine un pont levis au vagin ? ». La consigne dit d'abord quoi faire avec son corps, et l'univers de l'app reste le décor.
 
-### Ce que ça change
+## Ce que ça change
 | Où | Avant | Proposition |
 |---|---|---|
 | Sous-titre de la fiche | « Rééducation post-partum » | « Grossesse et post-partum » |
@@ -119,5 +105,5 @@ Côté Apple et mentions :
 - La règle 5.1.1(ix) réserve les apps de soins de santé aux entités juridiques : raison de plus pour rester dans le bien-être.
 - Mention à afficher : « Application de bien-être. Ce n'est pas un dispositif médical. Elle ne diagnostique et ne traite aucune pathologie, et ne remplace ni ta rééducation ni l'avis de ta sage-femme, de ton kiné ou de ton médecin. »
 
-### Sources et confiance
+## Sources et confiance
 Confiance moyenne : l'échantillon est petit. Lus : des forums de mamans, Mumsnet, des podcasts français, les avis visibles de trois concurrents, 8 fiches concurrentes, les règles Apple 1.4.1, 2.3 et 5.1, le Code de la consommation L.121-4, la page de l'ANSM sur les logiciels, la revue Cochrane 2020, les recommandations du CNGOF 2015. La partie règles n'est pas un avis juridique. Les vraies réponses viendront des utilisatrices : demande aux premières ce qui les a fait chercher, ce qu'elles avaient essayé et ce qui a changé.

@@ -14,8 +14,12 @@ Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lesson
 | Sujet | Quand |
 |---|---|
 | `work.agents` | toujours : comment travailler et rendre son travail |
+| `copy` | tout texte qu'une personne lira |
+| `design` | tout écran, toute animation, tout visuel |
+| `audience` | une étude d'audience, avant un onboarding, une fiche ou un site |
 | `app.create` | une nouvelle app |
-| `app.onboarding` | l'onboarding, le paywall, le premier lancement |
+| `app.onboarding` | l'onboarding, le premier lancement |
+| `app.paywall` | le paywall, les abonnements |
 | `app.aso` | la fiche App Store, les mots-clés, les captures |
 | `app.store-release` | un envoi TestFlight ou App Store, la review |
 | `web.create` | un nouveau site |
@@ -23,11 +27,11 @@ Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lesson
 3. Ouvre la page que la leçon cite (son champ `source`).
 4. Quand une leçon change ce que tu fais, dis-le en une ligne.
 
-Sans mémoire MCP, lis directement [`../../memoire/lecons.json`](../../memoire/lecons.json).
+Sans mémoire MCP, lis directement [`../../memory/lessons.json`](../../memory/lessons.json).
 
 ## Pendant et à la fin
 - L'humain te corrige ou demande une chose nouvelle sur sa façon de travailler : ajoute la leçon tout de suite.
-- Si la leçon vaut pour tout le monde, ouvre aussi une PR qui l'écrit dans la page du sujet et dans `memoire/lecons.json`.
+- Si la leçon vaut pour tout le monde, ouvre aussi une PR qui l'écrit dans le skill du sujet et dans `memory/lessons.json`.
 - Un fait de la vie de la personne (un projet, un budget, une machine) va dans une note de la mémoire, jamais dans ce dépôt.
 
 ## Une bonne leçon

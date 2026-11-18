@@ -5,7 +5,7 @@ Une app iOS payante d'exercices du périnée pour la grossesse et le post-partum
 ## Le déclic
 Le premier onboarding faisait découvrir tous les muscles avant le paywall : trop long. Une vidéo de Chris Raroque rappelle le but : amener le plus vite possible au premier moment aha, pour que la personne comprenne la valeur de l'app. Pas besoin de montrer toutes les fonctions : un peu de personnalisation, ce qu'elle va en tirer, et le ressenti de satisfaction.
 
-Deuxième étape : faire étudier les meilleurs onboardings du fitness et de la santé par un agent dédié, qui revient avec ce qu'on garde, ce qu'on retire et ce qu'on améliore ([`etudes.md`](etudes.md)).
+Deuxième étape : faire étudier les meilleurs onboardings du fitness et de la santé par un agent dédié, qui revient avec ce qu'on garde, ce qu'on retire et ce qu'on améliore ([`market-studies.md`](market-studies.md)).
 
 ## Les étapes du travail
 
@@ -15,7 +15,7 @@ Deuxième étape : faire étudier les meilleurs onboardings du fitness et de la 
 | 2 | Une vidéo de référence (la fin d'un onboarding de banque, 21 s) est analysée deux fois : par l'agent principal, puis par un agent qui n'a que la vidéo. Les deux convergent : l'écran ne change jamais vraiment. |
 | 3 | Une seule scène qui se fond (flou), un libellé de bouton qui se fond sur place, un lavis qui prend la teinte de l'étape, une notification qui fait défiler les vrais rappels, une graine qui pousse avec un toucher par étape, moins de cartes. |
 | 4 | Un `DESIGN.md` (format Google Labs), chargé par une règle à chaque fichier front, et les skills d'Emil Kowalski et SwiftUI. |
-| 5 | L'étude d'audience dans un fil dédié ([`etude-audience.md`](etude-audience.md)) et un guide de langage. |
+| 5 | L'étude d'audience dans un fil dédié ([`../../audience-study/references/example.md`](../../audience-study/references/example.md)) et un guide de langage. |
 | 6 | Le aha passe de la 9e à la 3e étape. Le tour des muscles et le bilan de 10 minutes sortent du chemin. « Ma première séance » ouvre la séance, sinon un seul rappel. |
 | 7 | Le texte est réécrit en une histoire, puis relu par deux agents en parallèle. |
 | 8 | L'interrupteur « La voix » sur l'écran du aha est remplacé par un haut-parleur rond. |
@@ -44,7 +44,7 @@ Deuxième étape : faire étudier les meilleurs onboardings du fitness et de la 
 Enceinte : sans les étapes 4 et 5.
 
 ## Le paywall
-Voir [`paywall.md`](paywall.md). En bref : paywall dur, sans croix ni freemium, annuel présélectionné avec 7 jours d'essai, mensuel sans essai, frise de l'essai, « J'ai un code » pour les premières utilisatrices, demande d'avis seulement aux abonnées après le premier paiement et une séance réussie.
+Voir [`../../app-paywall/references/case-study-screens.md`](../../app-paywall/references/case-study-screens.md). En bref : paywall dur, sans croix ni freemium, annuel présélectionné avec 7 jours d'essai, mensuel sans essai, frise de l'essai, « J'ai un code » pour les premières utilisatrices, demande d'avis seulement aux abonnées après le premier paiement et une séance réussie.
 
 ## La mesure
 - `onboarding_step_completed` (`step`, `action` = `answered` ou `skip`) à chaque étape. La réponse au aha (oui ou non) ne part pas : c'est une donnée de santé.

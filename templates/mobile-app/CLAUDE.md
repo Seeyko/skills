@@ -3,7 +3,7 @@
 <Une phrase : ce que fait l'app, pour qui, payante ou non.> FR + EN. Bundle `<app.nom.ios>`, équipe `<team id>`. Dépôt privé `<owner/repo>`.
 
 ## Avant toute tâche
-- Si une mémoire MCP est branchée, lis ses leçons `work.agents`, `app.create` et celles du sujet de la tâche (`app.onboarding`, `app.aso`, `app.store-release`).
+- Si une mémoire MCP est branchée, lis ses leçons `work.agents`, `copy`, `design`, `app.create` et celles du sujet de la tâche (`app.onboarding`, `app.paywall`, `app.aso`, `app.store-release`).
 
 ## Le dépôt
 
