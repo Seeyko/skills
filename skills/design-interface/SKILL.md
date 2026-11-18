@@ -1,0 +1,47 @@
+---
+name: design-interface
+description: Concevoir, animer ou relire une interface (écran d'app, parcours, site, composant, capture, vidéo de démo) pour qu'elle parle toute seule, se sente au toucher et ne fasse pas « IA ». À utiliser avant tout travail d'interface, dans une app comme sur un site, et pour relire un diff qui touche au visuel.
+---
+
+# Concevoir l'interface
+
+Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (couleurs, polices, composants, durées) et gagne sur ce skill. Pour le texte, voir [`write-copy`](../write-copy/SKILL.md).
+
+## Avant de commencer
+1. Lis le `DESIGN.md` du projet en entier, même pour une petite tâche. S'il n'existe pas, écris-le d'abord (format `DESIGN.md` de Google Labs), puis une règle qui le charge pour chaque fichier front.
+2. Pour la méthode, charge les skills de finition : `emil-design-eng`, `choreograph`, `review-animations`, `apple-design`, `animate-text`, `impeccable`, et `swiftui-expert-skill` sur iOS (voir [`../../CREDITS.md`](../../CREDITS.md)).
+3. Fais concevoir les écrans et les dessins par le modèle le plus fort. Chaque brief rappelle la charte du projet.
+
+## Les principes
+1. **L'écran parle tout seul.** Si on doit l'expliquer avec une phrase, on corrige le dessin, la couleur ou le geste. On n'ajoute pas la phrase.
+2. **Une seule chose mise en avant par écran, un seul CTA.** Ce qui n'est pas le sujet se fond dans le fond.
+3. **Peu de cartes, pas de bordures.** Le texte est posé sur le fond, ou sur des cartes qui ont la matière de l'univers de l'app.
+4. **L'écran ne change jamais vraiment.** Dans un parcours, le bouton reste fixe et seul le contenu se transforme. Un contenu en remplace un autre sur place, par un fondu flou. Le libellé du bouton se fond sur place, un temps après. Rien ne glisse sur le côté sans raison.
+5. **Montre au lieu d'expliquer.** Une notification qui fait défiler les vrais rappels remplace la phrase qui les décrit. Une graine qui pousse remplace « ton plan est prêt ». Une couleur reconnaît une zone mieux qu'une étiquette.
+6. **Pas de réglage lourd sur un écran d'expérience.** Ni interrupteur ni formulaire là où la personne vit le produit : un petit bouton rond (un haut-parleur) suffit. Les réglages vivent ailleurs.
+7. **Chaque geste se sent.** Haptique sur chaque bouton, chaque choix, chaque temps d'un rythme.
+8. **Une app minimale** : une vue, un geste, une entrée naturelle (voix, photo, texte). Pas de formulaire.
+9. **Natif.** Sur iOS : SwiftUI, Liquid Glass pour la couche flottante (jamais sur le contenu), shimmer pendant la lecture, morph quand le résultat arrive. Sur le web : shadcn.
+10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées par une IA.
+11. **Les détails qui gênent** : une ombre coupée par son conteneur, un carrousel horizontal qui défile aussi en vertical, un filtre qui en sélectionne un autre, un écran trop chargé.
+
+## La méthode
+- **Une maquette jouable avant le code.** Une page HTML avec les écrans en vrai format (393 × 852 pour un iPhone), côte à côte dans une rangée qui défile à l'horizontale. Sous chaque écran, hors du cadre, des repères « Haptique », « Animation », « Navigation ». On l'essaie sur un téléphone, on la valide, puis on code. L'app suit la maquette exactement.
+- **Une référence (une vidéo, une app) s'analyse deux fois** : par toi, et par un agent qui n'a que la matière brute. Garde ce qui converge.
+- **Chaque correction du propriétaire devient une règle** dans `DESIGN.md`, avec sa raison, dans le même commit (skill `learn-taste`).
+
+## Les visuels et les vidéos
+- Courts, nerveux, 60 fps, sans texte qui décrit et sans intro.
+- À vitesse réelle, pas en accéléré, dans un vrai mock, avec des données réalistes et assez nombreuses.
+- Le fond de la marque derrière une vidéo ou une capture.
+- Un détourage propre, ou rien.
+- Fidèle au réel : une image générée ne change pas la forme d'un objet réel, n'ajoute pas un détail qui n'existe pas et garde les proportions. Pas de vraie marque dans un visuel.
+- Pour un travail payant (génération d'images), un seul essai d'abord. Tout ce qui est généré est gardé sur un disque durable.
+
+## Avant de livrer un écran
+- [ ] Le test du doigt est passé ([`write-copy`](../write-copy/SKILL.md)).
+- [ ] Regardé en vraie taille, en FR et en EN, sur téléphone (et sur ordinateur pour un site).
+- [ ] Chaque contrôle a son haptique, sa cible de 44 pt et son libellé VoiceOver (il porte ce que le dessin ne dit pas).
+- [ ] Chaque mouvement a sa version « Réduire les animations » (un simple fondu).
+- [ ] N'anime que la transformation et l'opacité. 120 Hz tenus sur le plus vieil appareil supporté.
+- [ ] Captures avant et après envoyées (jamais commitées), et une vidéo à vitesse réelle pour un parcours.
