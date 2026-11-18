@@ -1,6 +1,6 @@
 ---
 name: app-onboarding
-description: Concevoir et livrer l'onboarding d'une app mobile, du premier écran au premier usage (accueil, questions, moment aha, rappels, plan, paywall, compte). À utiliser dès qu'on crée une app, qu'on touche à son accueil ou à son premier lancement, ou quand on parle d'« onboarding », de « moment aha » ou d'un onboarding « trop long ».
+description: Concevoir et livrer l'onboarding d'une app mobile, du premier écran au premier usage (accueil, questions, moment aha, rappels, plan, compte). Le paywall a son propre skill, app-paywall. À utiliser dès qu'on crée une app, qu'on touche à son accueil ou à son premier lancement, ou quand on parle d'« onboarding », de « moment aha » ou d'un onboarding « trop long ».
 ---
 
 # L'onboarding d'une app

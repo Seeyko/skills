@@ -16,6 +16,8 @@ def problems(path):
         if key in seen:
             yield f"{key}: clé en double"
         seen.add(key)
+        if key.split("/")[0] != lesson.get("topic"):
+            yield f"{key}: la clé doit commencer par le topic"
         if not TOPIC.match(lesson.get("topic", "")):
             yield f"{key}: topic invalide"
         if not lesson.get("rule"):

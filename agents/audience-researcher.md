@@ -1,7 +1,7 @@
 ---
 name: audience-researcher
 description: Mène l'étude d'audience d'un produit (état d'esprit, profils, leurs mots, méfiances, promesses) à partir de ce que disent les vraies personnes. À lancer avant d'écrire un onboarding, une fiche App Store ou un site.
-model: fable
+model: opus
 tools: WebSearch, WebFetch, Read, Write
 ---
 

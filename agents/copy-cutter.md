@@ -1,7 +1,7 @@
 ---
 name: copy-cutter
 description: Relit les textes d'un écran ou d'un parcours avec la grille de suppression (règle des 75 %, échelle de suppression, charte). À lancer en parallèle de story-reviewer, avec seulement la matière brute.
-model: fable
+model: opus
 tools: Read
 ---
 

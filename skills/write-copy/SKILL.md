@@ -34,9 +34,9 @@ Ce qui survit : une vraie conséquence au moment du choix, un fait invisible (co
 - Un bouton dit l'action et, s'il le faut, la durée : « Ma séance · 7 min ».
 - **Les mots de la personne, pas les tiens.** Ne suppose jamais qu'elle connaît ton vocabulaire. Une image de l'univers de l'app se dit en clair la première fois.
 - Dis pourquoi, en une phrase.
-- Des phrases de 20 mots au plus, à l'actif, au présent. Tutoiement. Relis à voix haute.
+- Des phrases de 20 mots au plus, à l'actif, au présent. Le tutoiement, sauf si le projet en a décidé autrement. Relis à voix haute.
 - **Une seule histoire** : les écrans d'un parcours s'enchaînent comme un récit. Aucun texte n'en répète un autre. Les titres se lisent à la suite.
-- FR et EN ensemble, dès le premier écran. Si une voix lit le texte, chaque changement oblige à re-rendre la voix : réutilise les phrases déjà enregistrées.
+- Toutes les langues du produit ensemble (FR et EN par défaut), dès le premier écran. Si une voix lit le texte, chaque changement oblige à re-rendre la voix : réutilise les phrases déjà enregistrées.
 - Quand tu réécris le texte de quelqu'un, garde exactement son ton et change le contenu.
 - **Le test du doigt** : cache chaque texte avec le doigt. Si l'écran se comprend encore, supprime ce texte.
 

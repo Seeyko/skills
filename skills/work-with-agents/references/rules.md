@@ -7,7 +7,7 @@
 - **Jamais de copier-coller pour l'humain.** Passe par l'API, le CLI ou le navigateur (Chrome MCP, computer use). S'il te manque un outil, dis-le tout de suite.
 - **Demande tous les accès en une fois**, tôt, par écrit.
 - **Pas de question dont la réponse est « oui » ou « l'option recommandée ».** Prends le défaut recommandé, dis-le en une ligne, continue.
-- **N'impose jamais une manipulation impossible** (« choisis un exécutable dans le Finder »). Si tu dois demander quelque chose, donne un bloc prêt à copier ou un lien qui fait l'action en un clic.
+- **N'impose jamais une manipulation impossible** (« choisis un exécutable dans le Finder »). Si une action ne peut venir que de l'humain (un accord, une connexion), donne-lui un lien qui la fait en un clic, ou la phrase exacte à envoyer.
 - Les règles d'autorisation de la machine de build (xcodebuild, xcodegen, xcrun, les scripts App Store, `gh pr create/merge`, `git push`, docker, `ssh` vers le serveur) sont ajoutées une fois pour toutes dans les réglages, pas demandées à chaque build. Explique clairement ce que la garde refuse.
 - Un gestionnaire de mots de passe peut remplir un champ par son extension. L'agent ne lit jamais un mot de passe.
 
@@ -19,7 +19,7 @@
 
 ## Les PR et le code
 - Une branche dédiée, une PR par étape. Jamais de commit sur `main`.
-- Fusionne quand la CI est verte et que les gros tests passent. Jamais sur un rouge, même « connu ».
+- Fusionne une petite PR quand la CI est verte et que les gros tests passent, sauf une surface sensible (voir ci-dessus). Jamais sur un rouge, même « connu ».
 - Le code d'un build envoyé au store est sur `main`.
 - **Pas de commentaires dans le code** : un nom clair, une petite fonction, un test.
 - **Des tests qui prouvent** : e2e fullstack (build de prod, API, vraie base), intégration, golden. Les tests unitaires seulement là où ils prouvent quelque chose.

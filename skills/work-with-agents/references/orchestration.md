@@ -3,6 +3,7 @@
 Le but : des agents autonomes. Tu lances la tâche depuis ton téléphone ou ton ordinateur, les agents font tout le reste et ne te demandent que ce qu'ils ne peuvent pas trouver ou créer eux-mêmes.
 
 ## Quel modèle pour quoi
+Les noms ci-dessous sont ceux d'aujourd'hui. Quand une nouvelle famille sort, garde les rôles et change les noms.
 - **Le modèle le plus fort (Fable)** analyse, cherche, relit, conçoit et **tranche** les questions ouvertes. Un premier agent écrit le besoin en termes purement fonctionnels, puis un agent Fable conçoit la solution.
 - **Opus** code, et fait les audits en parallèle (effort élevé).
 - **Sonnet** sert pour les sous-agents nombreux et répétitifs (essayer de casser une app, trier une liste).
@@ -38,9 +39,7 @@ Le but : des agents autonomes. Tu lances la tâche depuis ton téléphone ou ton
 - Tous les accès d'administration passent par un réseau privé (Tailscale ou équivalent).
 
 ## La preuve
-- Des captures avant et après pour chaque écran touché, envoyées dans le fil et dans la PR (jamais commitées).
-- Une **vidéo à vitesse réelle**, pas en accéléré, avec des données réalistes et assez nombreuses.
-- Pour un travail payant (génération d'images), **un seul essai d'abord**. Tout ce qui est généré est gardé sur un disque durable, jamais dans un dossier temporaire.
+Des captures avant et après, une vidéo à vitesse réelle, un seul essai d'abord pour un travail payant : voir [`design-interface`](../../design-interface/SKILL.md) et [`present-work`](../../present-work/SKILL.md).
 
 ## Garder ce qu'on apprend
 - Chaque correction devient une règle dans le skill, la règle ou le `DESIGN.md` du sujet, avec sa raison, dans la même PR.

@@ -75,7 +75,7 @@
     {
       "key": "copy/their-words",
       "topic": "copy",
-      "rule": "Écris avec les mots de la personne, jamais le vocabulaire de l'app. Dis pourquoi en une phrase. Des phrases de 20 mots au plus, à l'actif, tutoiement, FR et EN ensemble. Les écrans d'un parcours forment une seule histoire, sans texte répété.",
+      "rule": "Écris avec les mots de la personne, jamais le vocabulaire de l'app. Dis pourquoi en une phrase. Des phrases de 20 mots au plus, à l'actif, le tutoiement sauf décision du projet, toutes les langues du produit ensemble. Les écrans d'un parcours forment une seule histoire, sans texte répété.",
       "when": "quand tu écris un parcours, une consigne, une question ou un bouton",
       "why": "Peu de texte ne veut pas dire texte codé : une image de l'univers non expliquée bloque la personne.",
       "check": "Les titres se lisent à la suite comme une histoire ; aucun mot de l'app n'est utilisé sans être dit en clair une première fois.",

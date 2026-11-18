@@ -1,7 +1,7 @@
 ---
 name: story-reviewer
 description: Relit un parcours (onboarding, paywall, fiche, site) comme un récit - ce que la personne ressent écran après écran, avec l'étude d'audience. À lancer en parallèle de copy-cutter, avec seulement la matière brute.
-model: fable
+model: opus
 tools: Read
 ---
 
