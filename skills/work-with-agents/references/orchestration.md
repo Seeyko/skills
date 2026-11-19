@@ -24,7 +24,10 @@ Les noms ci-dessous sont ceux d'aujourd'hui. Quand une nouvelle famille sort, ga
 | Chercher les bugs chaque jour | Une routine quotidienne : des Sonnet tentent de casser l'app sur une pile complète (build de prod, API, vraie base), des Opus écrivent le correctif et le test, une PR par bug, lisible en une minute (titre qui dit le bug, captures, preuve). |
 | Une infra qu'une session ne peut pas atteindre | Écrire un **runbook** dans la PR, puis le passer à un agent qui a les accès. |
 | Un refus d'App Review | Une réponse point par point, par le CLI ou le navigateur, avec une vidéo de l'app en usage, ou des captures de l'appareil demandé et la liste des appareils testés. |
-| Une tâche récurrente | Un projet Claude avec un déclencheur planifié (chaque semaine, chaque jour), ou une routine. |
+| Une tâche récurrente | Un projet Claude avec un déclencheur planifié (chaque semaine, chaque jour), ou une routine. Une veille tourne au plus toutes les 3 h : plus souvent, elle dérange. Elle ne parle que s'il y a du nouveau. |
+| Veiller sur la branche principale | « Vert » veut dire **déployé** : la routine juge le run du commit de tête **et** le deploy. Un e2e annulé ou un vieux run vert ne compte pas. |
+| Un nouveau format vu ailleurs (un post, une pub) | Un fil d'exploration autonome qui cherche, prototype seul et montre tout avant de publier ([`social-content`](../../social-content/SKILL.md)). |
+| Garder la méthode à jour | Une routine quotidienne [`distill-practice`](../../distill-practice/SKILL.md) relit les fils et range ce qui a été demandé ou validé. |
 | Une analyse sans action | Seulement un document d'analyse. Pas de PR. Un plan ou une analyse ne se fusionne jamais tout seul. |
 
 ## Le suivi d'une PR
@@ -36,6 +39,8 @@ Les noms ci-dessous sont ceux d'aujourd'hui. Quand une nouvelle famille sort, ga
 ## Les machines
 - Une machine toujours allumée (un Mac pour iOS) fait les builds, le simulateur, App Store Connect et les runners de CI. Une session à distance y tourne en permanence, pour lui parler depuis le téléphone.
 - Les sessions cloud codent. Elles n'écrivent jamais en production : une écriture en prod passe par la machine qui a les accès, avec l'accord écrit du propriétaire.
+- Une étape d'installation de la CI a un plafond court (quelques minutes) : un runner bloqué échoue vite au lieu d'attendre une heure. Sur un runner macOS sans écran, les caches restent sur le disque interne : une autorisation système jamais validée bloque un job en silence.
+- Un fil ne peut pas changer une tâche planifiée qu'il n'a pas créée : il écrit le nouveau texte dans un fichier partagé et le demande au coordinateur.
 - Tous les accès d'administration passent par un réseau privé (Tailscale ou équivalent).
 
 ## La preuve

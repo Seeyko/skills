@@ -16,6 +16,8 @@ Les skills tiers que ce playbook utilise, et les créateurs dont il s'inspire. U
 | Sécurité | `cloudflare-security-audit`, un audit hebdomadaire | cloudflare/security-audit-skill, trailofbits |
 | Les gros lots de sous-agents | `workflow-authoring` | Claude Code |
 | Des PR lisibles | `things-you-should-know` | marketplace Claude |
+| La conformité App Store | une checklist d'audit avant soumission | https://github.com/mjmirza/app-store-compliance |
+| Générer images et avatars | le MCP fal (modèles d'images, environ 0,06 $ l'image) | https://fal.ai |
 
 ## Les créateurs
 
@@ -30,5 +32,9 @@ Les skills tiers que ce playbook utilise, et les créateurs dont il s'inspire. U
 | **Antoine van der Lee** | Le skill SwiftUI. |
 | **poteto** | `pstack`. |
 | **Moonjar** | Les captures App Store. |
+| **Superwall** (vidéo sur X) | Laisser choisir l'essai de l'abonnement annuel : gratuit et court, ou un premier mois payant. |
+| **revmp.studio, étude de cas Plantspace** | Le découpage des animations de série et de badges : beaucoup de temps courts, de l'impact. |
+| **César Álvarez** (X @cesaralvarezll) | Le format UGC « can't believe I was like this » (une réaction, puis la démo de l'app) et les avatars IA pour tester beaucoup de hooks. |
+| **Alysha** (X @alyshadotmd) | Les carrousels « matrice » : des personnages découpés sur deux axes. |
 | Le guide « How we write » du NHS | Une charte d'écriture simple et humaine. |
 | Le guide « distribution-101 » | Une base pour un plan de distribution. |
