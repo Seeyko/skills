@@ -16,6 +16,7 @@ Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lesson
 | `work.agents` | toujours : comment travailler et rendre son travail |
 | `copy` | tout texte qu'une personne lira |
 | `design` | tout écran, toute animation, tout visuel |
+| `social` | un post réseau, un slideshow, une vidéo d'app, un UGC |
 | `audience` | une étude d'audience, avant un onboarding, une fiche ou un site |
 | `app.create` | une nouvelle app |
 | `app.onboarding` | l'onboarding, le premier lancement |

@@ -9,6 +9,10 @@
 - **Pas de question dont la réponse est « oui » ou « l'option recommandée ».** Prends le défaut recommandé, dis-le en une ligne, continue.
 - **N'impose jamais une manipulation impossible** (« choisis un exécutable dans le Finder »). Si une action ne peut venir que de l'humain (un accord, une connexion), donne-lui un lien qui la fait en un clic, ou la phrase exacte à envoyer.
 - Les règles d'autorisation de la machine de build (xcodebuild, xcodegen, xcrun, les scripts App Store, `gh pr create/merge`, `git push`, docker, `ssh` vers le serveur) sont ajoutées une fois pour toutes dans les réglages, pas demandées à chaque build. Explique clairement ce que la garde refuse.
+- **Avant de dire « impossible », essaie pour de vrai** par l'API ou le CLI, et cite la réponse exacte reçue.
+- **Cherche la méthode qui existe déjà** (un skill d'un autre dépôt, une leçon de la mémoire) avant d'en inventer une.
+- **Une réponse groupée vaut pour chaque recommandation telle qu'elle a été posée**, « non » compris (« oui go » sur une liste de cinq). Note chaque refus dans la mémoire pour ne plus le reproposer.
+- **« Arrête » veut dire arrête** : rien de nouveau ne se lance, surtout pas une génération payante, tant que l'humain n'a pas fait sa part.
 - Un gestionnaire de mots de passe peut remplir un champ par son extension. L'agent ne lit jamais un mot de passe.
 
 ## Ce qui attend l'accord écrit du propriétaire
@@ -35,6 +39,10 @@
 - Vérifie tes affirmations dans l'app avant de les envoyer.
 - Utilise la bonne source, pas un homonyme (le bon dépôt, le bon auteur).
 
+## Les références partagées
+- Une vidéo, un article ou un post partagé par l'humain : trouve son **idée centrale** et applique-la, relis la source avant de proposer. Rater l'idée pour un détail voisin est l'erreur à éviter.
+- Une idée validée sur une app part dans **toutes les apps** du portefeuille, un fil par app. Un audit (conformité, store, sécurité) passe aussi toutes les apps.
+
 ## Les retours
 - Un retour d'utilisateur se discute, il ne s'applique pas tel quel.
 - On ne casse pas une review App Store en cours pour un petit correctif : la version suivante attend, les testeurs utilisent TestFlight.
@@ -53,6 +61,8 @@
 ## Parler à l'humain
 - **Présente chaque travail fini comme le dit [`present-work`](../../present-work/SKILL.md)** : un titre humain, une description courte, des captures ou un diagramme, puis le lien vers le détail.
 - Court, en commençant par ce qu'il doit faire, ou en disant qu'il n'a rien à faire.
+- Sans jargon de fil : quand tu remplaces ou annonces quelque chose, dis ce que c'est (la source, ce qu'on voit) avec le lien d'aperçu.
+- Une proposition de design ou de contenu arrive avec son visuel et son coût s'il y a des générations payantes.
 - Dans sa langue. Les identifiants de code, les règles et les skills en anglais.
 - Préviens-le de chaque sortie sur les stores.
 - Quand il ajoute un outil, note-le en une ligne dans le `CLAUDE.md`.

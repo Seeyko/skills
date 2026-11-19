@@ -251,6 +251,123 @@
       "why": "Simple, peu cher, tout au même endroit.",
       "check": "Le site tourne sur Dokploy et le DNS a été changé par le CLI.",
       "source": "playbook:web.create/playbook · skills/new-website"
+    },
+    {
+      "key": "social/real-first",
+      "topic": "social",
+      "rule": "Pas d'image IA sur le compte officiel d'une marque : si le public reproche un contenu, retire-le et remplace-le par du vrai. L'UGC IA vit sur des comptes à part : 2 ou 3 personas avec fiche JSON, photos de référence pour garder le même visage, étiquette IA du réseau, adultes seulement, un journal par vidéo. La voix « je » d'une vraie personne seulement avec son accord.",
+      "when": "quand on crée ou programme un post réseau avec une image générée, ou un UGC",
+      "why": "La confiance du public part au premier visuel IA repéré sur le compte de la marque.",
+      "check": "Aucun post du compte officiel n'a d'image générée ; chaque UGC IA porte son étiquette.",
+      "source": "playbook:social/real-first · skills/social-content"
+    },
+    {
+      "key": "social/native-language",
+      "topic": "social",
+      "rule": "Écris pour le réseau dans sa langue : étudie une cinquantaine de vrais posts de la niche avant d'écrire (vécu, POV, humour, hook de 2 à 6 mots qui nomme le sujet). L'accroche dit le bénéfice central, jamais une fonction secondaire. Chaque post finit par un CTA possible sur ce réseau (sur TikTok, le lien est en bio).",
+      "when": "avant d'écrire un slideshow, une légende ou un hook",
+      "why": "Une copy propre mais pas native du réseau ne perce pas.",
+      "check": "Le lot cite les posts étudiés ; chaque post a un hook court et un CTA.",
+      "source": "playbook:social/native-language · skills/social-content"
+    },
+    {
+      "key": "social/samples-first",
+      "topic": "social",
+      "rule": "Avant une série, montre 2 ou 3 échantillons ou styles avec le coût de chaque génération ; généralise celui qui est choisi. Une image qui montre un sport ou un métier est ultra réaliste, vérifiée en zoom. Un mème matrice est chargé et n'a qu'un sens de lecture.",
+      "when": "avant de produire un lot de visuels, de stickers ou de slideshows",
+      "why": "Un style généralisé trop tôt se refait en entier, et l'erreur d'un expert du domaine se voit tout de suite.",
+      "check": "2 ou 3 variantes et leur coût ont été montrés avant le lot.",
+      "source": "playbook:social/samples-first · skills/social-content"
+    },
+    {
+      "key": "social/app-video",
+      "topic": "social",
+      "rule": "Une vidéo d'app montre la vraie app, parfaitement fluide (enregistrée image par image sur une horloge simulée), en plein écran sur un fond flouté, sans cadre de téléphone. Pour un post : le parcours réel en accéléré jusqu'à la récompense.",
+      "when": "quand on fait une démo, une vidéo réseau ou une vidéo de PR d'une app",
+      "why": "Une démo qui saccade ou un cadre de téléphone font amateur au premier regard.",
+      "check": "La vidéo tient 30 à 60 i/s sans saccade et l'app remplit la hauteur.",
+      "source": "playbook:social/app-video · skills/social-content"
+    },
+    {
+      "key": "design/success-moments",
+      "topic": "design",
+      "rule": "Une réussite (série, chose gagnée) fait « wow » : beaucoup de temps courts (un toutes les 0,3 s), anticipation puis impact puis retombée, écraser et étirer, une frappe haptique par temps en une séquence, rien de touchable pendant la fête, jamais de jour manqué. Découpe la référence image par image, garde son rythme, jamais son dessin.",
+      "when": "quand on conçoit une fête de fin de séance, une série, un badge",
+      "why": "Une réussite qui suit les règles calmes du reste de l'app paraît molle.",
+      "check": "L'aperçu vidéo montre plusieurs temps et un impact ; la partition est testée.",
+      "source": "playbook:design/success-moments · skills/design-interface"
+    },
+    {
+      "key": "design/visual-with-proposal",
+      "topic": "design",
+      "rule": "Toute proposition de design arrive avec un visuel (vidéo d'aperçu, planche). Un visuel validé par le propriétaire se fusionne tout de suite.",
+      "when": "quand on propose une animation, un écran ou un style",
+      "why": "Une description seule ne se juge pas.",
+      "check": "Le message de proposition contient une image ou une vidéo.",
+      "source": "playbook:design/visual-with-proposal · skills/design-interface"
+    },
+    {
+      "key": "app.paywall/billed-price",
+      "topic": "app.paywall",
+      "rule": "Le montant facturé est le prix le plus visible (Apple 3.1.2(c)) : montre l'économie et le prix facturé en texte principal. Pour laisser choisir l'essai (gratuit court ou premier mois payé), crée un deuxième produit annuel : Apple n'accepte qu'une offre de lancement par abonnement.",
+      "when": "quand on touche aux prix, aux offres ou à l'essai d'un paywall",
+      "why": "Une pastille de prix mensuel devant le prix annuel fait refuser la review.",
+      "check": "Une capture de l'offre montre le prix facturé en premier.",
+      "source": "playbook:app.paywall/billed-price · skills/app-paywall"
+    },
+    {
+      "key": "app.create/compliance-audit",
+      "topic": "app.create",
+      "rule": "Avant chaque soumission, audite toutes les apps du compte avec une checklist de conformité publique : prix facturé visible, PrivacyInfo.xcprivacy par app, lien de confidentialité dans l'app, IA tierce nommée et acceptée avant le premier envoi, conditions d'abonnement dans la description.",
+      "when": "avant un envoi en review App Store",
+      "why": "Ce qu'Apple vérifie se voit dans le code, et une règle ratée sur une app l'est souvent sur les autres.",
+      "check": "Chaque app a son rapport d'audit avant la soumission.",
+      "source": "playbook:app.create/compliance-audit · skills/new-mobile-app"
+    },
+    {
+      "key": "work.agents/try-before-impossible",
+      "topic": "work.agents",
+      "rule": "Avant de dire « impossible », essaie pour de vrai par l'API ou le CLI et cite la réponse exacte. Cherche la méthode qui existe déjà (skill d'un autre dépôt, mémoire) avant d'en inventer une.",
+      "when": "quand une action semble bloquée ou qu'une méthode manque",
+      "why": "L'essai réel trouve souvent la vraie cause, ou montre que c'était possible.",
+      "check": "Le message cite la commande essayée et la réponse.",
+      "source": "playbook:work.agents/try-before-impossible · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/central-idea",
+      "topic": "work.agents",
+      "rule": "Une référence partagée (vidéo, article) : trouve son idée centrale, relis la source avant de proposer, et applique-la à toutes les apps du portefeuille, un fil par app. Un audit passe aussi toutes les apps.",
+      "when": "quand l'humain partage un lien, une vidéo ou un dépôt",
+      "why": "Rater l'idée centrale pour un détail voisin oblige l'humain à répéter.",
+      "check": "La proposition nomme l'idée centrale et les apps concernées.",
+      "source": "playbook:work.agents/central-idea · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/batch-go",
+      "topic": "work.agents",
+      "rule": "Une réponse groupée (« oui go ») vaut pour chaque recommandation telle qu'elle a été posée, « non » compris ; note chaque refus dans la mémoire pour ne plus le reproposer. « Arrête » veut dire : rien de nouveau ne se lance, surtout pas une génération payante.",
+      "when": "quand l'humain répond d'un mot à une liste, ou demande d'arrêter",
+      "why": "L'humain répond vite depuis son téléphone et ne veut pas réexpliquer.",
+      "check": "Les refus sont en mémoire ; aucune génération après un « arrête ».",
+      "source": "playbook:work.agents/batch-go · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/routines",
+      "topic": "work.agents",
+      "rule": "Une veille tourne au plus toutes les 3 h et ne parle que s'il y a du nouveau. Pour la branche principale, « vert » veut dire déployé : juge le run du commit de tête et le deploy, jamais un vieux run vert.",
+      "when": "quand on crée ou change une tâche planifiée de surveillance",
+      "why": "Une veille trop fréquente dérange, et un main vert qui ne déploie pas cache une panne.",
+      "check": "Le cron est espacé d'au moins 3 h ; le compte rendu cite le SHA de tête et le deploy.",
+      "source": "playbook:work.agents/routines · skills/work-with-agents/references/orchestration.md"
+    },
+    {
+      "key": "work.agents/distill-daily",
+      "topic": "work.agents",
+      "rule": "Une routine quotidienne relit les fils, les PR et les règles changées depuis le dernier passage, garde ce que l'humain a demandé, partagé ou validé, et le range dans le skill général du sujet (une PR qui s'enrichit) ou dans la mémoire si c'est personnel.",
+      "when": "pour garder la façon de travailler à jour sans le demander",
+      "why": "Ce qui est appris dans un fil se perd s'il n'est pas rangé.",
+      "check": "Chaque règle ajoutée cite un signal de validation dans le journal.",
+      "source": "playbook:work.agents/distill-daily · skills/distill-practice"
     }
   ]
 }

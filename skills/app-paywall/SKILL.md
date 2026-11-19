@@ -9,14 +9,16 @@ Le texte suit [`write-copy`](../write-copy/SKILL.md), l'interface suit [`design-
 
 ## Les principes
 1. **Un paywall dur, honnête, à la fin de l'onboarding.** Juste après la réussite du aha et le plan. Sans croix, sans freemium. Un paywall dur convertit bien plus (RevenueCat : 10,7 % de téléchargements payants contre 2,1 %), à rétention annuelle à peu près égale.
-2. **L'annuel est présélectionné**, avec un essai de 7 jours. Le mensuel n'a pas d'essai et coûte plus cher par mois.
+2. **L'annuel est présélectionné**, avec un essai de 7 jours (ou le choix de l'essai, point 10). Le mensuel n'a pas d'essai et coûte plus cher par mois.
 3. **La frise de l'essai** sur l'annuel : « Aujourd'hui · Tout est ouvert », « Jour 5 · On te rappelle la fin de l'essai », « Jour 7 · Premier paiement, sauf si tu annules ». Elle répond à la peur de l'abonnement caché. Elle se replie quand on choisit le mensuel.
-4. **Rien n'est caché** : le prix après l'essai et « Annulable à tout moment » sous le bouton. En pied : Restaurer, J'ai un code, Conditions, Confidentialité.
-5. **Le bouton juste avant ne promet rien que le paywall ne donne.** « Voir mon jardin » qui ouvre un paywall, c'est raté.
-6. **Le titre reprend la promesse verte**, et le décor de l'app reste en haut.
-7. **Des codes à vie pour les premières utilisatrices** (« J'ai un code » ouvre la feuille Apple des codes d'offre). Elles donnent les premiers avis.
-8. **La demande d'avis seulement aux abonnées**, après le premier paiement et une séance réussie (« Tu aimes … ? » → Oui / Pas encore), 3 fois par an au plus.
-9. **Après l'achat, l'action** : l'écran suivant ouvre le premier usage ([`app-onboarding`](../app-onboarding/SKILL.md)).
+4. **Le montant facturé est le prix le plus visible.** Une pastille « 2,50 € par mois » à côté d'un prix annuel en gris est refusée par Apple (3.1.2(c)) : montre l'économie (« −37 % ») et le prix facturé en texte principal.
+5. **Rien n'est caché** : le prix après l'essai et « Annulable à tout moment » sous le bouton. En pied : Restaurer, J'ai un code, Conditions, Confidentialité.
+6. **Le bouton juste avant ne promet rien que le paywall ne donne.** « Voir mon jardin » qui ouvre un paywall, c'est raté.
+7. **Le titre reprend la promesse verte**, et le décor de l'app reste en haut.
+8. **Des codes à vie pour les premières utilisatrices** (« J'ai un code » ouvre la feuille Apple des codes d'offre). Elles donnent les premiers avis.
+9. **La demande d'avis seulement aux abonnées**, après le premier paiement et une séance réussie (« Tu aimes … ? » → Oui / Pas encore), 3 fois par an au plus.
+10. **Laisser choisir l'essai** sur l'annuel : gratuit et court, ou un premier mois payé à petit prix. Apple n'accepte qu'une offre de lancement par abonnement, donc il faut un deuxième produit annuel. Le mois payé n'est pas un essai gratuit, ni dans l'analytique ni dans les textes (« paiement de l'année », pas « fin de l'essai »).
+11. **Après l'achat, l'action** : l'écran suivant ouvre le premier usage ([`app-onboarding`](../app-onboarding/SKILL.md)).
 
 ## Le code
 - StoreKit 2, abonnements App Store. Le fichier de configuration StoreKit a un pays fixé, sinon les prix passent de € à $ sur les captures.

@@ -19,7 +19,9 @@ Une façon de construire des apps mobiles et des sites avec des agents Claude. L
 | [`design-interface`](skills/design-interface/SKILL.md) | Tout écran, toute animation, tout visuel |
 | [`audience-study`](skills/audience-study/SKILL.md) | Avant d'écrire pour quelqu'un : un produit, un onboarding, une fiche, un site |
 | [`pick-stack`](skills/pick-stack/SKILL.md) | Au démarrage d'un projet, ou avant d'ajouter un service |
+| [`social-content`](skills/social-content/SKILL.md) | Les posts réseaux : slideshows, vidéos d'app, UGC, musique, CTA, formats gagnants |
 | [`memory-first`](skills/memory-first/SKILL.md), [`sync-memory`](skills/sync-memory/SKILL.md) | Lire et tenir à jour les leçons d'une mémoire MCP |
+| [`distill-practice`](skills/distill-practice/SKILL.md) | Chaque jour, extraire des fils ce qui a été demandé ou validé, et le ranger ici |
 
 **Pour chaque étape d'une app**
 
