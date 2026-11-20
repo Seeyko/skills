@@ -368,6 +368,42 @@
       "why": "Ce qui est appris dans un fil se perd s'il n'est pas rangé.",
       "check": "Chaque règle ajoutée cite un signal de validation dans le journal.",
       "source": "playbook:work.agents/distill-daily · skills/distill-practice"
+    },
+    {
+      "key": "social/person-video",
+      "topic": "social",
+      "rule": "Une vidéo avec une personne fait vrai : selfie à la maison, voix qui hésite, app en coupe franche, CTA écrit en légende. Génère d'abord des photos réalistes de début et de fin, puis anime entre les deux. Fais les deux familles : la drôle et la projection.",
+      "when": "quand on produit une vidéo UGC ou avatar pour un produit",
+      "why": "Une version studio « fait trop pub », une vidéo générée depuis le texte seul se voit à 100 %.",
+      "check": "La vidéo se comprend sans le son, et personne ne dit qu'elle fait pub ou IA.",
+      "source": "playbook:social/person-video · skills/social-content"
+    },
+    {
+      "key": "social/cost-first",
+      "topic": "social",
+      "rule": "Annonce le coût total avant tout rendu vidéo payant ; compare deux modèles sur le même clip, même photo, même voix, côte à côte.",
+      "when": "avant de lancer une génération vidéo ou voix payante",
+      "why": "L'humain veut savoir ce que ça coûte avant, et choisir sur pièce.",
+      "check": "Le message de lancement donne le coût ; le choix de modèle s'appuie sur un côte à côte.",
+      "source": "playbook:social/cost-first · skills/social-content"
+    },
+    {
+      "key": "design/collection-visible",
+      "topic": "design",
+      "rule": "La progression se voit sans chiffre : gagné en couleur, 2 ou 3 suivants en esquisse, le reste derrière un dézoom ; une chose nouvelle a son mini-tuto puis sa fête.",
+      "when": "quand on dessine une récompense, un carnet, un déblocage",
+      "why": "Une récompense pas encore coloriée n'a pas été comprise ; l'envie de débloquer fait revenir.",
+      "check": "Une testeuse dit ce qu'elle a et ce qui vient, sans explication.",
+      "source": "playbook:design/collection-visible · skills/design-interface"
+    },
+    {
+      "key": "design/reference-principle",
+      "topic": "design",
+      "rule": "« Comme tel jeu » nomme un principe, jamais son interface : reprends l'idée, repense le dessin dans l'univers de l'app.",
+      "when": "quand l'humain cite un jeu ou une app comme modèle",
+      "why": "Des notes qui tombent « à la Guitar Hero » ont été jugées nulles : il voulait combiner des gestes à l'écran.",
+      "check": "La maquette ne copie aucun élément visuel de la référence.",
+      "source": "playbook:design/reference-principle · skills/design-interface"
     }
   ]
 }

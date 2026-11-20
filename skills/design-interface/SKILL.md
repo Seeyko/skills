@@ -29,7 +29,7 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 ## La méthode
 - **Une maquette jouable avant le code.** Une page HTML avec les écrans en vrai format (393 × 852 pour un iPhone), côte à côte dans une rangée qui défile à l'horizontale. Sous chaque écran, hors du cadre, des repères « Haptique », « Animation », « Navigation ». On l'essaie sur un téléphone, on la valide, puis on code. L'app suit la maquette exactement.
 - **Toujours un visuel avec une proposition** (une vidéo d'aperçu, une planche) : une description seule ne se valide pas. Un visuel validé se fusionne tout de suite.
-- **Une référence (une vidéo, une app) se découpe image par image** pour en reprendre le rythme et le nombre de temps, jamais le dessin : on la repense dans l'univers de l'app. Elle s'analyse deux fois : par toi, et par un agent qui n'a que la matière brute. Garde ce qui converge.
+- **Une référence (une vidéo, une app) se découpe image par image** pour en reprendre le rythme et le nombre de temps, jamais le dessin : on la repense dans l'univers de l'app. « Comme tel jeu » nomme un principe (combiner des gestes à l'écran), jamais son interface (des notes qui tombent). Elle s'analyse deux fois : par toi, et par un agent qui n'a que la matière brute. Garde ce qui converge.
 - **Chaque correction du propriétaire devient une règle** dans `DESIGN.md`, avec sa raison, dans le même commit (skill `learn-taste`).
 
 ## Les moments de réussite
@@ -41,6 +41,8 @@ Une réussite (une série, une chose gagnée, la fin d'un effort) a le droit de 
 - **Rien ne se touche pendant la fête**, aucune question ni bouton à l'écran. Un toucher la passe, jamais dans sa première seconde.
 - **Jamais de jour manqué** : un compteur qui ne peut que monter, pas de rouge, pas de croix.
 - **Peu de mots** : un chiffre, pas de « Bravo ».
+- **La collection se voit** : ce qui est gagné en couleur, les 2 ou 3 suivants en esquisse, le tout derrière un dézoom. Ça donne envie, sans jamais décourager.
+- **Une chose nouvelle s'apprend avant de servir** : un mini-tuto avec ce seul geste, puis sa fête quand il est réussi.
 - La partition est une fonction pure du temps, testée (l'ordre des poses, le repos à la fin, l'haptique sur les mêmes temps).
 
 ## Les visuels et les vidéos

@@ -33,6 +33,14 @@ Le texte suit [`write-copy`](../write-copy/SKILL.md), les visuels suivent [`desi
 - **Le parcours réel, en accéléré, jusqu'à la récompense** : l'accueil, le tap, 2 ou 3 secondes de l'usage, une accélération, la récompense. Pas un défilé d'écrans.
 - **L'app en plein écran sur un fond flouté**, sans cadre ni contour de téléphone.
 
+## Les vidéos avec une personne
+- **Deux familles, toutes les deux.** La drôle : un vécu où l'on se reconnaît, le produit presque secondaire. La projection : ce qu'elle pourrait devenir, muette, un hook écrit très expressif.
+- **Naturel, pas pub.** Un selfie à la maison, la caméra un peu bougée, une voix qui hésite et qui rit, l'app en coupe franche. Pas de fond studio, de détourage propre ni de texte qui vend. Le CTA s'écrit en légende ou en commentaire épinglé, jamais à la voix.
+- **D'abord des photos réalistes, puis on anime.** Une vidéo générée depuis le texte seul se voit : génère les images de début et de fin façon téléphone, puis anime entre les deux. Pas de lumière dorée ni de ralenti.
+- **Elle se comprend seule**, sans le son et sans contexte.
+- **Annonce le coût total avant tout rendu payant.** Pour choisir un modèle, refais le même clip avec la même photo et la même voix, et montre-les côte à côte.
+- Un nom de marque étranger s'écrit en phonétique dans le script de la voix.
+
 ## La musique
 Une musique populaire et locale par post : ce qu'écoute la jeunesse du lieu montré (rap, urbain, ce qui marche en ce moment), de l'underground seulement s'il est très connu, idéalement un artiste lié au lieu ou au sujet. Chaque post arrive avec son titre et le passage à prendre.
 
