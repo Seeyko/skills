@@ -27,6 +27,7 @@
 - Le code d'un build envoyé au store est sur `main`.
 - **Pas de commentaires dans le code** : un nom clair, une petite fonction, un test.
 - **Des tests qui prouvent** : e2e fullstack (build de prod, API, vraie base), intégration, golden. Les tests unitaires seulement là où ils prouvent quelque chose.
+- **Le dépôt garde le code, les skills et les images que l'app embarque.** Les rendus, essais et visuels de posts vivent hors du dépôt, dans le dossier partagé.
 - **Pas de code mort** ni de « version 2 » : construis moins et finis-le. Git garde l'histoire.
 - **La performance est une règle** : un geste en une frame, une ouverture en moins de 100 ms, une lecture serveur en moins de 10 ms, chaque budget mesuré.
 - **Parité web et iOS** quand une app a les deux clients.
@@ -59,6 +60,7 @@
 - Aucune donnée de santé ni personnelle dans l'analytique. La politique de confidentialité suit chaque changement.
 
 ## Parler à l'humain
+- **Un « c'est fait » répond à la question qu'il clôt** : relis les demandes ouvertes et vérifie laquelle avant d'agir.
 - **Présente chaque travail fini comme le dit [`present-work`](../../present-work/SKILL.md)** : un titre humain, une description courte, des captures ou un diagramme, puis le lien vers le détail.
 - Court, en commençant par ce qu'il doit faire, ou en disant qu'il n'a rien à faire.
 - Sans jargon de fil : quand tu remplaces ou annonces quelque chose, dis ce que c'est (la source, ce qu'on voit) avec le lien d'aperçu.

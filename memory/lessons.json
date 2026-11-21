@@ -318,7 +318,7 @@
     {
       "key": "app.create/compliance-audit",
       "topic": "app.create",
-      "rule": "Avant chaque soumission, audite toutes les apps du compte avec une checklist de conformité publique : prix facturé visible, PrivacyInfo.xcprivacy par app, lien de confidentialité dans l'app, IA tierce nommée et acceptée avant le premier envoi, conditions d'abonnement dans la description.",
+      "rule": "Avant chaque soumission, audite toutes les apps du compte avec une checklist de conformité publique : prix facturé visible, PrivacyInfo.xcprivacy par app, lien de confidentialité dans l'app, IA tierce nommée et acceptée avant le premier envoi (une ligne à la connexion avec un lien, jamais une alerte), conditions d'abonnement dans la description.",
       "when": "avant un envoi en review App Store",
       "why": "Ce qu'Apple vérifie se voit dans le code, et une règle ratée sur une app l'est souvent sur les autres.",
       "check": "Chaque app a son rapport d'audit avant la soumission.",
@@ -404,6 +404,33 @@
       "why": "Des notes qui tombent « à la Guitar Hero » ont été jugées nulles : il voulait combiner des gestes à l'écran.",
       "check": "La maquette ne copie aucun élément visuel de la référence.",
       "source": "playbook:design/reference-principle · skills/design-interface"
+    },
+    {
+      "key": "app.create/consent-line",
+      "topic": "app.create",
+      "rule": "L'accord pour une IA tierce tient en une ligne courte à la connexion, avec un lien vers la page de confidentialité qui la nomme. Jamais une alerte avant un geste, jamais toute l'explication à l'écran.",
+      "when": "quand une app envoie des données à un service tiers (IA, transcription, vision)",
+      "why": "Une alerte avant le geste a été refusée net, puis le détail à l'écran jugé « too much » ; la ligne avec un lien a été validée.",
+      "check": "L'écran de connexion montre une ligne et un lien ; la page liée nomme le service et ce qu'il reçoit.",
+      "source": "playbook:app.create/consent-line · skills/new-mobile-app"
+    },
+    {
+      "key": "work.agents/assets-out-of-repo",
+      "topic": "work.agents",
+      "rule": "Le dépôt garde le code, les skills et les images que l'app embarque ; les rendus, essais et visuels de posts vivent hors du dépôt, dans le dossier partagé.",
+      "when": "avant de committer des images générées",
+      "why": "Le code source ne doit contenir que le code, les playbooks et les skills.",
+      "check": "git status ne montre aucun rendu de post ni essai.",
+      "source": "playbook:work.agents/assets-out-of-repo · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/done-scope",
+      "topic": "work.agents",
+      "rule": "Un « c'est fait » de l'humain répond à la question qu'il clôt : relis les demandes ouvertes et vérifie laquelle avant d'agir.",
+      "when": "quand l'humain répond « c'est fait », « ok », « fait » alors que plusieurs demandes sont ouvertes",
+      "why": "Un « c'est fait » sur une demande à Apple a été lu comme une recharge de crédits.",
+      "check": "La réponse de l'agent nomme la demande qu'il considère close.",
+      "source": "playbook:work.agents/done-scope · skills/work-with-agents/references/rules.md"
     }
   ]
 }
