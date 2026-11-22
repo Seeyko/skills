@@ -318,7 +318,7 @@
     {
       "key": "app.create/compliance-audit",
       "topic": "app.create",
-      "rule": "Avant chaque soumission, audite toutes les apps du compte avec une checklist de conformité publique : prix facturé visible, PrivacyInfo.xcprivacy par app, lien de confidentialité dans l'app, IA tierce nommée et acceptée avant le premier envoi (une ligne à la connexion avec un lien, jamais une alerte), conditions d'abonnement dans la description.",
+      "rule": "Avant chaque soumission, audite toutes les apps du compte avec une checklist de conformité publique : prix facturé visible, PrivacyInfo.xcprivacy par app, lien de confidentialité dans l'app, IA tierce nommée et acceptée avant le premier envoi (une ligne à la connexion avec un lien, jamais une alerte), conditions d'abonnement dans la description, qui dit qu'un achat est requis (2.3.2).",
       "when": "avant un envoi en review App Store",
       "why": "Ce qu'Apple vérifie se voit dans le code, et une règle ratée sur une app l'est souvent sur les autres.",
       "check": "Chaque app a son rapport d'audit avant la soumission.",
@@ -431,6 +431,60 @@
       "why": "Un « c'est fait » sur une demande à Apple a été lu comme une recharge de crédits.",
       "check": "La réponse de l'agent nomme la demande qu'il considère close.",
       "source": "playbook:work.agents/done-scope · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/zero-flaky",
+      "topic": "work.agents",
+      "rule": "Zéro test instable : corrige sa cause, jamais de relance automatique, de délai plus long ni de skip. Un rouge se lit dans le résumé du job.",
+      "when": "quand un test passe et échoue sans changement",
+      "why": "« Un test instable n'est pas un test déterministe. »",
+      "check": "Le test passe dix fois de suite et casse quand on casse le produit.",
+      "source": "playbook:work.agents/zero-flaky · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/merged-is-shipped",
+      "topic": "work.agents",
+      "rule": "Une fonction est livrée quand sa PR est fusionnée : fusionne depuis le fil dès que c'est vert ; au début d'une tâche, liste les PR ouvertes et fusionne ou ferme les anciennes.",
+      "when": "quand une PR est verte, et au début de chaque tâche",
+      "why": "Une PR laissée à une autre session est restée ouverte 13 jours ; l'humain la croyait en ligne.",
+      "check": "Aucune PR verte de plus d'un jour sans verdict.",
+      "source": "playbook:work.agents/merged-is-shipped · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/one-pr-when-asked",
+      "topic": "work.agents",
+      "rule": "Quand l'humain dit « une seule PR », tous les chantiers liés y vont, même si elle grossit.",
+      "when": "quand plusieurs fils travaillent sur le même sujet",
+      "why": "Demandé deux fois : « une seule PR pour tous les chantiers ».",
+      "check": "Les PR voisines sont fermées et renvoient vers la PR unique.",
+      "source": "playbook:work.agents/one-pr-when-asked · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/prod-switch",
+      "topic": "work.agents",
+      "rule": "Une bascule de prod se répète d'abord sur une copie, avec le retour arrière et sa garde prêts, puis se vérifie de bout en bout.",
+      "when": "avant une migration de base, un changement de version ou d'hébergeur en prod",
+      "why": "« Faut tout full tester et prévoir rollback. »",
+      "check": "Le journal de la répétition et le retour arrière testé sont dans la PR.",
+      "source": "playbook:work.agents/prod-switch · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/broadcast-rules",
+      "topic": "work.agents",
+      "rule": "Une consigne nouvelle part à tous les fils qu'elle touche, routines comprises ; chaque fil met à jour ses tâches planifiées lui-même, et reçoit ses connecteurs avant sa tâche.",
+      "when": "quand l'humain change une règle qui touche plusieurs fils",
+      "why": "« Tu peux pas mettre à jour les tâches planifiées toi-même ? »",
+      "check": "Chaque tâche planifiée concernée porte le nouveau texte.",
+      "source": "playbook:work.agents/broadcast-rules · skills/work-with-agents/references/orchestration.md"
+    },
+    {
+      "key": "work.agents/pr-batches",
+      "topic": "work.agents",
+      "rule": "Une PR en cours par auteur ; les branches finies pendant ce temps attendent et partent ensemble en lot, automatiquement.",
+      "when": "quand plusieurs PR d'un même auteur s'empilent",
+      "why": "Décision de l'humain d'après un post de référence : « les lots se font tout seuls ».",
+      "check": "Une seule PR non brouillon par auteur à la fois.",
+      "source": "playbook:work.agents/pr-batches · skills/work-with-agents/references/orchestration.md"
     }
   ]
 }

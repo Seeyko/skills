@@ -29,6 +29,8 @@ Les skills tiers que ce playbook utilise, et les créateurs dont il s'inspire. U
 | **David Attias** (X @david_attisaas) | Le prompt « aha moment » et le « sound-off test » : compris en moins de 2 s sans le son, une transformation visible, un effort minimal, un résultat partageable, un lien au paywall. |
 | **Owen Gretzinger** (X @owengretzinger) | Son article sur une CI rapide. |
 | **rudrank** | Le CLI `asc` pour App Store Connect. |
+| **rorkai** (github.com/rorkai/app-store-connect-cli-skills) | Les skills qui pilotent le CLI `asc`. |
+| **Kun Chen** (X @kunchenguid) | Les lots de PR automatiques : une PR en cours, les suivantes partent ensemble. |
 | **Antoine van der Lee** | Le skill SwiftUI. |
 | **poteto** | `pstack`. |
 | **Moonjar** | Les captures App Store. |

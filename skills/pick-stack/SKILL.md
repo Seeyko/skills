@@ -28,7 +28,7 @@ Une stack de développeur solo : peu chère, auto-hébergée quand c'est simple,
 | Analytique, erreurs, drapeaux | PostHog (région EU), un projet pour toutes les apps d'un compte, aucune donnée de santé |
 | E-mails transactionnels | Resend |
 | IA | Anthropic (Claude) ; Mistral pour l'OCR, la vision, la modération et la dictée (Voxtral) ; fal pour les images (par MCP, un essai d'abord) |
-| Réseaux sociaux | Postiz (auto-hébergé) pour programmer ; construire en public sur X |
+| Réseaux sociaux | Une file de posts branchée en MCP (brouillon par défaut) pour programmer ; construire en public sur X |
 | Captures et vidéos App Store | Moonjar (MCP), Playwright, Cap à 60 fps pour les vidéos d'écran |
 | App Store Connect | Le CLI `asc` de rudrank, l'API (clé `.p8` dans un fichier local), le navigateur en dernier recours |
 | La mémoire des agents | Un MCP de mémoire qui garde des leçons par sujet (voir [`../../memory/`](../../memory/README.md)) |
