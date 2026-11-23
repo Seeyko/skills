@@ -22,7 +22,7 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 7. **Chaque geste se sent.** Haptique sur chaque bouton, chaque choix, chaque temps d'un rythme.
 8. **Une app minimale** : une vue, un geste, une entrée naturelle (voix, photo, texte). Pas de formulaire.
 9. **Natif.** Sur iOS : SwiftUI, Liquid Glass pour la couche flottante (jamais sur le contenu), shimmer pendant la lecture, morph quand le résultat arrive. Sur le web : shadcn.
-10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées par une IA.
+10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées par une IA sans qu'il le demande. Quand il le demande, pars de l'idée et vise le niveau d'un de ses dessins de référence : un dessin se génère ou se peint, jamais en SVG écrit à la main.
 11. **Les moments de réussite font « wow ».** C'est la seule exception au calme : voir plus bas.
 12. **Les détails qui gênent** : une ombre coupée par son conteneur, un carrousel horizontal qui défile aussi en vertical, un filtre qui en sélectionne un autre, un écran trop chargé.
 

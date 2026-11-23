@@ -8,7 +8,7 @@ description: Produire les posts réseaux d'un produit (slideshows, carrousels, v
 Le texte suit [`write-copy`](../write-copy/SKILL.md), les visuels suivent [`design-interface`](../design-interface/SKILL.md).
 
 ## Le cap
-1. **Surtout des slideshows, un peu de vidéo.** Environ 70 à 90 % de carrousels photo, le reste en vidéo, le tout généré par code. Une photo native (carrousel) passe avant la vidéo d'un slideshow quand le réseau la propose.
+1. **Surtout des slideshows, un peu de vidéo.** Environ 70 à 90 % de carrousels photo, le reste en vidéo, le tout généré par code. Un slideshow reste un carrousel photo : jamais de vidéo montée à partir de slides. Une vidéo apporte du vrai mouvement (l'app, une personne), sinon c'est un carrousel.
 2. **Chaque post finit par un CTA** que le réseau rend possible. Sur TikTok, un lien n'est cliquable qu'en bio : dernière slide « lien en bio » ou « cherche <marque> », commentaire épinglé, réponse aux « c'est où ? ».
 3. **Trouve les formats gagnants, réseau par réseau.** Note chaque post (format, réseau, heure, son) et ses vues à J+1 et J+7. Un format qui fait deux fois la médiane deux fois de suite gagne ; trois posts sous la médiane, il perd et passe à un test par semaine.
 4. **Un lien posté porte son UTM** (`?utm_source=<réseau>`, rien d'autre), pour lire les visiteurs par réseau.

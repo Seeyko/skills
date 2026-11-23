@@ -31,7 +31,7 @@ Nom 30, sous-titre 30, texte promotionnel 170, mots-clés 100 octets (virgules, 
 - La popularité d'un mot se lit dans Apple Ads (de 5 à 100), même sans lancer de campagne. Sans ce compte, juge sur les impressions réelles dans App Store Connect.
 
 ## Les captures
-- Générées par un script, jamais à la main : des données de démonstration, un gabarit, un titre par capture (Playwright sur une page HTML sans build, ou des tests UI et un gabarit).
+- Générées par un script, jamais à la main : des données de démonstration, un gabarit, un titre par capture (Playwright sur une page HTML sans build, ou des tests UI et un gabarit). Le décor a du style, jamais un fond uni. Les données de démo montrent de vraies photos sous une licence qui permet l'usage commercial, créditées, jamais des emojis, des dessins à la place des photos ou le contenu d'un compte réel.
 - **Un seul titre par capture**, avec un mot mis en valeur. L'univers de l'app en plein cadre, le téléphone petit et incliné. **Jamais de paywall ni de prix.**
 - Apple lit les légendes pour la recherche, et la plupart des gens ne dépassent pas la 3e capture : les trois premières portent les mots qu'on veut indexer. Exemple : 1 « Sens ton périnée. *Enfin.* » 2 « *7 minutes* par jour. Une voix te guide, tu suis. » 3 « Pendant la grossesse ou après bébé, *à ton rythme* » 4 « Tu vois quel muscle serrer. *Sans sonde.* » 5 « Tu serres vite, la grenouille *saute* » 6 « Tu vas y arriver, *un jour après l'autre* » 7 « Pour te sentir à nouveau *toi* ».
 - Retire ce qui se lit comme une promesse de résultat (une courbe « les fuites » qui baisse, par exemple).
@@ -39,6 +39,7 @@ Nom 30, sous-titre 30, texte promotionnel 170, mots-clés 100 octets (virgules, 
 
 ## L'en-tête et l'image de recherche
 - En-tête 3840 × 1646 (21:9), image ou vidéo muette en boucle de 5 à 30 s ; résultat de recherche 3840 × 2560 (3:2). Par l'API : la bibliothèque d'éléments, puis les placements `PRODUCT_PAGE_HEADER_ASSET` et `APP_STORE_SEARCH_RESULTS_ASSET`. Mets-les sur **chaque** app.
+- **Anime l'en-tête et l'image de recherche** : une scène dessinée image par image, encodée en vidéo, fait bien mieux qu'une image fixe. Montre les vidéos à l'auteur avant l'envoi.
 - La plupart des en-têtes connus sont de l'image pure. Fais une version sans texte et une avec une ligne courte, puis teste-les une fois la version validée.
 
 ## Les pages produit personnalisées et la suite

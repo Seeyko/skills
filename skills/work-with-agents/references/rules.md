@@ -25,6 +25,7 @@
 - Une branche dédiée, une PR par étape. Jamais de commit sur `main`. Quand l'humain dit « une seule PR », tous les chantiers liés y vont, même si elle grossit.
 - Fusionne une petite PR quand la CI est verte et que les gros tests passent, sauf une surface sensible (voir ci-dessus). Jamais sur un rouge, même « connu ».
 - **Une fonction est livrée quand sa PR est fusionnée.** Fusionne depuis le fil dès que c'est vert, sans attendre une autre session. Au début d'une tâche, liste les PR ouvertes : une vieille PR est fusionnée, ou fermée avec sa raison.
+- **Une version se publie par la CI de `main`** (paquet, registre, CLI, serveur MCP), jamais à la main depuis une branche ou une session : la fusion suffit à la sortir.
 - Le code d'un build envoyé au store est sur `main`.
 - **Pas de commentaires dans le code** : un nom clair, une petite fonction, un test.
 - **Des tests qui prouvent** : e2e fullstack (build de prod, API, vraie base), intégration, golden. Les tests unitaires seulement là où ils prouvent quelque chose.
@@ -36,7 +37,7 @@
 
 ## Les tests et les preuves
 - Un test vert doit prouver quelque chose. Si un test passe alors que la fonction manque, le test est faux.
-- **Zéro test instable** : un test instable n'est pas déterministe. Corrige sa cause, jamais de relance automatique, de délai plus long ni de skip. Un rouge se lit dans le résumé du job, sans artefact à télécharger.
+- **Zéro test instable** : un test instable n'est pas déterministe. Corrige sa cause, jamais de relance automatique, de délai plus long ni de skip. Un rouge se lit dans le résumé du job, sans artefact à télécharger. Pour attraper un test qui ne tombe qu'en suite complète, allume les traces sur échec en CI seulement, avec une date de fin écrite dans le code, puis coupe-les.
 - **Une bascule de prod se répète d'abord** sur une copie, avec le retour arrière et sa garde prêts, puis se vérifie de bout en bout.
 - Mesure avant de toucher. Corrige la cause, pas le symptôme. N'affaiblis jamais un garde-fou pour passer.
 - Ne te fie jamais à ta mémoire pour un outil, un prix ou du matériel : cherche en ligne.

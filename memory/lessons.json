@@ -485,6 +485,60 @@
       "why": "Décision de l'humain d'après un post de référence : « les lots se font tout seuls ».",
       "check": "Une seule PR non brouillon par auteur à la fois.",
       "source": "playbook:work.agents/pr-batches · skills/work-with-agents/references/orchestration.md"
+    },
+    {
+      "key": "work.agents/release-by-ci",
+      "topic": "work.agents",
+      "rule": "Une version se publie par la CI de main, jamais à la main depuis une branche ou une session.",
+      "when": "quand on publie un paquet, un registre, une CLI ou un serveur MCP",
+      "why": "Demande de l'humain : « c'est la CI sur main qui publie, comme pour la CLI ».",
+      "check": "Le workflow de publication part d'un push sur main ; aucune commande de publication dans le fil.",
+      "source": "playbook:work.agents/release-by-ci · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/flaky-traces",
+      "topic": "work.agents",
+      "rule": "Pour attraper un test qui ne tombe qu'en suite complète, allume les traces sur échec en CI seulement, avec une date de fin dans le code, puis coupe-les.",
+      "when": "quand un test e2e échoue de temps en temps en suite complète",
+      "why": "Choix de l'humain sur une carte : « deux nuits puis on coupe ».",
+      "check": "La config porte la date de fin ; le réglage disparaît après lecture de la trace.",
+      "source": "playbook:work.agents/flaky-traces · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "social/no-slide-video",
+      "topic": "social",
+      "rule": "Jamais de vidéo montée à partir de slides : un slideshow reste un carrousel photo.",
+      "when": "quand on prépare un post vidéo",
+      "why": "Correction de l'humain : « si c'est pour faire un slideshow en vidéo autant faire un slideshow ».",
+      "check": "Chaque vidéo programmée montre du vrai mouvement (l'app, une personne).",
+      "source": "playbook:social/no-slide-video · skills/social-content/SKILL.md"
+    },
+    {
+      "key": "design/no-handmade-svg-art",
+      "topic": "design",
+      "rule": "Un dessin (mascotte, illustration) se génère ou se peint au niveau d'un dessin de référence, jamais en SVG écrit à la main.",
+      "when": "quand l'auteur demande de recréer une mascotte ou un dessin",
+      "why": "Refusé deux fois : « fait un truc high quality ».",
+      "check": "Le rendu est comparé côte à côte au dessin de référence.",
+      "source": "playbook:design/no-handmade-svg-art · skills/design-interface/SKILL.md"
+    },
+    {
+      "key": "app.aso/animated-header",
+      "topic": "app.aso",
+      "rule": "Anime l'en-tête et l'image de recherche (scène dessinée image par image, encodée en vidéo) et montre-les avant l'envoi.",
+      "when": "quand on prépare l'en-tête ou l'image de recherche d'une fiche App Store",
+      "why": "Validé : « la recherche animée, c'est une masterclass ».",
+      "check": "Les deux placements portent une vidéo validée par l'auteur.",
+      "source": "playbook:app.aso/animated-header · skills/app-store-optimization/SKILL.md"
+    },
+    {
+      "key": "app.aso/real-demo-photos",
+      "topic": "app.aso",
+      "rule": "Les captures ont un décor stylé, jamais un fond uni, et de vraies photos libres d'usage commercial, créditées, jamais le contenu d'un compte réel.",
+      "when": "quand on génère les captures d'une fiche",
+      "why": "Correction : le fond uni est refusé, « trop laid » ; les vraies photos ont été validées.",
+      "check": "Les crédits des photos sont dans les métadonnées ; aucun fond uni.",
+      "source": "playbook:app.aso/real-demo-photos · skills/app-store-optimization/SKILL.md"
     }
   ]
 }
