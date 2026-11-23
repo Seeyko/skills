@@ -1,6 +1,6 @@
 # Les sources
 
-Les skills tiers que ce playbook utilise, et les créateurs dont il s'inspire. Un skill tiers copié dans un projet garde sa LICENSE à côté, s'invoque à la main et se met à jour depuis l'amont. En cas de conflit, les règles du projet gagnent.
+Les skills tiers que ce dépôt utilise, et les créateurs dont il s'inspire. Un skill tiers copié dans un projet garde sa LICENSE à côté, s'invoque à la main et se met à jour depuis l'amont. En cas de conflit, les règles du projet gagnent.
 
 ## Les skills tiers
 

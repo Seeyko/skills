@@ -5,7 +5,7 @@ description: Lire ce qu'une mémoire MCP a déjà appris sur un sujet avant de c
 
 # La mémoire d'abord
 
-Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lessons_read`, `lesson_add`, `lesson_revise`, `lesson_retire`). Les leçons renvoient au détail, dans ce playbook ou dans le dépôt du projet.
+Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lessons_read`, `lesson_add`, `lesson_revise`, `lesson_retire`). Les leçons renvoient au détail, dans ce dépôt de skills ou dans le dépôt du projet.
 
 ## Au début d'une tâche
 1. Choisis l'espace de la mémoire (s'il y en a plusieurs, celui de la personne ou du projet).

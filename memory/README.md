@@ -1,6 +1,6 @@
 # Les leçons pour une mémoire MCP
 
-Si tes agents ont un MCP de mémoire qui garde des leçons par sujet (des outils du type `lessons_read`, `lesson_add`, `lesson_revise`, `lesson_retire`), ce dossier lui donne les règles courtes du playbook. Chaque leçon renvoie à la page qui a le détail.
+Si tes agents ont un MCP de mémoire qui garde des leçons par sujet (des outils du type `lessons_read`, `lesson_add`, `lesson_revise`, `lesson_retire`), ce dossier lui donne les règles courtes des skills. Chaque leçon renvoie à la page qui a le détail.
 
 `lessons.json` est la source de vérité de ces leçons. Un champ par leçon :
 

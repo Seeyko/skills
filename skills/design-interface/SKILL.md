@@ -22,14 +22,13 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 7. **Chaque geste se sent.** Haptique sur chaque bouton, chaque choix, chaque temps d'un rythme.
 8. **Une app minimale** : une vue, un geste, une entrée naturelle (voix, photo, texte). Pas de formulaire.
 9. **Natif.** Sur iOS : SwiftUI, Liquid Glass pour la couche flottante (jamais sur le contenu), shimmer pendant la lecture, morph quand le résultat arrive. Sur le web : shadcn.
-10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées par une IA sans qu'il le demande. Quand il le demande, pars de l'idée et vise le niveau d'un de ses dessins de référence : un dessin se génère ou se peint, jamais en SVG écrit à la main.
+10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées sans qu'il le demande. Quand il le demande, le niveau à atteindre est celui d'un de ses dessins de référence.
 11. **Les moments de réussite font « wow ».** C'est la seule exception au calme : voir plus bas.
-12. **Les détails qui gênent** : une ombre coupée par son conteneur, un carrousel horizontal qui défile aussi en vertical, un filtre qui en sélectionne un autre, un écran trop chargé.
 
 ## La méthode
 - **Une maquette jouable avant le code.** Une page HTML avec les écrans en vrai format (393 × 852 pour un iPhone), côte à côte dans une rangée qui défile à l'horizontale. Sous chaque écran, hors du cadre, des repères « Haptique », « Animation », « Navigation ». On l'essaie sur un téléphone, on la valide, puis on code. L'app suit la maquette exactement.
 - **Toujours un visuel avec une proposition** (une vidéo d'aperçu, une planche) : une description seule ne se valide pas. Un visuel validé se fusionne tout de suite.
-- **Une référence (une vidéo, une app) se découpe image par image** pour en reprendre le rythme et le nombre de temps, jamais le dessin : on la repense dans l'univers de l'app. « Comme tel jeu » nomme un principe (combiner des gestes à l'écran), jamais son interface (des notes qui tombent). Elle s'analyse deux fois : par toi, et par un agent qui n'a que la matière brute. Garde ce qui converge.
+- **Une référence (une vidéo, une app) se découpe image par image** pour en reprendre le rythme et le nombre de temps, jamais le dessin : on la repense dans l'univers de l'app. Elle s'analyse deux fois : par toi, et par un agent qui n'a que la matière brute. Garde ce qui converge.
 - **Chaque correction du propriétaire devient une règle** dans `DESIGN.md`, avec sa raison, dans le même commit (skill `learn-taste`).
 
 ## Les moments de réussite
@@ -48,7 +47,7 @@ Une réussite (une série, une chose gagnée, la fin d'un effort) a le droit de 
 ## Les visuels et les vidéos
 - Courts, nerveux, 60 fps, sans texte qui décrit et sans intro.
 - À vitesse réelle, pas en accéléré, dans un vrai mock, avec des données réalistes et assez nombreuses. Pour un post réseau, le parcours peut s'accélérer : voir [`social-content`](../social-content/SKILL.md).
-- Parfaitement fluide : enregistre image par image sur une horloge simulée quand l'enregistreur saccade.
+- Parfaitement fluide : une vidéo qui saccade ne sort pas.
 - Le fond de la marque derrière une vidéo ou une capture.
 - Un détourage propre, ou rien.
 - Fidèle au réel : une image générée ne change pas la forme d'un objet réel, n'ajoute pas un détail qui n'existe pas et garde les proportions. Pas de vraie marque dans un visuel.

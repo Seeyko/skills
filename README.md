@@ -1,6 +1,6 @@
-# Agent playbook
+# Skills
 
-Une façon de construire des apps mobiles et des sites avec des agents Claude. Le dépôt est rangé comme un plugin : des **skills** (une tâche chacun, avec ses `references/`), des **agents** prêts à lancer, des **modèles** de départ et des **leçons** courtes pour une mémoire. Il se suffit à lui-même : clone-le et utilise-le tel quel.
+Des skills pour construire des apps mobiles et des sites avec des agents Claude. Le dépôt est rangé comme un plugin : des **skills** (une tâche chacun, avec ses `references/`), des **agents** prêts à lancer, des **modèles** de départ et des **leçons** courtes pour une mémoire. Il se suffit à lui-même : clone-le et utilise-le tel quel.
 
 ## Pour démarrer
 1. Copie les skills et les agents qui te servent dans le `.claude/` de ton projet, ou ajoute ce dépôt comme source de skills.
@@ -42,7 +42,8 @@ Une façon de construire des apps mobiles et des sites avec des agents Claude. L
 - [`memory/`](memory/README.md) : les leçons courtes, une par règle, qui renvoient au skill.
 - [`CREDITS.md`](CREDITS.md) : les skills tiers et les créateurs.
 
-## Améliorer le playbook
+## Améliorer ces skills
+0. Vérifie que la règle a sa place ici : un savoir de métier qui dure, pas un contournement d'aujourd'hui ni la suite d'un incident ([`distill-practice`](skills/distill-practice/SKILL.md), « Ce qui mérite d'entrer »).
 1. Écris la règle dans le skill du sujet, avec sa raison. Une règle qui vaut partout va dans un skill général, pas dans celui d'une étape.
 2. Dans la même PR, ajoute, change ou retire la leçon qui correspond dans [`memory/lessons.json`](memory/lessons.json). `python3 scripts/check-lessons.py` vérifie le fichier (aussi en CI).
 3. Après la fusion, lance [`sync-memory`](skills/sync-memory/SKILL.md).

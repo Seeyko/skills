@@ -282,7 +282,7 @@
     {
       "key": "social/app-video",
       "topic": "social",
-      "rule": "Une vidéo d'app montre la vraie app, parfaitement fluide (enregistrée image par image sur une horloge simulée), en plein écran sur un fond flouté, sans cadre de téléphone. Pour un post : le parcours réel en accéléré jusqu'à la récompense.",
+      "rule": "Une vidéo d'app montre la vraie app, parfaitement fluide, en plein écran sur un fond flouté, sans cadre de téléphone. Pour un post : le parcours réel en accéléré jusqu'à la récompense.",
       "when": "quand on fait une démo, une vidéo réseau ou une vidéo de PR d'une app",
       "why": "Une démo qui saccade ou un cadre de téléphone font amateur au premier regard.",
       "check": "La vidéo tient 30 à 60 i/s sans saccade et l'app remplit la hauteur.",
@@ -363,18 +363,18 @@
     {
       "key": "work.agents/distill-daily",
       "topic": "work.agents",
-      "rule": "Une routine quotidienne relit les fils, les PR et les règles changées depuis le dernier passage, garde ce que l'humain a demandé, partagé ou validé, et le range dans le skill général du sujet (une PR qui s'enrichit) ou dans la mémoire si c'est personnel.",
+      "rule": "Une routine quotidienne relit les fils, les PR et les règles changées depuis le dernier passage. Elle garde seulement un savoir de métier qui dure (produit, marketing, texte, design, code, architecture), validé par l'humain : pas un contournement des limites d'un modèle ou d'un outil, pas la tuyauterie, pas la suite d'un seul incident. Dans le doute, elle n'ajoute rien.",
       "when": "pour garder la façon de travailler à jour sans le demander",
-      "why": "Ce qui est appris dans un fil se perd s'il n'est pas rangé.",
-      "check": "Chaque règle ajoutée cite un signal de validation dans le journal.",
+      "why": "Ce qui est appris dans un fil se perd s'il n'est pas rangé, et une règle faible pollue chaque tâche qui la lit.",
+      "check": "Chaque règle ajoutée cite un signal de validation et passe les quatre questions du skill ; le journal dit ce qui a été jeté.",
       "source": "playbook:work.agents/distill-daily · skills/distill-practice"
     },
     {
       "key": "social/person-video",
       "topic": "social",
-      "rule": "Une vidéo avec une personne fait vrai : selfie à la maison, voix qui hésite, app en coupe franche, CTA écrit en légende. Génère d'abord des photos réalistes de début et de fin, puis anime entre les deux. Fais les deux familles : la drôle et la projection.",
+      "rule": "Une vidéo avec une personne fait vrai : selfie à la maison, voix qui hésite, app en coupe franche, CTA écrit en légende. Une image de téléphone, pas de cinéma : si on voit que c'est généré, elle ne sort pas. Fais les deux familles : la drôle et la projection.",
       "when": "quand on produit une vidéo UGC ou avatar pour un produit",
-      "why": "Une version studio « fait trop pub », une vidéo générée depuis le texte seul se voit à 100 %.",
+      "why": "Une version studio « fait trop pub », et une vidéo qui se voit générée perd la confiance tout de suite.",
       "check": "La vidéo se comprend sans le son, et personne ne dit qu'elle fait pub ou IA.",
       "source": "playbook:social/person-video · skills/social-content"
     },
@@ -397,15 +397,6 @@
       "source": "playbook:design/collection-visible · skills/design-interface"
     },
     {
-      "key": "design/reference-principle",
-      "topic": "design",
-      "rule": "« Comme tel jeu » nomme un principe, jamais son interface : reprends l'idée, repense le dessin dans l'univers de l'app.",
-      "when": "quand l'humain cite un jeu ou une app comme modèle",
-      "why": "Des notes qui tombent « à la Guitar Hero » ont été jugées nulles : il voulait combiner des gestes à l'écran.",
-      "check": "La maquette ne copie aucun élément visuel de la référence.",
-      "source": "playbook:design/reference-principle · skills/design-interface"
-    },
-    {
       "key": "app.create/consent-line",
       "topic": "app.create",
       "rule": "L'accord pour une IA tierce tient en une ligne courte à la connexion, avec un lien vers la page de confidentialité qui la nomme. Jamais une alerte avant un geste, jamais toute l'explication à l'écran.",
@@ -417,25 +408,16 @@
     {
       "key": "work.agents/assets-out-of-repo",
       "topic": "work.agents",
-      "rule": "Le dépôt garde le code, les skills et les images que l'app embarque ; les rendus, essais et visuels de posts vivent hors du dépôt, dans le dossier partagé.",
+      "rule": "Le dépôt garde le code, les skills et les images que l'app embarque ; les rendus, essais et visuels de posts vivent hors du dépôt.",
       "when": "avant de committer des images générées",
-      "why": "Le code source ne doit contenir que le code, les playbooks et les skills.",
+      "why": "Le code source ne doit contenir que le code et les skills.",
       "check": "git status ne montre aucun rendu de post ni essai.",
       "source": "playbook:work.agents/assets-out-of-repo · skills/work-with-agents/references/rules.md"
     },
     {
-      "key": "work.agents/done-scope",
-      "topic": "work.agents",
-      "rule": "Un « c'est fait » de l'humain répond à la question qu'il clôt : relis les demandes ouvertes et vérifie laquelle avant d'agir.",
-      "when": "quand l'humain répond « c'est fait », « ok », « fait » alors que plusieurs demandes sont ouvertes",
-      "why": "Un « c'est fait » sur une demande à Apple a été lu comme une recharge de crédits.",
-      "check": "La réponse de l'agent nomme la demande qu'il considère close.",
-      "source": "playbook:work.agents/done-scope · skills/work-with-agents/references/rules.md"
-    },
-    {
       "key": "work.agents/zero-flaky",
       "topic": "work.agents",
-      "rule": "Zéro test instable : corrige sa cause, jamais de relance automatique, de délai plus long ni de skip. Un rouge se lit dans le résumé du job.",
+      "rule": "Zéro test instable : corrige sa cause, jamais de relance automatique, de délai plus long ni de skip. Un rouge se lit dans le résumé du job. Un réglage de diagnostic temporaire porte sa date de fin dans le code.",
       "when": "quand un test passe et échoue sans changement",
       "why": "« Un test instable n'est pas un test déterministe. »",
       "check": "Le test passe dix fois de suite et casse quand on casse le produit.",
@@ -444,20 +426,11 @@
     {
       "key": "work.agents/merged-is-shipped",
       "topic": "work.agents",
-      "rule": "Une fonction est livrée quand sa PR est fusionnée : fusionne depuis le fil dès que c'est vert ; au début d'une tâche, liste les PR ouvertes et fusionne ou ferme les anciennes.",
+      "rule": "Une fonction est livrée quand sa PR est fusionnée : l'agent qui l'a ouverte la fusionne dès qu'elle est verte, sans la confier à un autre ; au début d'une tâche, liste les PR ouvertes et fusionne ou ferme les anciennes.",
       "when": "quand une PR est verte, et au début de chaque tâche",
-      "why": "Une PR laissée à une autre session est restée ouverte 13 jours ; l'humain la croyait en ligne.",
+      "why": "Une PR confiée à un autre est restée ouverte 13 jours ; l'humain la croyait en ligne.",
       "check": "Aucune PR verte de plus d'un jour sans verdict.",
       "source": "playbook:work.agents/merged-is-shipped · skills/work-with-agents/references/rules.md"
-    },
-    {
-      "key": "work.agents/one-pr-when-asked",
-      "topic": "work.agents",
-      "rule": "Quand l'humain dit « une seule PR », tous les chantiers liés y vont, même si elle grossit.",
-      "when": "quand plusieurs fils travaillent sur le même sujet",
-      "why": "Demandé deux fois : « une seule PR pour tous les chantiers ».",
-      "check": "Les PR voisines sont fermées et renvoient vers la PR unique.",
-      "source": "playbook:work.agents/one-pr-when-asked · skills/work-with-agents/references/rules.md"
     },
     {
       "key": "work.agents/prod-switch",
@@ -471,20 +444,11 @@
     {
       "key": "work.agents/broadcast-rules",
       "topic": "work.agents",
-      "rule": "Une consigne nouvelle part à tous les fils qu'elle touche, routines comprises ; chaque fil met à jour ses tâches planifiées lui-même, et reçoit ses connecteurs avant sa tâche.",
-      "when": "quand l'humain change une règle qui touche plusieurs fils",
-      "why": "« Tu peux pas mettre à jour les tâches planifiées toi-même ? »",
+      "rule": "Une consigne nouvelle part à tous les agents qu'elle touche, tâches planifiées comprises.",
+      "when": "quand l'humain change une règle qui touche plusieurs agents ou routines",
+      "why": "Une routine qui garde l'ancien texte refait l'ancienne erreur chaque jour.",
       "check": "Chaque tâche planifiée concernée porte le nouveau texte.",
       "source": "playbook:work.agents/broadcast-rules · skills/work-with-agents/references/orchestration.md"
-    },
-    {
-      "key": "work.agents/pr-batches",
-      "topic": "work.agents",
-      "rule": "Une PR en cours par auteur ; les branches finies pendant ce temps attendent et partent ensemble en lot, automatiquement.",
-      "when": "quand plusieurs PR d'un même auteur s'empilent",
-      "why": "Décision de l'humain d'après un post de référence : « les lots se font tout seuls ».",
-      "check": "Une seule PR non brouillon par auteur à la fois.",
-      "source": "playbook:work.agents/pr-batches · skills/work-with-agents/references/orchestration.md"
     },
     {
       "key": "work.agents/release-by-ci",
@@ -494,33 +458,6 @@
       "why": "Demande de l'humain : « c'est la CI sur main qui publie, comme pour la CLI ».",
       "check": "Le workflow de publication part d'un push sur main ; aucune commande de publication dans le fil.",
       "source": "playbook:work.agents/release-by-ci · skills/work-with-agents/references/rules.md"
-    },
-    {
-      "key": "work.agents/flaky-traces",
-      "topic": "work.agents",
-      "rule": "Pour attraper un test qui ne tombe qu'en suite complète, allume les traces sur échec en CI seulement, avec une date de fin dans le code, puis coupe-les.",
-      "when": "quand un test e2e échoue de temps en temps en suite complète",
-      "why": "Choix de l'humain sur une carte : « deux nuits puis on coupe ».",
-      "check": "La config porte la date de fin ; le réglage disparaît après lecture de la trace.",
-      "source": "playbook:work.agents/flaky-traces · skills/work-with-agents/references/rules.md"
-    },
-    {
-      "key": "social/no-slide-video",
-      "topic": "social",
-      "rule": "Jamais de vidéo montée à partir de slides : un slideshow reste un carrousel photo.",
-      "when": "quand on prépare un post vidéo",
-      "why": "Correction de l'humain : « si c'est pour faire un slideshow en vidéo autant faire un slideshow ».",
-      "check": "Chaque vidéo programmée montre du vrai mouvement (l'app, une personne).",
-      "source": "playbook:social/no-slide-video · skills/social-content/SKILL.md"
-    },
-    {
-      "key": "design/no-handmade-svg-art",
-      "topic": "design",
-      "rule": "Un dessin (mascotte, illustration) se génère ou se peint au niveau d'un dessin de référence, jamais en SVG écrit à la main.",
-      "when": "quand l'auteur demande de recréer une mascotte ou un dessin",
-      "why": "Refusé deux fois : « fait un truc high quality ».",
-      "check": "Le rendu est comparé côte à côte au dessin de référence.",
-      "source": "playbook:design/no-handmade-svg-art · skills/design-interface/SKILL.md"
     },
     {
       "key": "app.aso/animated-header",

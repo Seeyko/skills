@@ -34,16 +34,13 @@ Les noms ci-dessous sont ceux d'aujourd'hui. Quand une nouvelle famille sort, ga
 - Le titre et la description suivent [`present-work`](../../present-work/SKILL.md) : lisibles par un chef de produit, captures d'abord.
 - L'agent qui ouvre une PR la suit jusqu'à un état final : **fusionnée**, **verte et laissée au propriétaire**, ou **rouge avec un verdict**. Puis il se désabonne et s'arrête.
 - Petite PR verte : l'agent la fusionne (squash). Une surface sensible (paiement, sécurité, migration, CI, contrat d'API mobile) ou un plan : « prête pour relecture ».
-- **Une PR en cours par auteur.** Les branches finies pendant ce temps attendent, puis partent ensemble en lot dès qu'elle passe, automatiquement.
 - Une relance par panne d'infra. Deuxième panne : un verdict, pas de boucle.
 
 ## Les machines
 - Une machine toujours allumée (un Mac pour iOS) fait les builds, le simulateur, App Store Connect et les runners de CI. Une session à distance y tourne en permanence, pour lui parler depuis le téléphone.
 - Les sessions cloud codent. Elles n'écrivent jamais en production : une écriture en prod passe par la machine qui a les accès, avec l'accord écrit du propriétaire.
-- Une étape d'installation de la CI a un plafond court (quelques minutes) : un runner bloqué échoue vite au lieu d'attendre une heure. Sur un runner macOS sans écran, les caches restent sur le disque interne : une autorisation système jamais validée bloque un job en silence.
-- Une consigne nouvelle part à tous les fils qu'elle touche, routines comprises, et chaque fil met à jour ses tâches planifiées lui-même. Si la mise à jour est refusée, recrée la tâche sous le même nom ; ne la supprime jamais sans le dire, son historique part avec.
-- Un fil ne peut pas changer une tâche planifiée qu'il n'a pas créée : il écrit le nouveau texte dans un fichier partagé et le demande au coordinateur.
-- Un fil reçoit ses connecteurs avant sa tâche.
+- Une étape d'installation de la CI a un plafond court (quelques minutes) : un runner bloqué échoue vite au lieu d'attendre une heure.
+- Une consigne nouvelle part à tous les agents qu'elle touche, tâches planifiées comprises : une routine qui garde l'ancien texte refait l'ancienne erreur chaque jour.
 - Tous les accès d'administration passent par un réseau privé (Tailscale ou équivalent).
 
 ## La preuve
