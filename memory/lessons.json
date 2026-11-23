@@ -566,6 +566,33 @@
       "why": "On doit pouvoir jouer en regardant : un rythme trop serré empêche de deviner.",
       "check": "Chaque manche laisse 3 s, et la réponse n'apparaît que sur un écran.",
       "source": "playbook:social/game-video · skills/social-content"
+    },
+    {
+      "key": "architecture/questions-first",
+      "topic": "architecture",
+      "rule": "Avant d'écrire un back-end ou une nouvelle brique, écris la vision en une page avec le propriétaire, puis un document court : ce qui est la vérité et ce qui est un cache, un seul chemin d'écriture, ce que lit l'app, les budgets en millisecondes, les menaces et leurs parades. Les questions ouvertes ont chacune une recommandation. Pas de code avant le go.",
+      "when": "au démarrage d'un back-end, avant une table, un service, un agent ou une dépendance",
+      "why": "Le code va vite ; une mauvaise forme de la donnée coûte cher à défaire.",
+      "check": "Le document existe, dit pourquoi ce modèle et ce qui a été écarté, et le go est écrit.",
+      "source": "playbook:architecture/questions-first · skills/design-backend"
+    },
+    {
+      "key": "architecture/ai-guardrails",
+      "topic": "architecture",
+      "rule": "Le chemin d'un geste n'appelle jamais un modèle : on répond tout de suite, le résultat arrive après. Une exécution n'a jamais ensemble des données privées, du contenu venu d'ailleurs et une sortie vers l'extérieur. Une valeur inconnue s'affiche « inconnue », jamais inventée. Un modèle se choisit par un test sur de vraies phrases.",
+      "when": "quand un produit appelle un modèle ou donne des outils à un agent",
+      "why": "Un modèle est lent, se trompe et obéit à ce qu'il lit.",
+      "check": "Aucun geste n'attend un modèle, et aucun agent n'a les trois à la fois.",
+      "source": "playbook:architecture/ai-guardrails · skills/design-backend"
+    },
+    {
+      "key": "design/minimal-interface",
+      "topic": "design",
+      "rule": "Le minimum d'interface : pas de formulaire (parler, photo, écrire derrière un seul +), un écran quand c'est possible, ce qui sert aux agents ne s'affiche pas, un geste par ligne, annuler sur plusieurs niveaux, une réponse immédiate en mots simples. Le composant natif avant tout contrôle maison, le verre du système pour la couche flottante seulement.",
+      "when": "quand on conçoit une app, un écran ou un bouton de plus",
+      "why": "Une app si simple et si polie que personne n'a envie de la refaire ; chaque écran en plus doit être une action.",
+      "check": "Aucun formulaire dans le chemin, et chaque écran ou bouton ajouté a été discuté.",
+      "source": "playbook:design/minimal-interface · skills/design-interface"
     }
   ]
 }

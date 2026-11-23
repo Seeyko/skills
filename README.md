@@ -18,6 +18,7 @@ Des skills pour construire des apps mobiles et des sites avec des agents Claude.
 | [`write-copy`](skills/write-copy/SKILL.md) | Tout texte qu'une personne lira : la règle des 75 %, les mots de la personne, les promesses |
 | [`design-interface`](skills/design-interface/SKILL.md) | Tout écran, toute animation, tout visuel |
 | [`audience-study`](skills/audience-study/SKILL.md) | Avant d'écrire pour quelqu'un : un produit, un onboarding, une fiche, un site |
+| [`design-backend`](skills/design-backend/SKILL.md) | Avant d'écrire un back-end ou une nouvelle brique : la vision, les questions, un document court, un go |
 | [`pick-stack`](skills/pick-stack/SKILL.md) | Au démarrage d'un projet, ou avant d'ajouter un service |
 | [`social-content`](skills/social-content/SKILL.md) | Les posts réseaux : slideshows, vidéos d'app, vidéos de jeu, UGC, musique, CTA, formats gagnants |
 | [`seo-content`](skills/seo-content/SKILL.md) | Un article, un comparatif, le référencement un pas par jour, les citations par les IA |

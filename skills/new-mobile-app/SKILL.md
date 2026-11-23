@@ -10,7 +10,7 @@ Avant tout : skill [`memory-first`](../memory-first/SKILL.md) (sujets `work.agen
 ## 1. Décider vite
 - **Une phrase fixe tout** : l'app, le public, la stack, l'hébergement. Pose seulement les questions dont tu ne peux pas trouver la réponse, toutes ensemble, au début.
 - **Une maquette d'abord** : une page HTML jouable, essayée sur un téléphone. L'app suit la maquette exactement.
-- **Une conception courte, puis un go** : le modèle de données, l'écran, le geste, les budgets de performance, les questions ouvertes. Pas de code avant le go.
+- **Une conception courte, puis un go** ([`design-backend`](../design-backend/SKILL.md)) : le modèle de données, l'écran, le geste, les budgets de performance, les questions ouvertes. Pas de code avant le go.
 - **Pour qui ?** L'étude d'audience d'abord ([`audience-study`](../audience-study/SKILL.md)).
 - **L'interface** suit [`design-interface`](../design-interface/SKILL.md) (une app minimale, le design par le modèle le plus fort), **le texte** suit [`write-copy`](../write-copy/SKILL.md).
 

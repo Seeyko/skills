@@ -20,8 +20,8 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 5. **Montre au lieu d'expliquer.** Une notification qui fait défiler les vrais rappels remplace la phrase qui les décrit. Une graine qui pousse remplace « ton plan est prêt ». Une couleur reconnaît une zone mieux qu'une étiquette.
 6. **Pas de réglage lourd sur un écran d'expérience.** Ni interrupteur ni formulaire là où la personne vit le produit : un petit bouton rond (un haut-parleur) suffit. Les réglages vivent ailleurs.
 7. **Chaque geste se sent.** Haptique sur chaque bouton, chaque choix, chaque temps d'un rythme.
-8. **Une app minimale** : une vue, un geste, une entrée naturelle (voix, photo, texte). Pas de formulaire.
-9. **Natif.** Sur iOS : SwiftUI, Liquid Glass pour la couche flottante (jamais sur le contenu), shimmer pendant la lecture, morph quand le résultat arrive. Sur le web : shadcn.
+8. **Le minimum d'interface** : une vue, un geste, une entrée naturelle (voix, photo, texte). Voir plus bas.
+9. **Natif.** Le composant de la plateforme avant tout contrôle maison. Sur iOS : SwiftUI, et Liquid Glass partout où c'est la couche flottante, jamais sur le contenu. Sur le web : shadcn.
 10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées sans qu'il le demande. Quand il le demande, le niveau à atteindre est celui d'un de ses dessins de référence.
 11. **Les moments de réussite font « wow ».** C'est la seule exception au calme : voir plus bas.
 
@@ -30,6 +30,17 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 - **Toujours un visuel avec une proposition** (une vidéo d'aperçu, une planche) : une description seule ne se valide pas. Un visuel validé se fusionne tout de suite.
 - **Une référence (une vidéo, une app) se découpe image par image** pour en reprendre le rythme et le nombre de temps, jamais le dessin : on la repense dans l'univers de l'app. Elle s'analyse deux fois : par toi, et par un agent qui n'a que la matière brute. Garde ce qui converge.
 - **Chaque correction du propriétaire devient une règle** dans `DESIGN.md`, avec sa raison, dans le même commit (skill `learn-taste`).
+
+## Le minimum d'interface
+Une app est une fenêtre sur sa donnée, si simple et si polie que personne n'a envie de la refaire. Chaque écran, onglet ou bouton en plus doit être une action, et se discute.
+- **Pas de formulaire.** La personne parle, prend une photo ou écrit une phrase, et le produit comprend. Un seul bouton **+** ouvre les trois. Seule exception : corriger, qui ouvre les champs, parce qu'on corrige ce que la compréhension a raté.
+- **Un écran quand c'est possible.** Pas d'onglet, d'écran de réglages ni d'écran de détail sans accord.
+- **Montre le minimum.** Ce qui sert aux agents (le stock, le catalogue, les prix) ne s'affiche pas. Pour savoir ce qu'il y a dans le frigo, on ouvre le frigo.
+- **Un geste par ligne**, et un toucher dans la poche ne fait jamais disparaître quelque chose : la ligne reste, barrée, et un second toucher la remet.
+- **Annuler remonte plusieurs gestes**, comme ⌘Z. Un seul niveau ne suffit pas après deux touchers de trop.
+- **La réponse est immédiate, en mots simples.** La phrase envoyée scintille tout de suite, puis le vrai changement vient se ranger à sa place (morph). Jamais « C'est noté » sans rien derrière, jamais une longue liste.
+- **Derrière chaque phrase, un assistant**, jamais un routage figé : ce que dit la personne n'est pas toujours pour l'app ouverte. Il voit ce que l'écran montre (le jour affiché, la liste ouverte), et « Annuler » reprend la phrase entière.
+- **L'âge, pas l'invention.** Une donnée qui peut être vieille montre son âge. Une valeur inconnue ne s'affiche pas.
 
 ## Les moments de réussite
 Une réussite (une série, une chose gagnée, la fin d'un effort) a le droit de claquer, et elle seule. Une première version qui suit les règles calmes du reste de l'app est trop molle.

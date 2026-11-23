@@ -21,6 +21,7 @@ Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lesson
 | `analytics` | ce qu'on trace : un parcours, un paywall, une campagne |
 | `seo` | un article, un comparatif, le référencement, les citations par les IA |
 | `product` | une fonction nouvelle, une bêta |
+| `architecture` | un back-end, une nouvelle brique, un modèle de données |
 | `app.create` | une nouvelle app |
 | `app.onboarding` | l'onboarding, le premier lancement |
 | `app.paywall` | le paywall, les abonnements |
