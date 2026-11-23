@@ -20,8 +20,8 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 5. **Montre au lieu d'expliquer.** Une notification qui fait défiler les vrais rappels remplace la phrase qui les décrit. Une graine qui pousse remplace « ton plan est prêt ». Une couleur reconnaît une zone mieux qu'une étiquette.
 6. **Pas de réglage lourd sur un écran d'expérience.** Ni interrupteur ni formulaire là où la personne vit le produit : un petit bouton rond (un haut-parleur) suffit. Les réglages vivent ailleurs.
 7. **Chaque geste se sent.** Haptique sur chaque bouton, chaque choix, chaque temps d'un rythme.
-8. **Le minimum d'interface** : une vue, un geste, une entrée naturelle (voix, photo, texte). Voir plus bas.
-9. **Natif.** Le composant de la plateforme avant tout contrôle maison. Sur iOS : SwiftUI, et Liquid Glass partout où c'est la couche flottante, jamais sur le contenu. Sur le web : shadcn.
+8. **La friction se décide.** Le moins possible quand le produit est une porte vers un système qui comprend, exprès là où elle protège ou engage. Voir plus bas.
+9. **Natif.** Le composant de la plateforme avant tout contrôle maison : la personne le connaît déjà, il suit le système (accessibilité, gestes, mises à jour) et il coûte moins à tenir. Sur iOS aujourd'hui : SwiftUI, et le verre du système pour ce qui flotte au-dessus du contenu, jamais pour le contenu lui-même.
 10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées sans qu'il le demande. Quand il le demande, le niveau à atteindre est celui d'un de ses dessins de référence.
 11. **Les moments de réussite font « wow ».** C'est la seule exception au calme : voir plus bas.
 
@@ -31,16 +31,26 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 - **Une référence (une vidéo, une app) se découpe image par image** pour en reprendre le rythme et le nombre de temps, jamais le dessin : on la repense dans l'univers de l'app. Elle s'analyse deux fois : par toi, et par un agent qui n'a que la matière brute. Garde ce qui converge.
 - **Chaque correction du propriétaire devient une règle** dans `DESIGN.md`, avec sa raison, dans le même commit (skill `learn-taste`).
 
-## Le minimum d'interface
-Une app est une fenêtre sur sa donnée, si simple et si polie que personne n'a envie de la refaire. Chaque écran, onglet ou bouton en plus doit être une action, et se discute.
-- **Pas de formulaire.** La personne parle, prend une photo ou écrit une phrase, et le produit comprend. Un seul bouton **+** ouvre les trois. Seule exception : corriger, qui ouvre les champs, parce qu'on corrige ce que la compréhension a raté.
-- **Un écran quand c'est possible.** Pas d'onglet, d'écran de réglages ni d'écran de détail sans accord.
-- **Montre le minimum.** Ce qui sert aux agents (le stock, le catalogue, les prix) ne s'affiche pas. Pour savoir ce qu'il y a dans le frigo, on ouvre le frigo.
-- **Un geste par ligne**, et un toucher dans la poche ne fait jamais disparaître quelque chose : la ligne reste, barrée, et un second toucher la remet.
-- **Annuler remonte plusieurs gestes**, comme ⌘Z. Un seul niveau ne suffit pas après deux touchers de trop.
-- **La réponse est immédiate, en mots simples.** La phrase envoyée scintille tout de suite, puis le vrai changement vient se ranger à sa place (morph). Jamais « C'est noté » sans rien derrière, jamais une longue liste.
-- **Derrière chaque phrase, un assistant**, jamais un routage figé : ce que dit la personne n'est pas toujours pour l'app ouverte. Il voit ce que l'écran montre (le jour affiché, la liste ouverte), et « Annuler » reprend la phrase entière.
-- **L'âge, pas l'invention.** Une donnée qui peut être vieille montre son âge. Une valeur inconnue ne s'affiche pas.
+## Combien d'interface ? La friction se décide
+Avant de dessiner, écris en une phrase à quoi sert l'interface de ce produit. La quantité d'écrans, de champs et de boutons en découle. Elle ne se recopie pas d'un produit à l'autre.
+
+- **Quand le produit est une porte vers un système qui comprend** (un assistant, des agents, une mémoire), l'interface sert à deux choses : dire et voir. Le but est alors le moins de friction possible. La personne dit ce qu'elle veut comme elle le dirait à quelqu'un (voix, photo, une phrase), le système range, et l'écran montre seulement ce qui lui sert maintenant. Chaque champ à remplir est un travail qu'on lui rend alors que le système pouvait le faire.
+- **Quand la friction protège ou engage**, on la garde, exprès. Confirmer avant un geste qu'on ne peut pas défaire, un paiement, un choix médical. Un parcours plus long quand il construit la confiance ou le plan ([`app-onboarding`](../app-onboarding/SKILL.md)). Un outil d'expert où tout voir d'un coup fait gagner du temps.
+
+Les questions à te poser :
+- **Qu'est-ce que la personne vient faire, et combien de fois par jour ?** Un geste fait dix fois par jour ne supporte aucune étape de trop.
+- **Qu'est-ce que le produit peut comprendre ou deviner seul ?** Tout ce qu'il peut deviner, il ne le demande pas.
+- **Qu'est-ce qui sert à la personne, et qu'est-ce qui ne sert qu'à la machine ?** Ce qui ne sert qu'à la machine ne s'affiche pas.
+- **Qu'est-ce qui se passe si elle se trompe ?** Si l'erreur se défait d'un geste, on ne confirme pas : on laisse faire et on donne « Annuler ». Si elle ne se défait pas, on ralentit.
+- **Où la lenteur aide-t-elle ?** Nomme les endroits où tu gardes de la friction, et pourquoi.
+
+Ce qui reste vrai dans les deux cas :
+- **Chaque écran, onglet ou bouton en plus se justifie** par une action que la personne fait vraiment.
+- **Le produit répond tout de suite, et montre ce qu'il a fait.** Jamais un « C'est noté » sans rien derrière.
+- **Une erreur se rattrape.** Annuler remonte plusieurs gestes, et un toucher par mégarde ne fait rien disparaître.
+- **On ne montre pas ce qu'on ne sait pas.** Une donnée qui peut être vieille montre son âge.
+
+Exemple : une liste de courses reliée à un assistant a fini avec un seul écran, une seule entrée (parler, photographier ou écrire) et un toucher par ligne, parce que son but était d'être la porte la plus courte vers le système. Un produit avec un autre but aurait une autre réponse.
 
 ## Les moments de réussite
 Une réussite (une série, une chose gagnée, la fin d'un effort) a le droit de claquer, et elle seule. Une première version qui suit les règles calmes du reste de l'app est trop molle.

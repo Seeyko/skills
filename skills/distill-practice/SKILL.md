@@ -47,6 +47,18 @@ Une consigne validée n'est pas encore une leçon. Ce dépôt garde un savoir de
 | Dit-elle quelque chose du métier, et pas de la tuyauterie ? | Comment marche un fil, une tâche planifiée, une garde, un runner : ça change avec le produit. Dans la mémoire, ou rien. |
 | Tient-elle sans l'incident qui l'a fait naître ? | Une erreur d'un jour se corrige, elle ne devient pas une règle. Attends qu'elle revienne. |
 
+### Le principe, la mise en œuvre, le goût
+Ce qu'on a fait dans un produit mélange trois choses. Sépare-les avant d'écrire.
+
+| | Ce que c'est | Où ça va |
+|---|---|---|
+| **Le principe** | Le but et sa raison : « le moins de friction, parce que ce produit est une porte vers un système qui comprend » | Dans le skill, avec les questions qui permettent de trancher pour un autre produit |
+| **La mise en œuvre** | La réponse d'un produit à ces questions : « un seul bouton + », « le aha à la 3e étape », « un essai de 7 jours » | Dans une étude de cas (`references/`), dite comme un exemple |
+| **Le goût** | Ce que la personne aime et montre : une app, une animation, un créateur, un skill tiers | Dans `CREDITS.md`, avec ce qu'on en garde |
+
+- Un skill qui ne donne que la mise en œuvre fait recopier. Un skill qui donne le principe et ses questions fait décider : l'agent doit pouvoir arriver à une autre réponse pour un autre produit.
+- Cherche le « parce que » dans ce que la personne a dit. S'il manque, demande-le, ou range la règle en étude de cas.
+- Un skill tiers dit déjà bien une chose ? Renvoie vers lui au lieu de le réécrire.
 - Une règle qui dit seulement « fais ce que l'humain demande » n'apprend rien : jette-la.
 - Un « jamais » vient souvent d'un seul refus. Écris ce que la personne voulait obtenir, pas le moyen qu'elle a refusé ce jour-là.
 - Dans le doute, n'ajoute pas. Une règle faible coûte plus qu'une règle absente : chaque agent la lira à chaque tâche.

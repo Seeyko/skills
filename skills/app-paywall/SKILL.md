@@ -7,31 +7,34 @@ description: Concevoir le paywall d'une app payante et ses abonnements (offres, 
 
 Le texte suit [`write-copy`](../write-copy/SKILL.md), l'interface suit [`design-interface`](../design-interface/SKILL.md). Les écrans d'une étude de cas, avec leur haptique et leur animation, sont dans [`references/case-study-screens.md`](references/case-study-screens.md).
 
-## Les principes
-1. **Un paywall dur, honnête, à la fin de l'onboarding.** Juste après la réussite du aha et le plan. Sans croix, sans freemium. Un paywall dur convertit bien plus (RevenueCat : 10,7 % de téléchargements payants contre 2,1 %), à rétention annuelle à peu près égale.
-2. **L'annuel est présélectionné**, avec un essai de 7 jours (ou le choix de l'essai, point 10). Le mensuel n'a pas d'essai et coûte plus cher par mois.
-3. **La frise de l'essai** sur l'annuel : « Aujourd'hui · Tout est ouvert », « Jour 5 · On te rappelle la fin de l'essai », « Jour 7 · Premier paiement, sauf si tu annules ». Elle répond à la peur de l'abonnement caché. Elle se replie quand on choisit le mensuel.
-4. **Le montant facturé est le prix le plus visible.** Une pastille « 2,50 € par mois » à côté d'un prix annuel en gris est refusée par Apple (3.1.2(c)) : montre l'économie (« −37 % ») et le prix facturé en texte principal.
-5. **Rien n'est caché** : le prix après l'essai et « Annulable à tout moment » sous le bouton. En pied : Restaurer, J'ai un code, Conditions, Confidentialité.
-6. **Le bouton juste avant ne promet rien que le paywall ne donne.** « Voir mon jardin » qui ouvre un paywall, c'est raté.
-7. **Le titre reprend la promesse verte**, et le décor de l'app reste en haut.
-8. **Des codes à vie pour les premières utilisatrices** (« J'ai un code » ouvre la feuille Apple des codes d'offre). Elles donnent les premiers avis.
-9. **La demande d'avis seulement aux abonnées**, après le premier paiement et une séance réussie (« Tu aimes … ? » → Oui / Pas encore), 3 fois par an au plus.
-10. **Laisser choisir l'essai** sur l'annuel : gratuit et court, ou un premier mois payé à petit prix. Apple n'accepte qu'une offre de lancement par abonnement, donc il faut un deuxième produit annuel. Le mois payé n'est pas un essai gratuit, ni dans l'analytique ni dans les textes (« paiement de l'année », pas « fin de l'essai »).
-11. **Après l'achat, l'action** : l'écran suivant ouvre le premier usage ([`app-onboarding`](../app-onboarding/SKILL.md)).
+## Le but
+Le paywall demande de l'argent au moment où la personne sait pourquoi elle paierait, et sans rien lui cacher. Le reste (dur ou freemium, essai, prix) est une décision par produit, qu'on prend puis qu'on mesure.
 
-## Le code
-- StoreKit 2, abonnements App Store. Le fichier de configuration StoreKit a un pays fixé, sinon les prix passent de € à $ sur les captures.
-- Les codes promo ne se créent qu'une fois l'achat intégré validé par Apple.
-- Haptique : impact léger à la sélection d'une offre, moyen sur le bouton, notification de réussite quand l'achat est confirmé.
+## Les principes
+1. **La valeur d'abord, le prix ensuite.** Le paywall vient après le moment où elle a senti ce que le produit lui apporte ([`app-onboarding`](../app-onboarding/SKILL.md)). Un prix qui tombe avant est un prix refusé.
+2. **Honnête.** Le montant vraiment débité est le prix le plus visible, la date du premier paiement est écrite, annuler est simple et c'est dit. La peur du piège à abonnement est la première raison de partir : on y répond en montrant, pas en rassurant. (Les stores refusent d'ailleurs un prix « par mois » mis en avant sur une offre annuelle.)
+3. **Le bouton juste avant ne promet rien que le paywall ne donne.** Un bouton « Voir mon plan » qui ouvre un prix, c'est une confiance perdue.
+4. **Après l'achat, l'action.** L'écran suivant ouvre le premier usage, pas un tour.
+5. **On juge sur ce que les gens paient vraiment**, après l'essai et au renouvellement, jamais sur les débuts d'essai. Les chiffres des vendeurs d'outils sont des pistes, pas des causes.
+6. **Un paywall se teste.** L'offre, le prix, l'essai et l'endroit où il s'ouvre sont des paris. Pose de quoi les comparer dès le premier jour ([`product-analytics`](../product-analytics/SKILL.md)), pour qu'un agent puisse changer une chose, relire une semaine après et garder ce qui gagne.
+
+## Les questions à te poser
+- **Qu'est-ce qu'elle a déjà reçu au moment où le prix arrive ?** Si la réponse est « rien encore », le paywall est trop tôt ou le aha manque.
+- **Dur ou freemium ?** Un paywall dur (rien sans essai ou achat) convertit bien plus quand la valeur se sent dès l'onboarding et que le produit coûte à faire tourner. Une part gratuite se défend quand la valeur vient avec l'usage répété, le réseau ou le contenu que les gens créent. Écris ton choix et sa raison.
+- **Quel engagement demande le produit ?** Un résultat qui prend des semaines pousse vers l'annuel ; un besoin ponctuel vers une offre courte ou un achat unique.
+- **De quoi a-t-elle peur ?** D'oublier d'annuler, de payer pour rien, de ne pas réussir. Chaque peur a sa réponse sur l'écran (la frise de l'essai, le rappel avant le débit, le prix écrit).
+- **Qui sont tes premières utilisatrices ?** Un accès offert aux toutes premières donne les premiers avis et les premiers retours.
+
+## Un exemple, pas un gabarit
+Une app de santé payante a choisi : un paywall dur à la fin de l'onboarding, l'annuel présélectionné avec un essai de 7 jours, un mensuel sans essai, une frise « aujourd'hui, jour 5, jour 7 » qui dit quand on prévient et quand on débite, le choix entre un essai gratuit court et un premier mois à petit prix, des codes à vie pour les premières, et la demande d'avis seulement après un paiement et une réussite. Les écrans sont dans [`references/case-study-screens.md`](references/case-study-screens.md). Le skill `paywalls` des marketingskills ([`CREDITS.md`](../../CREDITS.md)) donne d'autres schémas.
 
 ## À éviter
-- Optimiser les seuls débuts d'essai : 82 % des essais démarrent le jour 0, et 55 % des annulations d'un essai de 3 jours aussi. Regarde ce que les abonnés paient vraiment.
-- Prendre les chiffres des vendeurs pour des causes.
-- Un prix ou un paywall sur une capture de la fiche App Store.
+- Optimiser les seuls débuts d'essai : la plupart démarrent et s'annulent le premier jour.
+- Recopier le paywall d'une autre app sans s'être posé ses questions.
+- Un prix ou un paywall sur une capture de la fiche du store.
 
 ## Avant de livrer
-- [ ] L'annuel est présélectionné, l'essai et sa fin se voient, le prix après l'essai est écrit.
-- [ ] Pas de croix, mais Restaurer, J'ai un code, Conditions et Confidentialité sont là.
-- [ ] Le fichier StoreKit a un pays fixé.
-- [ ] Les deux états (annuel, mensuel) sont capturés en FR et en EN.
+- [ ] Le choix (dur ou freemium, offres, essai) est écrit avec sa raison.
+- [ ] Le prix débité, la date du premier paiement et la façon d'annuler se lisent sans chercher.
+- [ ] Restaurer, les conditions et la confidentialité sont là.
+- [ ] Les événements sont posés, et une date de relecture des chiffres aussi.

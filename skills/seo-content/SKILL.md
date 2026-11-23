@@ -7,8 +7,11 @@ description: Écrire un article qui se classe sur Google et que les assistants I
 
 Le texte suit [`write-copy`](../write-copy/SKILL.md). Les skills tiers de SEO sont dans [`../../CREDITS.md`](../../CREDITS.md). Une règle du propriétaire gagne sur une recette SEO connue.
 
+## Le principe
+La réponse d'abord, la preuve après. La personne pressée repart avec sa réponse en dix secondes, et un moteur comme un assistant IA trouvent un bloc propre à reprendre. Un contenu se juge à une chose : est-ce qu'il répond mieux et plus vite que ce qui est déjà classé ? Pour la technique (audit, mots-clés, pages générées), prends les skills SEO tiers de [`CREDITS.md`](../../CREDITS.md) : ce skill ne garde que ce qu'ils ne disent pas.
+
 ## L'article
-La réponse tient dans le premier écran, la preuve vient après. La personne pressée repart avec sa réponse en dix secondes, et Google comme les IA trouvent un bloc propre à extraire.
+Un gabarit de départ qui applique le principe. Change-le quand la requête demande autre chose.
 
 | # | Bloc | Contenu |
 |---|---|---|

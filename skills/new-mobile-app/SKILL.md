@@ -12,7 +12,7 @@ Avant tout : skill [`memory-first`](../memory-first/SKILL.md) (sujets `work.agen
 - **Une maquette d'abord** : une page HTML jouable, essayée sur un téléphone. L'app suit la maquette exactement.
 - **Une conception courte, puis un go** ([`design-backend`](../design-backend/SKILL.md)) : le modèle de données, l'écran, le geste, les budgets de performance, les questions ouvertes. Pas de code avant le go.
 - **Pour qui ?** L'étude d'audience d'abord ([`audience-study`](../audience-study/SKILL.md)).
-- **L'interface** suit [`design-interface`](../design-interface/SKILL.md) (une app minimale, le design par le modèle le plus fort), **le texte** suit [`write-copy`](../write-copy/SKILL.md).
+- **L'interface** suit [`design-interface`](../design-interface/SKILL.md) (combien d'interface et de friction pour ce produit, le design par le modèle le plus fort), **le texte** suit [`write-copy`](../write-copy/SKILL.md).
 
 ## 2. Le dépôt
 Pars de [`../../templates/mobile-app/`](../../templates/mobile-app/) : `CLAUDE.md`, `DESIGN.md`, `.claude/rules/front.md`, `SECRETS.md`.

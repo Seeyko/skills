@@ -8,6 +8,7 @@ Ce dépôt garde les skills d'une façon de construire des produits avec des age
 ## Ce qui a sa place ici
 - Un savoir de métier qui dure : produit, marketing, texte, design, code, architecture, façon de mener un travail.
 - Pas un contournement des limites d'un modèle ou d'un outil d'aujourd'hui, pas la tuyauterie d'un produit, pas la suite d'un seul incident, pas une règle d'un seul projet. Les quatre questions sont dans `skills/distill-practice` (« Ce qui mérite d'entrer »).
+- Un skill donne le principe, sa raison et les questions à se poser. La réponse d'un produit (un nombre d'étapes, un bouton, un prix) va dans une étude de cas, dite comme un exemple. Les goûts et les skills tiers vont dans `CREDITS.md`.
 - Dans le doute, n'ajoute pas.
 
 ## Quand tu changes une règle ou un skill

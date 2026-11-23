@@ -12,56 +12,50 @@ Ce skill ne dit que ce qui est propre à l'onboarding. Le texte suit [`write-cop
 2. Lis le `CLAUDE.md` et le `DESIGN.md` de l'app.
 3. Pas d'étude d'audience ? Fais-la d'abord ([`audience-study`](../audience-study/SKILL.md)).
 
+## Le but
+Un onboarding n'est pas une visite. Il amène la personne, le plus vite possible, à sentir ce que le produit change pour elle. Tout le reste (questions, rappels, compte, paiement) se range autour de ce moment.
+
 ## Les principes
-1. **Amène au premier moment aha le plus vite possible.** Pas de visite des fonctions : personne ne les retient. Un peu de personnalisation, puis la personne sent ce qu'elle gagne. Dans l'étude de cas, le aha est passé de la 9e à la **3e étape**.
-2. **Le aha marche partout, en moins d'une minute.** Elle est peut-être dans le métro. Il dure 20 à 40 s, marche sans le son (le texte et les vibrations guident, la voix se coupe d'un geste) et ne demande pas d'être chez soi. Il donne une réussite réelle, dite seulement après qu'elle l'a confirmée (« Tu l'as trouvé »).
-3. **Le aha se sent énorme.** Le geste est petit, la fête est grande : le dessin, l'haptique de réussite, une phrase qui la nomme. C'est là que le chat se sent tigre.
-4. **Garde les questions qui personnalisent.** Seulement celles qui changent le plan, chacune dit pourquoi en une ligne. Les couper pour faire court fait baisser la conversion (Headspace : +10 % avec plusieurs objectifs).
-5. **Les rappels juste après une petite réussite**, en montrant la vraie notification, avec « Continuer sans rappel ».
-6. **Le plan montre qui elle devient** (« Aujourd'hui, tu deviens celle qui s'en occupe »), juste avant le paywall.
-7. **Après le paywall, l'action, pas un tour.** « Ma première séance » ouvre vraiment l'usage. Sinon, « Rappelle-moi ce soir » ou « Rappelle-moi demain » programme **un seul** rappel, choisi selon l'heure : après 17 h, on continue demain. Le tour complet et les explications vivent dans l'app.
-8. **Le compte, le plus tard possible**, ou jamais si l'app n'en a pas besoin. Duolingo gagne environ 20 % d'utilisateurs actifs en repoussant l'inscription. Sur iOS, « Continuer avec Apple » d'abord.
+1. **Un moment aha qui fait « waouh ».** Le plus petit geste qui fait sentir la valeur, avec un vrai résultat pour elle. Personne ne retient une liste de fonctions, tout le monde retient une réussite. Le geste est petit, la fête est grande.
+2. **Le paiement vient après le waouh.** On ne paie pas une promesse, on paie pour garder ce qu'on vient de vivre. Le paywall suit [`app-paywall`](../app-paywall/SKILL.md).
+3. **On accompagne jusqu'à la première action qui lui apporte de la valeur.** L'onboarding finit quand elle a fait cette action, pas quand elle a vu le dernier écran. Après le paiement, le bouton ouvre vraiment l'usage.
+4. **La longueur se décide, elle ne se recopie pas.** Elle dépend de qui arrive et de ce qu'il faut pour que le moment magique marche. Voir les questions ci-dessous.
+5. **Chaque étape sert le aha, la personnalisation réelle ou la suite.** Une question qui ne change rien à ce qu'elle va vivre sort du chemin. Une question qui change son plan reste, et dit pourquoi : la couper pour faire court fait baisser la conversion.
+6. **Demander au bon moment.** Une permission (rappels, micro, photos) se demande quand elle vient de comprendre à quoi elle sert, en montrant le vrai résultat. Le compte arrive le plus tard possible, ou jamais.
 
-## La séquence de départ
+## Les questions à te poser avant de dessiner
+Réponds par écrit, à partir de l'étude d'audience. Ce sont elles qui donnent la séquence, pas un gabarit.
+- **Qui arrive, et dans quel état ?** Pressée ou curieuse, méfiante ou convaincue, seule chez elle ou dans le métro. Vient-elle d'une recommandation ou d'une pub vue trois secondes ?
+- **Quel est le moment magique de ce produit ?** L'instant où elle se dit « ah, c'est pour moi ». Si tu ne sais pas le dire en une phrase, tu n'es pas prête à dessiner.
+- **De quoi le produit a-t-il besoin pour que ce moment marche ?** Rien (on le fait vivre tout de suite), une réponse ou deux (on les pose avant), une donnée à elle (une photo, une liste : on l'aide à l'apporter). C'est ça qui fixe la longueur avant le aha.
+- **Où et comment le vivra-t-elle ?** S'il faut du son, du calme ou du matériel, beaucoup ne le vivront pas : trouve une version qui marche partout.
+- **Combien d'engagement demande le produit ensuite ?** Un produit cher ou exigeant (santé, apprentissage) gagne à un parcours plus long qui construit la confiance et le plan. Un outil simple gagne à ouvrir tout de suite.
+- **Qu'est-ce qui la ferait partir ?** Un compte demandé trop tôt, une question indiscrète, un prix qui tombe avant la valeur.
 
-| # | Écran | Rôle |
-|---|---|---|
-| 1 | Bienvenue | Une promesse qui parle d'elle, un bouton |
-| 2 | Où en es-tu ? | 1 ou 2 choix qui personnalisent la suite |
-| 3 | **Le aha** | Le geste guidé, court, partout, puis « Tu l'as senti ? » et la réussite |
-| 4-6 | Personnalisation | Seulement les questions qui changent le plan |
-| 7 | Comment nous as-tu connus ? | Pour l'acquisition (choix + « Autre ») |
-| 8 | Préférences | Voix, vibrations, en montrant |
-| 9 | Rappels | La vraie notification qui défile |
-| 10 | Le plan est prêt | Qui elle devient, une animation qui pousse |
-| 11 | Paywall | Voir [`app-paywall`](../app-paywall/SKILL.md) |
-| 12 | C'est parti | « Ma première séance » ou un seul rappel |
-
-Une étape qui n'aide ni le aha, ni le plan, ni le paywall sort du chemin.
+Si tu hésites entre court et long : livre la version la plus défendable, mesure étape par étape ([`product-analytics`](../product-analytics/SKILL.md)), et laisse les chiffres trancher.
 
 ## La méthode
 1. **L'étude d'audience** dans un fil à part ([`audience-study`](../audience-study/SKILL.md)).
-2. **Trouver le aha** : le plus petit geste qui fait sentir la valeur de l'app, en moins d'une minute et sans matériel. Pour une app d'exercices, une contraction guidée de 40 s. Pour Photoroom, le premier détourage. Pour Calm, la première respiration. Si tu ne sais pas, fais étudier les meilleurs onboardings de la catégorie par un agent dédié, qui revient avec ce qu'on garde, ce qu'on retire et ce qu'on améliore.
-3. **Dessiner la séquence** à partir du gabarit, puis la maquette jouable ([`design-interface`](../design-interface/SKILL.md)).
-4. **Écrire le texte** comme une seule histoire, puis le faire relire par les deux agents de [`write-copy`](../write-copy/SKILL.md).
-5. **Le mouvement** : un seul décor qui se transforme, le bouton fixe, une haptique par étape.
-6. **Mesurer** : un événement `onboarding_step_completed` (`step`, `action`) à chaque étape, puis `onboarding_completed` avec ce qui s'est passé à la fin (première séance tout de suite ou non). Une réponse qui est une donnée de santé ne part pas. Un funnel écran par écran, dans l'ordre réel des étapes, remis à jour quand l'ordre change.
-7. **Montrer** : des captures, puis une vidéo du parcours complet à vitesse réelle, en FR et en EN.
+2. **Trouver le aha.** Fais étudier les meilleurs onboardings de la catégorie par un agent dédié, qui revient avec ce qu'on garde, ce qu'on retire et ce qu'on améliore. Le skill `onboarding` des marketingskills et les exemples des créateurs cités dans [`CREDITS.md`](../../CREDITS.md) servent de base.
+3. **Répondre aux questions ci-dessus**, puis dessiner la séquence et la maquette jouable ([`design-interface`](../design-interface/SKILL.md)).
+4. **Écrire le texte** comme une seule histoire ([`write-copy`](../write-copy/SKILL.md)).
+5. **Mesurer** chaque étape, puis relire les chiffres une semaine après ([`product-analytics`](../product-analytics/SKILL.md)).
+6. **Montrer** : une vidéo du parcours complet à vitesse réelle.
 
-Livre la V1 au mieux, puis l'analytique décide de la suite.
+## Un exemple, pas un gabarit
+Dans une app de santé payante, pour une personne fatiguée et méfiante, le aha était un geste guidé de 40 secondes, sans le son. Il est passé de la 9e à la 3e étape, les questions de personnalisation venaient après, puis les rappels, le plan et le paywall. Le détail et ses raisons sont dans [`references/case-study.md`](references/case-study.md). C'est la réponse d'un produit à ses propres questions : un autre produit en aura une autre.
 
 ## Avant de livrer
-- [ ] Le aha arrive avant le 4e écran, dure moins d'une minute et marche sans le son.
-- [ ] Ni interrupteur ni formulaire sur l'écran du aha.
-- [ ] Chaque question change le plan, et dit pourquoi.
-- [ ] Après le paywall, l'action principale ouvre vraiment l'usage.
-- [ ] Le compte arrive à la fin, ou pas du tout.
-- [ ] Les événements sont posés, le funnel suit l'ordre réel, aucune donnée de santé.
+- [ ] Tu sais dire le moment magique en une phrase, et il arrive avant le paiement.
+- [ ] La longueur est justifiée par écrit : qui arrive, et ce qu'il faut pour le aha.
+- [ ] Chaque question change ce qu'elle va vivre, et dit pourquoi.
+- [ ] À la fin, elle a fait une première action utile, pas seulement vu des écrans.
+- [ ] Chaque étape est mesurée, et une date de relecture des chiffres est posée.
 - [ ] Les checklists de [`write-copy`](../write-copy/SKILL.md) et [`design-interface`](../design-interface/SKILL.md) sont passées.
-- [ ] La vidéo du parcours est envoyée.
 
 ## À éviter
 - La visite des fonctions, et le tour complet avant le paywall.
-- Un exercice long et sonore obligatoire avant le paywall.
+- Un aha qui demande du son, du temps ou du matériel pour marcher.
+- Recopier la séquence d'une autre app sans s'être posé ses questions.
 - Optimiser les seuls débuts d'essai : regarde ce que les abonnés paient vraiment.
 - Prendre les chiffres des vendeurs (RevenueCat, Superwall…) pour des causes.

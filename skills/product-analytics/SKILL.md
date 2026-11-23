@@ -1,19 +1,28 @@
 ---
 name: product-analytics
-description: Décider quoi tracer dans un produit (onboarding, paywall, abonnements, acquisition) et comment compter les personnes sans données sensibles. À utiliser quand on branche l'analytique d'une app ou d'un site, qu'on ajoute un parcours, un paywall ou une campagne, ou qu'on demande « qu'est-ce qu'on trace ? », « d'où viennent les téléchargements ? ».
+description: Mettre en place la mesure d'un produit pour que les choix se fassent sur des chiffres (onboarding, paywall, abonnements, acquisition) : la boucle tester, relire, adapter, quoi tracer, et comment compter les personnes sans données sensibles. À utiliser quand on branche l'analytique d'une app ou d'un site, qu'on ajoute un parcours, un paywall ou une campagne, ou qu'on demande « qu'est-ce qu'on trace ? », « d'où viennent les téléchargements ? ».
 ---
 
-# Ce qu'on trace
+# Mesurer pour décider
 
-Le but : savoir, sans rien redemander, où les personnes s'arrêtent, ce qu'elles paient vraiment et d'où elles viennent. On trace les parcours, jamais les personnes. L'outil est dans [`pick-stack`](../pick-stack/SKILL.md).
+Le but n'est pas un funnel « optimisé » le premier jour. C'est d'avoir les outils en place pour que la suite se décide sur des chiffres : on livre au mieux, on mesure, et un agent peut changer une chose, relire une semaine après et garder ce qui gagne. Sans mesure, chaque choix de produit reste une opinion.
 
-## Les règles
+## La boucle
+1. **L'outil est branché avant la première vraie utilisatrice** : un outil d'analytique produit (PostHog par exemple, voir [`pick-stack`](../pick-stack/SKILL.md)) que les agents peuvent lire et piloter eux-mêmes, avec des événements, des funnels, des drapeaux et des expériences.
+2. **Chaque parcours qui compte est tracé étape par étape** (premier lancement, paiement, première action utile), pour voir où les gens s'arrêtent.
+3. **Un changement est un pari écrit** : ce qu'on change, le chiffre qui doit bouger, la date où on relit. Une seule chose à la fois, derrière un drapeau quand c'est possible.
+4. **À la date dite, on relit** et on garde, on retire ou on essaie autre chose. Trop peu de monde pour conclure ? On le dit, on ne conclut pas.
+5. **Ce qu'on apprend s'écrit** là où le prochain agent le lira (la doc du produit, la mémoire).
+
+Les tables plus bas sont un schéma de départ, qui a servi sur plusieurs produits. Les noms comptent moins que deux choses : couvrir le parcours en entier, et garder les mêmes noms d'un produit à l'autre pour comparer.
+
+## Compter juste
 1. **On envoie qu'un écran a été vu, puis comment il a été quitté.** Jamais la réponse choisie quand elle dit quelque chose de sensible (santé, situation de famille, argent).
 2. **Une personne se compte une fois.** Un seul identifiant par humain, de la même forme sur le site, le serveur et l'app. Un test verrouille cette forme : si une surface la change seule, les personnes se dédoublent sans que rien ne le dise.
 3. **Un identifiant tiré au hasard**, jamais un e-mail, un prénom ni un id de session. Le même identifiant sert aux achats, pour relier un paiement à un parcours.
 4. **Faire marcher le service n'est pas mesurer l'audience.** Les erreurs, la modération et les enquêtes dans l'app se passent du consentement. Les pages vues et l'identification du navigateur l'attendent.
 5. **Une tâche sans humain a son propre acteur, nommé et filtrable.** Sinon chaque appel compte comme un visiteur de plus.
-6. **Chaque événement dit d'où il vient** : `debug`, `testflight` ou `app_store`. Les tableaux de bord écartent `debug`.
+6. **Chaque événement dit d'où il vient** : développement, bêta ou production. Les tableaux de bord écartent le développement.
 7. **La mesure ne coûte rien à l'app.** L'outil se charge après la première image, n'attend jamais et ne fait jamais planter : un envoi raté se perd en silence.
 8. **L'équipe ne se mesure pas.** Les comptes internes et le back-office sortent des chiffres.
 9. **Pas d'enregistrement de session** quand l'écran montre la vie des gens.
@@ -68,6 +77,8 @@ Une place de marché, une inscription de professionnel, une réservation : le m�
 Un par question : l'onboarding et le paywall ; les abonnements, les revenus et le départ ; l'usage et la rétention ; le site ; l'acquisition.
 
 ## Vérifier
+- [ ] Un agent peut lire les chiffres seul, sans rien te redemander.
+- [ ] Chaque changement en cours a son chiffre attendu et sa date de relecture.
 - [ ] Aucune réponse sensible ne part, et aucun e-mail.
 - [ ] Une personne de test donne une seule ligne, sur le site comme dans l'app.
 - [ ] Le funnel de l'onboarding suit l'ordre réel des écrans.

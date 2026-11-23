@@ -43,3 +43,8 @@ Les écrans validés d'une app de santé payante, de l'expérience du aha jusqu'
 ### 12 · Après le lancement de l'essai
 - Titre « C'est parti », ligne « On te prévient 2 jours avant la fin de l'essai. », bouton « Ma première séance ».
 - Un arrosoir se penche en boucle (3,2 s), les gouttes tombent sur la pousse. Notification success à l'arrivée.
+
+## Sur iOS, ce qu'on a appris en route
+- StoreKit 2, abonnements App Store. Le fichier de configuration StoreKit a un pays fixé, sinon les prix passent de € à $ sur les captures.
+- Les codes promo ne se créent qu'une fois l'achat intégré validé par Apple.
+- Haptique : impact léger à la sélection d'une offre, moyen sur le bouton, notification de réussite quand l'achat est confirmé.

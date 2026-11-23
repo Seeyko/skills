@@ -167,44 +167,44 @@
       "topic": "app.onboarding",
       "rule": "Lis en entier le skill app-onboarding et son étude de cas avant de concevoir ou de changer un onboarding. Il renvoie à write-copy, design-interface et app-paywall pour le texte, l'interface et le paywall.",
       "when": "avant de concevoir, écrire ou changer un onboarding ou un premier lancement",
-      "why": "Le skill porte la séquence, le aha et ce qui a déjà été refusé ; sans lui, on refait un onboarding trop long.",
-      "check": "La conception cite l'étude d'audience, le moment aha choisi et la séquence du skill.",
+      "why": "Le skill porte les principes, les questions à se poser et ce qui a déjà été refusé ; sans lui, on recopie une séquence au lieu de la décider.",
+      "check": "La conception cite l'étude d'audience, le moment aha en une phrase et la raison de la longueur choisie.",
       "source": "playbook:app.onboarding/read-skill · skills/app-onboarding"
     },
     {
       "key": "app.onboarding/aha-early",
       "topic": "app.onboarding",
-      "rule": "Fais vivre le moment aha au 3e écran au plus tard, avant toute question longue. Il marche partout, en moins d'une minute, sans le son : compris en moins de 2 s, une transformation visible, un effort minimal. Le geste est petit, la fête est grande.",
-      "when": "quand on ordonne les écrans d'un onboarding",
+      "rule": "Construis l'onboarding autour d'un moment aha qui fait « waouh » : le plus petit geste qui fait sentir la valeur, avec un vrai résultat. Le paiement vient après. La longueur avant le aha se décide : qui arrive, et ce qu'il faut au produit pour que ce moment marche. Le geste est petit, la fête est grande.",
+      "when": "quand on conçoit ou ordonne un onboarding",
       "why": "Personne ne retient les fonctions montrées à l'accueil ; la valeur se sent, elle ne s'explique pas (Chris Raroque, sound-off test de David Attias).",
-      "check": "Le aha est au 3e écran au plus tard, et se comprend son coupé.",
+      "check": "Le moment aha tient en une phrase, arrive avant le paiement, et la longueur du parcours est justifiée par écrit.",
       "source": "playbook:app.onboarding/aha-early · skills/app-onboarding"
     },
     {
       "key": "app.onboarding/after-paywall",
       "topic": "app.onboarding",
-      "rule": "Après le paywall, ouvre vraiment l'usage (« Ma première séance »), sinon programme un seul rappel choisi selon l'heure (après 17 h, demain). Le tour complet vit dans l'app. Le compte arrive le plus tard possible, « Continuer avec Apple » d'abord.",
+      "rule": "L'onboarding finit quand la personne a fait une première action qui lui apporte de la valeur, pas au dernier écran. Après le paiement, le bouton ouvre vraiment l'usage. Le tour complet vit dans le produit. Le compte et les permissions se demandent au moment où elle comprend à quoi ils servent, le plus tard possible.",
       "when": "quand on conçoit la fin d'un onboarding",
       "why": "Personne ne retient un tour ; repousser l'inscription garde plus de monde (Duolingo, environ +20 %).",
-      "check": "La dernière action ouvre l'usage ; aucun compte n'est demandé avant la fin.",
+      "check": "La dernière action ouvre l'usage ; rien n'est demandé avant d'avoir servi.",
       "source": "playbook:app.onboarding/after-paywall · skills/app-onboarding"
     },
     {
       "key": "app.onboarding/measure",
       "topic": "app.onboarding",
-      "rule": "Pose onboarding_step_completed (step, action) à chaque écran et onboarding_completed à la fin, puis un funnel dans l'ordre réel des étapes, remis à jour quand l'ordre change. Une réponse qui est une donnée de santé ne part pas.",
+      "rule": "Mesure chaque étape d'un onboarding (vue, puis comment elle a été quittée) et pose une date pour relire les chiffres. Le funnel suit l'ordre réel des étapes. Une réponse sensible ne part pas.",
       "when": "quand on livre ou réordonne un onboarding",
-      "why": "L'analytique décide de la suite de l'onboarding.",
-      "check": "Le funnel existe et ses propriétés n'ont rien de médical.",
+      "why": "La bonne longueur et le bon ordre ne se devinent pas : on livre au mieux, puis les chiffres tranchent.",
+      "check": "Le funnel existe, suit l'ordre réel, et une date de relecture est posée.",
       "source": "playbook:app.onboarding/measure · skills/app-onboarding"
     },
     {
       "key": "app.paywall/honest-hard-paywall",
       "topic": "app.paywall",
-      "rule": "Termine l'onboarding par un paywall dur et honnête, sans croix ni freemium : l'annuel présélectionné avec 7 jours d'essai, le mensuel sans essai, une frise qui dit quand on prévient et quand on débite, le prix après l'essai écrit sous le bouton. Des codes à vie pour les premières utilisatrices.",
+      "rule": "Le prix arrive après la valeur, et rien n'est caché : le montant débité est le plus visible, la date du premier paiement est écrite, annuler est simple. Dur ou freemium, essai, offres : c'est un choix par produit, écrit avec sa raison, puis testé. Juge sur ce que les gens paient après l'essai, pas sur les débuts d'essai.",
       "when": "quand on conçoit ou change le paywall d'une app payante",
-      "why": "Le paywall dur convertit bien plus que le freemium (RevenueCat), et la frise répond à la peur du piège à abonnement.",
-      "check": "Le paywall montre l'annuel sélectionné, l'essai, la frise et le prix ; Restaurer et J'ai un code sont là.",
+      "why": "On paie pour garder ce qu'on vient de vivre, et la peur du piège à abonnement est la première raison de partir. Un paywall dur convertit plus quand la valeur se sent dès l'onboarding ; une part gratuite se défend quand la valeur vient avec l'usage.",
+      "check": "Le choix du modèle est écrit avec sa raison ; le prix débité, la date et l'annulation se lisent sans chercher.",
       "source": "playbook:app.paywall/honest-hard-paywall · skills/app-paywall"
     },
     {
@@ -480,10 +480,10 @@
     {
       "key": "analytics/funnel-events",
       "topic": "analytics",
-      "rule": "Trace un parcours écran par écran : vu, puis comment il a été quitté, jamais la réponse choisie si elle est sensible. Pour un paywall : vu, offre choisie, achat lancé, annulé ou échoué, essai, conversion, renouvellement, résiliation, remboursement, chacun avec product_id et placement.",
-      "when": "quand on branche l'analytique d'un onboarding, d'un paywall ou d'un abonnement",
-      "why": "On veut savoir où les personnes s'arrêtent et ce qu'elles paient vraiment, sans tracer les personnes.",
-      "check": "Le funnel suit l'ordre réel des écrans, et un achat de test se suit du paywall au renouvellement.",
+      "rule": "Branche la mesure avant la première vraie utilisatrice, pour que les choix se fassent sur des chiffres : chaque parcours qui compte est tracé étape par étape, chaque changement est un pari écrit (ce qu'on change, le chiffre attendu, la date de relecture), et un agent peut lire les résultats seul. Pour un abonnement, couvre le cycle entier, de l'écran de prix au renouvellement et au départ.",
+      "when": "quand on branche l'analytique d'un produit, ou qu'on change un onboarding, un prix ou un parcours",
+      "why": "Sans mesure, chaque choix de produit reste une opinion. Avec, un agent peut tester, relire une semaine après et garder ce qui gagne.",
+      "check": "Un agent lit les chiffres seul ; chaque changement en cours a son chiffre attendu et sa date de relecture.",
       "source": "playbook:analytics/funnel-events · skills/product-analytics"
     },
     {
@@ -543,10 +543,10 @@
     {
       "key": "product/beta-by-sharing",
       "topic": "product",
-      "rule": "Une fonction nouvelle sort derrière un drapeau et se diffuse par le partage : accepter un lien ou une invitation inscrit à la bêta. L'inscription vit dans ta base, le lien porte un jeton aléatoire, et aucune variable d'environnement n'ouvre une bêta.",
+      "rule": "Sors une fonction nouvelle pour quelques personnes et laisse-la se diffuser par le partage : recevoir un lien ou une invitation ouvre l'accès, et celle qui reçoit peut partager à son tour. Pas pour ce qui n'a rien à partager ni pour ce que tout le monde doit avoir le même jour.",
       "when": "quand on crée une fonction en bêta ou un lien de partage sur une fonction fermée",
-      "why": "La bêta grandit là où la fonction sert, sans campagne ; un id seul dans le lien ouvrirait la bêta à qui sait compter.",
-      "check": "Un lien partagé inscrit un compte neuf ; un jeton faux répond comme un objet inconnu.",
+      "why": "Les gens ne partagent que ce qui leur sert : la bêta grandit là où la fonction est utile, sa vitesse est déjà une mesure, et un défaut touche peu de monde.",
+      "check": "Un lien partagé ouvre l'accès à un compte neuf, qui peut partager à son tour ; un lien faux n'ouvre rien.",
       "source": "playbook:product/beta-by-sharing · skills/beta-by-sharing"
     },
     {
@@ -586,13 +586,13 @@
       "source": "playbook:architecture/ai-guardrails · skills/design-backend"
     },
     {
-      "key": "design/minimal-interface",
+      "key": "design/friction-is-a-choice",
       "topic": "design",
-      "rule": "Le minimum d'interface : pas de formulaire (parler, photo, écrire derrière un seul +), un écran quand c'est possible, ce qui sert aux agents ne s'affiche pas, un geste par ligne, annuler sur plusieurs niveaux, une réponse immédiate en mots simples. Le composant natif avant tout contrôle maison, le verre du système pour la couche flottante seulement.",
-      "when": "quand on conçoit une app, un écran ou un bouton de plus",
-      "why": "Une app si simple et si polie que personne n'a envie de la refaire ; chaque écran en plus doit être une action.",
-      "check": "Aucun formulaire dans le chemin, et chaque écran ou bouton ajouté a été discuté.",
-      "source": "playbook:design/minimal-interface · skills/design-interface"
+      "rule": "Avant de dessiner, écris à quoi sert l'interface de ce produit : la quantité d'écrans, de champs et de boutons en découle. Quand le produit est une porte vers un système qui comprend (assistant, agents), vise le moins de friction : la personne dit, le système range, l'écran montre ce qui lui sert. Garde de la friction, exprès, là où elle protège ou engage.",
+      "when": "quand on conçoit un produit, un écran ou un bouton de plus",
+      "why": "Chaque champ à remplir rend à la personne un travail que le système pouvait faire ; mais une confirmation ou un parcours plus long peuvent protéger ou construire la confiance. C'est le but du produit qui tranche, pas une habitude.",
+      "check": "Le but de l'interface tient en une phrase, et chaque friction gardée a sa raison.",
+      "source": "playbook:design/friction-is-a-choice · skills/design-interface"
     }
   ]
 }
