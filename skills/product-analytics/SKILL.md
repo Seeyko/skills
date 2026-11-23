@@ -14,7 +14,10 @@ Le but : savoir, sans rien redemander, où les personnes s'arrêtent, ce qu'elle
 4. **Faire marcher le service n'est pas mesurer l'audience.** Les erreurs, la modération et les enquêtes dans l'app se passent du consentement. Les pages vues et l'identification du navigateur l'attendent.
 5. **Une tâche sans humain a son propre acteur, nommé et filtrable.** Sinon chaque appel compte comme un visiteur de plus.
 6. **Chaque événement dit d'où il vient** : `debug`, `testflight` ou `app_store`. Les tableaux de bord écartent `debug`.
-7. **Un réglage coupe les statistiques**, et « Effacer mes données » remet l'identifiant à zéro. La page de confidentialité dit exactement ce qui part.
+7. **La mesure ne coûte rien à l'app.** L'outil se charge après la première image, n'attend jamais et ne fait jamais planter : un envoi raté se perd en silence.
+8. **L'équipe ne se mesure pas.** Les comptes internes et le back-office sortent des chiffres.
+9. **Pas d'enregistrement de session** quand l'écran montre la vie des gens.
+10. **Un réglage coupe les statistiques**, et « Effacer mes données » remet l'identifiant à zéro. La page de confidentialité dit exactement ce qui part.
 
 ## L'onboarding
 
@@ -44,6 +47,15 @@ Le but : savoir, sans rien redemander, où les personnes s'arrêtent, ce qu'elle
 - Un premier mois payé n'est pas un essai gratuit : `trial_type` les sépare ([`app-paywall`](../app-paywall/SKILL.md)).
 - On juge une offre sur ce que les abonnés paient après l'essai, pas sur les débuts d'essai.
 - Lus dans l'app, les événements d'abonnement n'arrivent qu'à la prochaine ouverture. Pour voir une résiliation le jour même, branche les notifications serveur du store.
+
+C'est le cycle de vie complet d'un abonnement. Sans lui, on voit des débuts d'essai et on rate ce qui compte : qui paie après l'essai, qui part, et pourquoi (résiliation, échec de paiement, remboursement).
+
+## Un parcours qui n'est pas un abonnement
+Une place de marché, une inscription de professionnel, une réservation : le même schéma. Un événement par étape du parcours (`<parcours>_step_completed`, avec `step`), un à la fin, puis les événements d'argent venus du serveur (`payment_succeeded`, `payment_failed`), jamais du seul navigateur.
+
+## Les erreurs et l'IA
+- **Une erreur remonte toujours**, rattachée à la personne quand on la connaît.
+- **Un événement par appel à un modèle** : le chemin (`import`, `assistant`, `dictation`…), le modèle, les jetons, la latence, l'erreur et le coût calculé. Le coût se lit par jour, par chemin et par personne active : c'est lui qui dit si un abonnement paie ses appels.
 
 ## D'où viennent les personnes
 - **La question « Comment nous as-tu connus ? »** dans l'onboarding. C'est le seul lien par personne pour les réseaux, le bouche-à-oreille et les professionnels.
