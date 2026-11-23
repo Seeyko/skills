@@ -1,10 +1,8 @@
 name: lessons
 on:
   pull_request:
-    paths: ["memory/**", "scripts/check-lessons.py"]
   push:
     branches: [main]
-    paths: ["memory/**"]
 jobs:
   check:
     runs-on: ubuntu-latest
