@@ -27,7 +27,8 @@
 - **Une version se publie par la CI de `main`** (paquet, registre, CLI, serveur MCP), jamais à la main depuis une branche ou une session : la fusion suffit à la sortir.
 - Le code d'un build envoyé au store est sur `main`.
 - **Pas de commentaires dans le code** : un nom clair, une petite fonction, un test.
-- **Des tests qui prouvent** : e2e fullstack (build de prod, API, vraie base), intégration, golden. Les tests unitaires seulement là où ils prouvent quelque chose.
+- **Des tests qui prouvent** : e2e fullstack (build de prod, API, vraie base), intégration, golden. Pas de test unitaire : des milliers de tests verts sur un faux service ont caché des dizaines de vrais défauts, que les premiers vrais e2e ont trouvés.
+- **Jamais d'id séquentiel dans une URL** qu'une personne peut voir ou partager : un slug pour un contenu public, un pseudo pour une personne, un identifiant aléatoire pour le reste. Un id qui se devine laisse parcourir et compter tout le site. Un identifiant mal formé répond comme un objet inconnu.
 - **Le dépôt garde le code, les skills et les images que l'app embarque.** Les rendus, essais et visuels de posts vivent hors du dépôt.
 - **Pas de code mort** ni de « version 2 » : construis moins et finis-le. Git garde l'histoire.
 - **La performance est une règle** : un geste en une frame, une ouverture en moins de 100 ms, une lecture serveur en moins de 10 ms, chaque budget mesuré.
@@ -68,4 +69,5 @@
 - Une proposition de design ou de contenu arrive avec son visuel et son coût s'il y a des générations payantes.
 - Dans sa langue. Les identifiants de code, les règles et les skills en anglais.
 - Préviens-le de chaque sortie sur les stores.
+- Un incident public se raconte sans détail technique : ce qui ne marchait pas pour les gens, depuis quand, et que c'est réparé. Le détail va dans la PR.
 - Quand il ajoute un outil, note-le en une ligne dans le `CLAUDE.md`.

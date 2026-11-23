@@ -18,6 +18,9 @@ Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lesson
 | `design` | tout écran, toute animation, tout visuel |
 | `social` | un post réseau, un slideshow, une vidéo d'app, un UGC |
 | `audience` | une étude d'audience, avant un onboarding, une fiche ou un site |
+| `analytics` | ce qu'on trace : un parcours, un paywall, une campagne |
+| `seo` | un article, un comparatif, le référencement, les citations par les IA |
+| `product` | une fonction nouvelle, une bêta |
 | `app.create` | une nouvelle app |
 | `app.onboarding` | l'onboarding, le premier lancement |
 | `app.paywall` | le paywall, les abonnements |

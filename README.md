@@ -19,7 +19,10 @@ Des skills pour construire des apps mobiles et des sites avec des agents Claude.
 | [`design-interface`](skills/design-interface/SKILL.md) | Tout écran, toute animation, tout visuel |
 | [`audience-study`](skills/audience-study/SKILL.md) | Avant d'écrire pour quelqu'un : un produit, un onboarding, une fiche, un site |
 | [`pick-stack`](skills/pick-stack/SKILL.md) | Au démarrage d'un projet, ou avant d'ajouter un service |
-| [`social-content`](skills/social-content/SKILL.md) | Les posts réseaux : slideshows, vidéos d'app, UGC, musique, CTA, formats gagnants |
+| [`social-content`](skills/social-content/SKILL.md) | Les posts réseaux : slideshows, vidéos d'app, vidéos de jeu, UGC, musique, CTA, formats gagnants |
+| [`seo-content`](skills/seo-content/SKILL.md) | Un article, un comparatif, le référencement un pas par jour, les citations par les IA |
+| [`product-analytics`](skills/product-analytics/SKILL.md) | Ce qu'on trace : l'onboarding, le paywall, les abonnements, l'acquisition |
+| [`beta-by-sharing`](skills/beta-by-sharing/SKILL.md) | Une fonction nouvelle sort en bêta et se diffuse par le partage |
 | [`memory-first`](skills/memory-first/SKILL.md), [`sync-memory`](skills/sync-memory/SKILL.md) | Lire et tenir à jour les leçons d'une mémoire MCP |
 | [`distill-practice`](skills/distill-practice/SKILL.md) | Chaque jour, extraire des fils ce qui a été demandé ou validé, et le ranger ici |
 

@@ -40,8 +40,18 @@ Le texte suit [`write-copy`](../write-copy/SKILL.md), les visuels suivent [`desi
 - **Elle se comprend seule**, sans le son et sans contexte.
 - **Annonce le coût total avant tout rendu payant.** Pour choisir un modèle, refais le même clip avec la même photo et la même voix, et montre-les côte à côte.
 
+## Les vidéos de jeu
+Un quiz ou un classement court, auquel on joue en regardant.
+- **L'accroche est entière dès la première image**, sur la meilleure vraie photo de l'épisode. Les mots ne s'écrivent pas au fil du temps.
+- **Un minuteur visible à chaque manche**, et au moins 3 s pour deviner. On ne raccourcit pas pour « faire nerveux » : si c'est trop long, on retire une manche.
+- **La réponse se montre une fois**, sur un seul écran, tenue au moins 1,5 s. On montre pourquoi avec une vraie donnée dessinée sur l'image.
+- **Le décompte 3-2-1 dure trois vraies secondes.**
+- **Une seule langue par épisode**, à l'écran, en légende et dans le titre.
+- **De vrais sons, pas de musique** : une ambiance réelle en continu, et quatre à six moments sonores au plus.
+- **Sur un jeu à score, la fin donne un rang** (trois paliers) et une seule demande : « dis ton rang en commentaire ».
+
 ## La musique
-Une musique populaire et locale par post : ce qu'écoute la jeunesse du lieu montré (rap, urbain, ce qui marche en ce moment), de l'underground seulement s'il est très connu, idéalement un artiste lié au lieu ou au sujet. Chaque post arrive avec son titre et le passage à prendre.
+Hors vidéos de jeu, une musique populaire et locale par post : ce qu'écoute la jeunesse du lieu montré (rap, urbain, ce qui marche en ce moment), de l'underground seulement s'il est très connu, idéalement un artiste lié au lieu ou au sujet. Chaque post arrive avec son titre et le passage à prendre.
 
 ## Un nouveau format vu ailleurs
 Un fil d'exploration autonome : il lit la source, cherche en ligne, produit ses prototypes seul, puis montre tout avant de programmer quoi que ce soit.

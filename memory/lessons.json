@@ -476,6 +476,96 @@
       "why": "Correction : le fond uni est refusé, « trop laid » ; les vraies photos ont été validées.",
       "check": "Les crédits des photos sont dans les métadonnées ; aucun fond uni.",
       "source": "playbook:app.aso/real-demo-photos · skills/app-store-optimization/SKILL.md"
+    },
+    {
+      "key": "analytics/funnel-events",
+      "topic": "analytics",
+      "rule": "Trace un parcours écran par écran : vu, puis comment il a été quitté, jamais la réponse choisie si elle est sensible. Pour un paywall : vu, offre choisie, achat lancé, annulé ou échoué, essai, conversion, renouvellement, résiliation, remboursement, chacun avec product_id et placement.",
+      "when": "quand on branche l'analytique d'un onboarding, d'un paywall ou d'un abonnement",
+      "why": "On veut savoir où les personnes s'arrêtent et ce qu'elles paient vraiment, sans tracer les personnes.",
+      "check": "Le funnel suit l'ordre réel des écrans, et un achat de test se suit du paywall au renouvellement.",
+      "source": "playbook:analytics/funnel-events · skills/product-analytics"
+    },
+    {
+      "key": "analytics/one-person",
+      "topic": "analytics",
+      "rule": "Une personne se compte une fois : un seul identifiant aléatoire par humain, de la même forme sur le site, le serveur et l'app, verrouillée par un test. Jamais d'e-mail en propriété. Une tâche sans humain a son propre acteur nommé.",
+      "when": "quand on ajoute un émetteur d'événements ou une surface (app, serveur, outil)",
+      "why": "Une forme qui change sur une seule surface dédouble les personnes sans que rien ne le dise.",
+      "check": "Une personne de test donne une seule ligne dans l'outil.",
+      "source": "playbook:analytics/one-person · skills/product-analytics"
+    },
+    {
+      "key": "analytics/acquisition",
+      "topic": "analytics",
+      "rule": "Demande « Comment nous as-tu connus ? » dans l'onboarding, et donne un lien de campagne à chaque canal. Les régies se lisent en agrégé, par une valeur de conversion qui monte avec le parcours. Jamais d'empreinte d'appareil.",
+      "when": "quand on lance un canal, une campagne ou une pub",
+      "why": "La source déclarée est le seul lien par personne pour les réseaux et le bouche-à-oreille.",
+      "check": "Chaque canal a son lien, et la question est dans l'onboarding.",
+      "source": "playbook:analytics/acquisition · skills/product-analytics"
+    },
+    {
+      "key": "seo/answer-first",
+      "topic": "seo",
+      "rule": "Un article donne la réponse dans le premier écran : un chapeau de 40 à 60 mots avec le nom du premier choix, 3 à 5 puces « l'essentiel », des réponses rapides, un seul tableau à 3 colonnes, puis le détail. Rien d'inventé, rien de provisoire.",
+      "when": "quand on écrit ou réécrit un article, un best of, un guide",
+      "why": "Google et les assistants IA extraient un bloc propre ; la personne pressée repart avec sa réponse.",
+      "check": "Le chapeau répond à la requête, et aucun fait n'est sans source.",
+      "source": "playbook:seo/answer-first · skills/seo-content"
+    },
+    {
+      "key": "seo/versus",
+      "topic": "seo",
+      "rule": "Compare d'abord par usage (la requête que les gens tapent). Un versus ne cite qu'un concurrent, jamais de page groupée, et jamais de victoire du concurrent sur une fonction qu'on prépare : « ça arrive très bientôt ».",
+      "when": "quand on écrit un comparatif, un « X vs Y » ou une page concurrent",
+      "why": "Une page groupée publiée a dû être supprimée ; une page par usage ne vieillit pas à chaque sortie d'un concurrent.",
+      "check": "Un seul concurrent dans le titre et dans le texte.",
+      "source": "playbook:seo/versus · skills/seo-content"
+    },
+    {
+      "key": "seo/one-step-a-day",
+      "topic": "seo",
+      "rule": "Chaque jour, une requête en page 2, les trois premiers résultats lus, le plus petit changement qui comble l'écart, une ligne de journal, un recontrôle 14 jours après. Une requête travaillée depuis moins de 14 jours est sautée.",
+      "when": "quand on met en place ou qu'on fait tourner le suivi du référencement",
+      "why": "Petit et régulier bat gros et rare, et Google a besoin de temps pour réévaluer une page.",
+      "check": "Le journal a une ligne par jour, avec sa date de recontrôle.",
+      "source": "playbook:seo/one-step-a-day · skills/seo-content"
+    },
+    {
+      "key": "seo/ai-citations",
+      "topic": "seo",
+      "rule": "Mesure si les assistants IA citent le produit avec un jeu de requêtes figé, posé à date fixe. Il ne change jamais ; une requête nouvelle s'ajoute avec sa date d'entrée. Les réponses perdues donnent les prochains articles.",
+      "when": "quand on demande si une IA cite le produit, ou après un lot de contenu",
+      "why": "Une requête reformulée rend deux relevés incomparables : on croit mesurer un progrès, on mesure une reformulation.",
+      "check": "Deux relevés portent les mêmes requêtes, mot pour mot.",
+      "source": "playbook:seo/ai-citations · skills/seo-content"
+    },
+    {
+      "key": "product/beta-by-sharing",
+      "topic": "product",
+      "rule": "Une fonction nouvelle sort derrière un drapeau et se diffuse par le partage : accepter un lien ou une invitation inscrit à la bêta. L'inscription vit dans ta base, le lien porte un jeton aléatoire, et aucune variable d'environnement n'ouvre une bêta.",
+      "when": "quand on crée une fonction en bêta ou un lien de partage sur une fonction fermée",
+      "why": "La bêta grandit là où la fonction sert, sans campagne ; un id seul dans le lien ouvrirait la bêta à qui sait compter.",
+      "check": "Un lien partagé inscrit un compte neuf ; un jeton faux répond comme un objet inconnu.",
+      "source": "playbook:product/beta-by-sharing · skills/beta-by-sharing"
+    },
+    {
+      "key": "work.agents/no-sequential-ids",
+      "topic": "work.agents",
+      "rule": "Jamais d'id séquentiel dans une URL visible ou partageable : un slug, un pseudo, ou un identifiant aléatoire. Un identifiant mal formé répond comme un objet inconnu.",
+      "when": "quand on crée une route, une page ou un lien de partage",
+      "why": "Un id qui se devine laisse parcourir tout le site, compter son activité et tester les droits ligne par ligne.",
+      "check": "Aucune route publique ne prend un entier de la base.",
+      "source": "playbook:work.agents/no-sequential-ids · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "social/game-video",
+      "topic": "social",
+      "rule": "Une vidéo de jeu a son accroche entière dès la première image, un minuteur visible et au moins 3 s par manche, une réponse montrée une seule fois, un décompte en vraies secondes, une seule langue et de vrais sons. Trop long : on retire une manche, pas du temps.",
+      "when": "quand on fait un quiz, un classement ou un jeu court pour les réseaux",
+      "why": "On doit pouvoir jouer en regardant : un rythme trop serré empêche de deviner.",
+      "check": "Chaque manche laisse 3 s, et la réponse n'apparaît que sur un écran.",
+      "source": "playbook:social/game-video · skills/social-content"
     }
   ]
 }
