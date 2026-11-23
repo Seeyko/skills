@@ -12,7 +12,7 @@ Les skills tiers que ce dépôt utilise, et les créateurs dont il s'inspire. Un
 | Garder le goût du propriétaire | `learn-taste`, et le format `DESIGN.md` | https://github.com/google-labs-code/design.md |
 | Un lint « anti-slop » | `install-anti-slop` (plugin Oxlint) | `dmmulroy/anti-slop` |
 | Expliquer une architecture | `pstack` de poteto, pas un homonyme | poteto |
-| SEO et citations par les IA | `seo-audit`, `ai-seo`, `programmatic-seo`, `blitz-seo`, `blog-refresher`, `seo-title-optimization` | Corey Haines, Illyism/seo-skills |
+| SEO et citations par les IA | `seo-audit`, `ai-seo`, `programmatic-seo`, `blitz-seo`, `blog-refresher`, `seo-title-optimization`, `seo-autopilot` (un pas de SEO par jour) | Corey Haines, Illyism/seo-skills |
 | Sécurité | `cloudflare-security-audit`, un audit hebdomadaire | cloudflare/security-audit-skill, trailofbits |
 | Les gros lots de sous-agents | `workflow-authoring` | Claude Code |
 | Des PR lisibles | `things-you-should-know` | marketplace Claude |
@@ -38,5 +38,7 @@ Les skills tiers que ce dépôt utilise, et les créateurs dont il s'inspire. Un
 | **revmp.studio, étude de cas Plantspace** | Le découpage des animations de série et de badges : beaucoup de temps courts, de l'impact. |
 | **César Álvarez** (X @cesaralvarezll) | Le format UGC « can't believe I was like this » (une réaction, puis la démo de l'app) et les avatars IA pour tester beaucoup de hooks. |
 | **Alysha** (X @alyshadotmd) | Les carrousels « matrice » : des personnages découpés sur deux axes. |
+| **LegWork** (studio) | Le niveau d'animation d'un parcours d'accueil : une seule caméra qui descend du plus large au plus précis. On en garde le mouvement, pas l'ambiance. |
+| Le dessin animé fait main (Cuphead) | L'âme d'une mascotte qui bouge : image par image, jamais un pantin vectoriel articulé. |
 | Le guide « How we write » du NHS | Une charte d'écriture simple et humaine. |
 | Le guide « distribution-101 » | Une base pour un plan de distribution. |

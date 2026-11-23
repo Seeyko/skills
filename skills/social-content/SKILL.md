@@ -43,6 +43,7 @@ Le texte suit [`write-copy`](../write-copy/SKILL.md), les visuels suivent [`desi
 ## Les vidéos de jeu
 Un quiz ou un classement court, auquel on joue en regardant. Tout découle de là : la personne doit comprendre le jeu à la première image, avoir le temps de jouer, et vouloir dire son résultat. Les durées ci-dessous sont celles qui ont tenu après plusieurs séries, à ajuster au format.
 - **L'accroche est entière dès la première image**, sur la meilleure vraie photo de l'épisode. Les mots ne s'écrivent pas au fil du temps.
+- **Un jeu trop facile n'est pas un jeu.** Si la réponse se devine à la première image, la série sort.
 - **Un minuteur visible à chaque manche**, et au moins 3 s pour deviner. On ne raccourcit pas pour « faire nerveux » : si c'est trop long, on retire une manche.
 - **La réponse se montre une fois**, sur un seul écran, tenue au moins 1,5 s. On montre pourquoi avec une vraie donnée dessinée sur l'image.
 - **Le décompte 3-2-1 dure trois vraies secondes.**

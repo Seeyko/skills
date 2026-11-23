@@ -11,7 +11,7 @@ Le texte suit [`write-copy`](../write-copy/SKILL.md), l'interface suit [`design-
 Le paywall demande de l'argent au moment où la personne sait pourquoi elle paierait, et sans rien lui cacher. Le reste (dur ou freemium, essai, prix) est une décision par produit, qu'on prend puis qu'on mesure.
 
 ## Les principes
-1. **La valeur d'abord, le prix ensuite.** Le paywall vient après le moment où elle a senti ce que le produit lui apporte ([`app-onboarding`](../app-onboarding/SKILL.md)). Un prix qui tombe avant est un prix refusé.
+1. **La valeur d'abord, le prix ensuite.** Le paywall vient après le moment où elle a senti ce que le produit lui apporte ([`app-onboarding`](../app-onboarding/SKILL.md)). Un prix qui tombe avant est un prix refusé. Celle qui arrive au paywall après un bon parcours veut déjà devenir la personne d'« après » ([`write-copy`](../write-copy/SKILL.md)) : le paywall n'a plus à convaincre, seulement à ne pas faire peur.
 2. **Honnête.** Le montant vraiment débité est le prix le plus visible, la date du premier paiement est écrite, annuler est simple et c'est dit. La peur du piège à abonnement est la première raison de partir : on y répond en montrant, pas en rassurant. (Les stores refusent d'ailleurs un prix « par mois » mis en avant sur une offre annuelle.)
 3. **Le bouton juste avant ne promet rien que le paywall ne donne.** Un bouton « Voir mon plan » qui ouvre un prix, c'est une confiance perdue.
 4. **Après l'achat, l'action.** L'écran suivant ouvre le premier usage, pas un tour.
