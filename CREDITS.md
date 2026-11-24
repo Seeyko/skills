@@ -17,6 +17,8 @@ Les skills tiers que ce dépôt utilise, et les créateurs dont il s'inspire. Un
 | Les gros lots de sous-agents | `workflow-authoring` | Claude Code |
 | Des PR lisibles | `things-you-should-know` | marketplace Claude |
 | La conformité App Store | une checklist d'audit avant soumission | https://github.com/mjmirza/app-store-compliance |
+| Cadrer avant d'agir | les skills de Matt Pocock, dont `grill-me` (l'agent pose ses questions avant de commencer) | https://github.com/mattpocock/skills |
+| Le questionnaire d'un onboarding | `claude-skill-app-onboarding-questionnaire` | https://github.com/adamlyttleapps/claude-skill-app-onboarding-questionnaire |
 | Générer images et avatars | le MCP fal (modèles d'images, environ 0,06 $ l'image) | https://fal.ai |
 
 ## Les créateurs
@@ -27,7 +29,8 @@ Les skills tiers que ce dépôt utilise, et les créateurs dont il s'inspire. Un
 | **Emil Kowalski** | Les détails d'interaction et d'animation. |
 | **Corey Haines** | Les marketingskills. |
 | **David Attias** (X @david_attisaas) | Le prompt « aha moment » et le « sound-off test » : compris en moins de 2 s sans le son, une transformation visible, un effort minimal, un résultat partageable, un lien au paywall. |
-| **Owen Gretzinger** (X @owengretzinger) | Son article sur une CI rapide. |
+| **Owen Gretzinger** (X @owengretzinger) | Son article sur une CI rapide (« How I made our CI 20x faster »). |
+| **Linear**, « CI bottleneck, reworked » (linear.app/now/ci-bottleneck-reworked) | Traiter la CI comme un produit : mesurer, retirer du travail avant d'ajouter des machines. |
 | **rudrank** | Le CLI `asc` pour App Store Connect. |
 | **rorkai** (github.com/rorkai/app-store-connect-cli-skills) | Les skills qui pilotent le CLI `asc`. |
 | **Kun Chen** (X @kunchenguid) | Les lots de PR automatiques : une PR en cours, les suivantes partent ensemble. |

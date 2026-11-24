@@ -45,6 +45,6 @@ Une stack de développeur solo : peu chère, auto-hébergée quand c'est simple,
 ## Les conventions de déploiement
 - Une fusion sur `main` déploie en prod. Le code d'un build envoyé au store est sur `main`.
 - Une branche `experimentation` qui se déploie seule sur une copie isolée et anonymisée de la prod, pour tester en ligne.
-- CI sur les runners auto-hébergés, workflows découpés par chemins. Une PR reste rapide (une dizaine de minutes).
+- CI sur les runners auto-hébergés, workflows découpés par chemins. Une PR reste rapide (une dizaine de minutes). La CI se traite comme un produit : on mesure sur des centaines de runs, on retire du travail (cache, doublons) avant d'ajouter des machines, et on ne desserre jamais le contrôle pour aller plus vite.
 - TestFlight : un groupe interne (toi), un groupe externe (tes proches), un lien public limité si besoin. Les proches testent pendant la review d'Apple.
 - Plusieurs comptes Apple (perso, société) peuvent cohabiter sur le Mac, chacun avec ses certificats.

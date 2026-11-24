@@ -25,6 +25,10 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées sans qu'il le demande. Quand il le demande, le niveau à atteindre est celui d'un de ses dessins de référence.
 11. **Les moments de réussite font « wow ».** C'est la seule exception au calme : voir plus bas.
 
+12. **La même chose a le même visage partout.** Une carte, une icône, une couleur par type de contenu, d'un écran à l'autre. Dans le code aussi : un seul composant.
+13. **Le contenu avant les contrôles.** Si les boutons posés sur une image la cachent, il y en a trop. On montre ce qui change, pas tout.
+14. **Ça se juge au ressenti, sur le vrai rendu.** L'agent regarde l'écran qui tourne et recommence jusqu'à ce que ce soit beau, pas jusqu'à ce que la liste soit cochée. « Presque » la référence, ce n'est pas fini. Un rendu correct mais générique est refusé : on doit reconnaître la marque.
+
 ## La méthode
 - **Une maquette jouable avant le code.** Une page HTML avec les écrans en vrai format (393 × 852 pour un iPhone), côte à côte dans une rangée qui défile à l'horizontale. Sous chaque écran, hors du cadre, des repères « Haptique », « Animation », « Navigation ». On l'essaie sur un téléphone, on la valide, puis on code. L'app suit la maquette exactement.
 - **Toujours un visuel avec une proposition** (une vidéo d'aperçu, une planche) : une description seule ne se valide pas. Un visuel validé se fusionne tout de suite.
@@ -51,6 +55,14 @@ Ce qui reste vrai dans les deux cas :
 - **On ne montre pas ce qu'on ne sait pas.** Une donnée qui peut être vieille montre son âge.
 
 Exemple : une liste de courses reliée à un assistant a fini avec un seul écran, une seule entrée (parler, photographier ou écrire) et un toucher par ligne, parce que son but était d'être la porte la plus courte vers le système. Un produit avec un autre but aurait une autre réponse.
+
+## L'attente et le mouvement
+- **Rapide, on ne montre rien.** Sous une demi-seconde, pas d'indicateur. S'il apparaît, il finit son cycle, et il est très léger : il s'affiche justement quand le réseau est mauvais.
+- **Jamais un écran faux pendant l'attente** (un écran de connexion le temps qu'on connecte). Puis un seul écran de réussite, qui dit clairement l'état.
+- **On anime l'apparition, pas le repos.** Rien ne bouge en boucle. Entre deux états, jamais de coupure : le survol, l'appui et le retour s'enchaînent.
+- **Ce qui suit le doigt ou le curseur ne rebondit pas** : on doit pouvoir viser. Le ressort est pour ce qui arrive ou repart.
+- **Sur téléphone, un site se comporte comme une app** : pas de zoom au double toucher, les zones sûres respectées, rien de fixe qui mange l'écran.
+- **Une démo montre le vrai produit**, jamais une maquette de l'interface.
 
 ## Les moments de réussite
 Une réussite (une série, une chose gagnée, la fin d'un effort) a le droit de claquer, et elle seule. Une première version qui suit les règles calmes du reste de l'app est trop molle.

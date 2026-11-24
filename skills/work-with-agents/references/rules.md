@@ -30,6 +30,9 @@
 - **Des tests qui prouvent** : e2e fullstack (build de prod, API, vraie base), intégration, golden. Pas de test unitaire : des milliers de tests verts sur un faux service ont caché des dizaines de vrais défauts, que les premiers vrais e2e ont trouvés.
 - **Jamais d'id séquentiel dans une URL** qu'une personne peut voir ou partager : un slug pour un contenu public, un pseudo pour une personne, un identifiant aléatoire pour le reste. Un id qui se devine laisse parcourir et compter tout le site. Un identifiant mal formé répond comme un objet inconnu.
 - **Le dépôt garde le code, les skills et les images que l'app embarque.** Les rendus, essais et visuels de posts vivent hors du dépôt.
+- **Une même chose, un seul code.** Un composant, un format de données, un chemin pour une règle du métier. Deux versions de la même carte ou deux façons de modérer finissent par se contredire, et chaque changement coûte double.
+- **Le diff d'une mission ne contient que la mission.** Pas de réécriture annexe, pas de dépendance ni de réglage ajoutés « au passage ».
+- **Un plan ou une doc ne se fusionne pas seul.** Ce qui est sur `main` est lu par tous les agents suivants : un plan qui n'est pas devenu du code les trompe.
 - **Pas de code mort** ni de « version 2 » : construis moins et finis-le. Git garde l'histoire.
 - **La performance est une règle** : un geste en une frame, une ouverture en moins de 100 ms, une lecture serveur en moins de 10 ms, chaque budget mesuré.
 - **Parité web et iOS** quand une app a les deux clients.
@@ -39,6 +42,11 @@
 - Un test vert doit prouver quelque chose. Si un test passe alors que la fonction manque, le test est faux.
 - **Zéro test instable** : un test instable n'est pas déterministe. Corrige sa cause, jamais de relance automatique, de délai plus long ni de skip. Un rouge se lit dans le résumé du job, sans artefact à télécharger. Un réglage de diagnostic temporaire porte sa date de fin dans le code.
 - **Une bascule de prod se répète d'abord** sur une copie, avec le retour arrière et sa garde prêts, puis se vérifie de bout en bout.
+- **La source fait foi, pas un ancien rapport.** Un vieux document, une analyse passée ou un commentaire peuvent être faux : revérifie dans le code et dans le produit qui tourne. « Inconnu » vaut mieux qu'un fait faux recopié.
+- **Vérifie de l'extérieur**, comme le verrait une personne ou un client, pas en relisant ta propre configuration.
+- **Une relecture adverse cherche à invalider** : ce qui est affirmé est-il vrai, ce qui était demandé est-il fait, et ce changement est-il vraiment nécessaire ? Plusieurs relecteurs, chacun avec un contexte neuf.
+- **Un changement risqué se livre bloc par bloc**, avec la commande de retour arrière prête avant de commencer. On ne coupe l'ancien chemin qu'une fois le nouveau prouvé.
+- **Une refonte garde le comportement** : les tests s'écrivent sur l'ancien système, puis le nouveau les passe sans qu'on y touche. Avant la bascule, cherche ce qui ferait perdre des utilisateurs ou du référencement, y compris ce que personne n'a pensé à demander.
 - Mesure avant de toucher. Corrige la cause, pas le symptôme. N'affaiblis jamais un garde-fou pour passer.
 - Ne te fie jamais à ta mémoire pour un outil, un prix ou du matériel : cherche en ligne.
 - Vérifie tes affirmations dans l'app avant de les envoyer.

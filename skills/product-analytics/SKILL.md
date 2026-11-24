@@ -14,6 +14,13 @@ Le but n'est pas un funnel « optimisé » le premier jour. C'est d'avoir les ou
 4. **À la date dite, on relit** et on garde, on retire ou on essaie autre chose. Trop peu de monde pour conclure ? On le dit, on ne conclut pas.
 5. **Ce qu'on apprend s'écrit** là où le prochain agent le lira (la doc du produit, la mémoire).
 
+## Décider avec
+- **Une idée se juge sur la part réelle des usages.** Si presque toutes les recherches visent autre chose, la fonction ne sert à rien, aussi bonne soit-elle. Pareil pour une langue ou un marché : la répartition réelle du public, pas l'intuition.
+- **Un avant et un après, simples.** Pas une usine à gaz : de quoi voir si ça s'améliore, et revenir en arrière dans un mois sinon.
+- **L'intention se mesure au clic**, pas à la fin du parcours : « je m'inscris » compte au moment où elle appuie.
+- **Un tableau de bord montre ce qui compte pour celui qui le lit**, pas tout ce qu'on sait.
+- **Un même événement suit le même chemin sur toutes les plateformes**, sinon le parcours a des trous.
+
 Les tables plus bas sont un schéma de départ, qui a servi sur plusieurs produits. Les noms comptent moins que deux choses : couvrir le parcours en entier, et garder les mêmes noms d'un produit à l'autre pour comparer.
 
 ## Compter juste

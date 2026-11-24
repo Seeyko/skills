@@ -5,6 +5,11 @@ Le but : des agents autonomes. Tu lances la tâche depuis ton téléphone ou ton
 ## Quel modèle pour quoi
 Les noms ci-dessous sont ceux d'aujourd'hui. Quand une nouvelle famille sort, garde les rôles et change les noms.
 - **Le modèle le plus fort (Fable)** analyse, cherche, relit, conçoit et **tranche** les questions ouvertes. Un premier agent écrit le besoin en termes purement fonctionnels, puis un agent Fable conçoit la solution.
+- **Le plus fort décide comment, les autres appliquent.** Un agent fort écrit la façon de faire une fois, des agents moins chers l'appliquent partout de la même manière : c'est ce qui garde un grand chantier cohérent.
+- **Une consigne de délégation est légère** : quoi faire et pourquoi. Pas d'avis technique préformé, l'agent explore et propose. Trop de contraintes et de contexte rendent un agent créatif conforme et sans surprise : donne-lui la marque, pas tes règles de code.
+- **L'avis d'un autre modèle est une entrée, pas un ordre.**
+- **Un skill garde le chemin qui marche**, pas le récit des erreurs, et des façons de ne pas se tromper plutôt que des faits écrits en dur. Il reste assez simple pour être rejoué seul.
+- **La veille fait partie du travail.** Des outils sortent chaque semaine : avant un gros chantier, cherche ce qui existe depuis le mois dernier.
 - **Opus** code, et fait les audits en parallèle (effort élevé).
 - **Sonnet** sert pour les sous-agents nombreux et répétitifs (essayer de casser une app, trier une liste).
 

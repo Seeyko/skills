@@ -29,6 +29,8 @@ Si le code, une règle ou une spec contredit la vision ou l'architecture, on s'a
 - Comment efface-t-on vraiment la donnée d'une personne ?
 
 **Les écritures et les lectures**
+- Chaque type d'objet a-t-il ses propres champs ? Ce qui est commun reste commun, sinon un champ ajouté pour un type pollue tous les autres.
+- Tout ce qui est fait se rattache-t-il à une vraie personne ? Pas de jeton personnel partagé : on doit savoir qui a fait quoi.
 - Y a-t-il un seul chemin d'écriture, avec ses droits, sa trace et son annulation ?
 - Que lit l'app : une vue déjà calculée, ou des tables qu'elle assemble ?
 - Que voit la personne hors ligne, et que devient son geste ?
@@ -43,7 +45,9 @@ Si le code, une règle ou une spec contredit la vision ou l'architecture, on s'a
 - Les assistants des gens peuvent-ils s'y brancher ? Les noms d'outils restent stables.
 
 **Le périmètre**
-- Peut-on tout faire tenir dans une seule base, sans service de plus ?
+- Peut-on tout faire tenir dans une seule base, sans service de plus ? L'option la plus simple est souvent celle qui n'ajoute aucun fournisseur.
+- Si un fournisseur tombe, que se passe-t-il ? Le code ne connaît de lui qu'une adresse et une correspondance, pour pouvoir en changer ou en avoir deux.
+- Si on repart de zéro, se limite-t-on à cause de l'existant ? Une refonte vise le plus propre, sans sur-construire. Ce qui est remplacé est supprimé, pas gardé à côté.
 - Quel est le plus petit périmètre qu'on peut finir parfaitement ? On ne découpe pas en « version 1 » et « version 2 » : on construit moins.
 - Qu'est-ce qui doit être là dès la première ligne, parce qu'on ne l'ajoute pas après ? La sécurité et le cloisonnement.
 

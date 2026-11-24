@@ -21,6 +21,7 @@ Le paywall demande de l'argent au moment où la personne sait pourquoi elle paie
 ## Les questions à te poser
 - **Qu'est-ce qu'elle a déjà reçu au moment où le prix arrive ?** Si la réponse est « rien encore », le paywall est trop tôt ou le aha manque.
 - **Dur ou freemium ?** Un paywall dur (rien sans essai ou achat) convertit bien plus quand la valeur se sent dès l'onboarding et que le produit coûte à faire tourner. Une part gratuite se défend quand la valeur vient avec l'usage répété, le réseau ou le contenu que les gens créent. Écris ton choix et sa raison.
+- **Qu'est-ce qui te coûte à chaque usage ?** Faire payer ce qui coûte (les fonctions qui appellent un modèle, par exemple) se comprend tout seul, et laisse le reste ouvert pour faire connaître le produit.
 - **Quel engagement demande le produit ?** Un résultat qui prend des semaines pousse vers l'annuel ; un besoin ponctuel vers une offre courte ou un achat unique.
 - **De quoi a-t-elle peur ?** D'oublier d'annuler, de payer pour rien, de ne pas réussir. Chaque peur a sa réponse sur l'écran (la frise de l'essai, le rappel avant le débit, le prix écrit).
 - **Qui sont tes premières utilisatrices ?** Un accès offert aux toutes premières donne les premiers avis et les premiers retours.

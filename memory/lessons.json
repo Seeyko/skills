@@ -593,6 +593,69 @@
       "why": "Chaque champ à remplir rend à la personne un travail que le système pouvait faire ; mais une confirmation ou un parcours plus long peuvent protéger ou construire la confiance. C'est le but du produit qui tranche, pas une habitude.",
       "check": "Le but de l'interface tient en une phrase, et chaque friction gardée a sa raison.",
       "source": "playbook:design/friction-is-a-choice · skills/design-interface"
+    },
+    {
+      "key": "work.agents/source-not-reports",
+      "topic": "work.agents",
+      "rule": "La source fait foi, pas un ancien rapport : revérifie dans le code et dans le produit qui tourne, de l'extérieur, comme le verrait une personne. « Inconnu » vaut mieux qu'un fait faux recopié.",
+      "when": "quand tu t'appuies sur un document, une analyse passée ou un commentaire pour affirmer quelque chose",
+      "why": "Les vieux documents et les commentaires deviennent faux sans prévenir, et une erreur recopiée détruit la confiance.",
+      "check": "Chaque affirmation du compte rendu a été vue dans le code ou dans le produit pendant cette tâche.",
+      "source": "playbook:work.agents/source-not-reports · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/adversarial-review",
+      "topic": "work.agents",
+      "rule": "Fais relire un travail important par plusieurs agents adverses au contexte neuf, qui cherchent à invalider : est-ce vrai, est-ce ce qui était demandé, est-ce vraiment nécessaire ?",
+      "when": "avant de livrer une série de correctifs, un diagnostic ou une analyse",
+      "why": "Un agent se croit sur parole ; un relecteur qui cherche la faille trouve ce que l'auteur ne voit plus.",
+      "check": "Le compte rendu dit ce que les relecteurs ont invalidé ou retiré.",
+      "source": "playbook:work.agents/adversarial-review · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/light-delegation",
+      "topic": "work.agents",
+      "rule": "Une consigne de délégation dit quoi faire et pourquoi, sans avis technique préformé. Le plus fort décide comment une fois, les autres appliquent partout pareil. Trop de contraintes rendent un agent créatif conforme.",
+      "when": "quand tu écris la consigne d'un sous-agent ou d'un autre fil",
+      "why": "Un avis préformé empêche l'agent d'explorer, et un grand chantier ne reste cohérent que si la façon de faire est décidée une seule fois.",
+      "check": "La consigne tient en quelques lignes et ne dicte pas la solution.",
+      "source": "playbook:work.agents/light-delegation · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/one-code-one-thing",
+      "topic": "work.agents",
+      "rule": "Une même chose, un seul code : un composant, un format de données, un chemin pour une règle du métier. Ce qui est remplacé est supprimé. Le diff d'une mission ne contient que la mission.",
+      "when": "quand tu ajoutes un composant, une route ou une règle qui ressemble à une autre",
+      "why": "Deux versions de la même chose finissent par se contredire, et chaque changement coûte double.",
+      "check": "Aucun doublon ajouté ; l'ancien chemin est supprimé dans la même PR.",
+      "source": "playbook:work.agents/one-code-one-thing · skills/work-with-agents"
+    },
+    {
+      "key": "design/waiting-and-motion",
+      "topic": "design",
+      "rule": "Rapide, on ne montre rien ; un indicateur qui apparaît finit son cycle. Jamais un écran faux pendant l'attente. On anime l'apparition, pas le repos, sans coupure entre deux états, et ce qui suit le doigt ne rebondit pas.",
+      "when": "quand tu conçois un chargement, une transition ou un élément qu'on déplace",
+      "why": "Un indicateur qui clignote ou un écran faux font paraître le produit lent et cassé ; un rebond sur ce qu'on tient empêche de viser.",
+      "check": "Sous une demi-seconde rien ne s'affiche, et aucun élément ne bouge en boucle au repos.",
+      "source": "playbook:design/waiting-and-motion · skills/design-interface"
+    },
+    {
+      "key": "design/felt-on-real-render",
+      "topic": "design",
+      "rule": "Juge un écran au ressenti, sur le vrai rendu, en boucle jusqu'à ce que ce soit beau. « Presque » la référence n'est pas fini. La même chose a le même visage partout, et le contenu passe avant les contrôles.",
+      "when": "quand tu livres ou relis un écran",
+      "why": "Une liste cochée ne dit pas si c'est beau, et un rendu générique ne se distingue de rien.",
+      "check": "L'agent a regardé l'écran qui tourne à côté de la référence avant de livrer.",
+      "source": "playbook:design/felt-on-real-render · skills/design-interface"
+    },
+    {
+      "key": "analytics/decide-on-real-usage",
+      "topic": "analytics",
+      "rule": "Juge une idée sur la part réelle des usages, pas sur l'intuition. Mesure l'intention au clic, garde un avant et un après simples pour pouvoir revenir en arrière, et ne montre à chacun que les chiffres qui comptent pour lui.",
+      "when": "quand tu proposes une fonction, une langue, un marché, ou que tu construis un tableau de bord",
+      "why": "Une bonne idée qui vise 5 % des usages ne sert à rien, et un tableau de bord qui montre tout ne se lit pas.",
+      "check": "La proposition cite la part d'usage mesurée, et le changement a son avant et son après.",
+      "source": "playbook:analytics/decide-on-real-usage · skills/product-analytics"
     }
   ]
 }
