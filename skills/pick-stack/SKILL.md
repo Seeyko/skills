@@ -28,7 +28,7 @@ Une stack de développeur solo : peu chère, auto-hébergée quand c'est simple,
 | Analytique, erreurs, drapeaux | PostHog (région EU), un projet pour toutes les apps d'un compte, aucune donnée de santé |
 | E-mails transactionnels | Resend |
 | IA | Anthropic (Claude) ; Mistral pour l'OCR, la vision, la modération et la dictée (Voxtral) ; fal pour les images (par MCP, un essai d'abord) |
-| Réseaux sociaux | Postiz (auto-hébergé) pour programmer ; construire en public sur X |
+| Réseaux sociaux | Une file de posts branchée en MCP (brouillon par défaut) pour programmer ; construire en public sur X |
 | Captures et vidéos App Store | Moonjar (MCP), Playwright, Cap à 60 fps pour les vidéos d'écran |
 | App Store Connect | Le CLI `asc` de rudrank, l'API (clé `.p8` dans un fichier local), le navigateur en dernier recours |
 | La mémoire des agents | Un MCP de mémoire qui garde des leçons par sujet (voir [`../../memory/`](../../memory/README.md)) |
@@ -45,6 +45,6 @@ Une stack de développeur solo : peu chère, auto-hébergée quand c'est simple,
 ## Les conventions de déploiement
 - Une fusion sur `main` déploie en prod. Le code d'un build envoyé au store est sur `main`.
 - Une branche `experimentation` qui se déploie seule sur une copie isolée et anonymisée de la prod, pour tester en ligne.
-- CI sur les runners auto-hébergés, workflows découpés par chemins. Une PR reste rapide (une dizaine de minutes).
+- CI sur les runners auto-hébergés, workflows découpés par chemins. Une PR reste rapide (une dizaine de minutes). La CI se traite comme un produit : on mesure sur des centaines de runs, on retire du travail (cache, doublons) avant d'ajouter des machines, et on ne desserre jamais le contrôle pour aller plus vite.
 - TestFlight : un groupe interne (toi), un groupe externe (tes proches), un lien public limité si besoin. Les proches testent pendant la review d'Apple.
 - Plusieurs comptes Apple (perso, société) peuvent cohabiter sur le Mac, chacun avec ses certificats.

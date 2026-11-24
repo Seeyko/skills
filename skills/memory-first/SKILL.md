@@ -5,7 +5,7 @@ description: Lire ce qu'une mémoire MCP a déjà appris sur un sujet avant de c
 
 # La mémoire d'abord
 
-Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lessons_read`, `lesson_add`, `lesson_revise`, `lesson_retire`). Les leçons renvoient au détail, dans ce playbook ou dans le dépôt du projet.
+Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lessons_read`, `lesson_add`, `lesson_revise`, `lesson_retire`). Les leçons renvoient au détail, dans ce dépôt de skills ou dans le dépôt du projet.
 
 ## Au début d'une tâche
 1. Choisis l'espace de la mémoire (s'il y en a plusieurs, celui de la personne ou du projet).
@@ -18,6 +18,10 @@ Une mémoire MCP garde des leçons courtes par sujet (des outils du type `lesson
 | `design` | tout écran, toute animation, tout visuel |
 | `social` | un post réseau, un slideshow, une vidéo d'app, un UGC |
 | `audience` | une étude d'audience, avant un onboarding, une fiche ou un site |
+| `analytics` | ce qu'on trace : un parcours, un paywall, une campagne |
+| `seo` | un article, un comparatif, le référencement, les citations par les IA |
+| `product` | une fonction nouvelle, une bêta |
+| `architecture` | un back-end, une nouvelle brique, un modèle de données |
 | `app.create` | une nouvelle app |
 | `app.onboarding` | l'onboarding, le premier lancement |
 | `app.paywall` | le paywall, les abonnements |

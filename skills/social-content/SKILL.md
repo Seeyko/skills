@@ -8,7 +8,7 @@ description: Produire les posts réseaux d'un produit (slideshows, carrousels, v
 Le texte suit [`write-copy`](../write-copy/SKILL.md), les visuels suivent [`design-interface`](../design-interface/SKILL.md).
 
 ## Le cap
-1. **Surtout des slideshows, un peu de vidéo.** Environ 70 à 90 % de carrousels photo, le reste en vidéo, le tout généré par code. Une photo native (carrousel) passe avant la vidéo d'un slideshow quand le réseau la propose.
+1. **Surtout des slideshows, un peu de vidéo.** Environ 70 à 90 % de carrousels photo, le reste en vidéo, le tout généré par code. Une vidéo apporte du vrai mouvement (l'app, une personne). Des slides montées en vidéo restent un carrousel : publie-les comme un carrousel.
 2. **Chaque post finit par un CTA** que le réseau rend possible. Sur TikTok, un lien n'est cliquable qu'en bio : dernière slide « lien en bio » ou « cherche <marque> », commentaire épinglé, réponse aux « c'est où ? ».
 3. **Trouve les formats gagnants, réseau par réseau.** Note chaque post (format, réseau, heure, son) et ses vues à J+1 et J+7. Un format qui fait deux fois la médiane deux fois de suite gagne ; trois posts sous la médiane, il perd et passe à un test par semaine.
 4. **Un lien posté porte son UTM** (`?utm_source=<réseau>`, rien d'autre), pour lire les visiteurs par réseau.
@@ -29,12 +29,30 @@ Le texte suit [`write-copy`](../write-copy/SKILL.md), les visuels suivent [`desi
 - **La voix d'une vraie personne** (« je ») seulement avec son accord, chaque fait vérifié par elle. Jamais de faux témoignage.
 
 ## Les vidéos d'app
-- **La vraie app, parfaitement fluide.** Enregistre image par image sur une horloge simulée (30 à 60 i/s). L'enregistreur vidéo par défaut d'un navigateur headless saccade.
+- **La vraie app, parfaitement fluide** (30 à 60 i/s, sans saccade).
 - **Le parcours réel, en accéléré, jusqu'à la récompense** : l'accueil, le tap, 2 ou 3 secondes de l'usage, une accélération, la récompense. Pas un défilé d'écrans.
 - **L'app en plein écran sur un fond flouté**, sans cadre ni contour de téléphone.
 
+## Les vidéos avec une personne
+- **Deux familles, toutes les deux.** La drôle : un vécu où l'on se reconnaît, le produit presque secondaire. La projection : ce qu'elle pourrait devenir, muette, un hook écrit très expressif.
+- **Naturel, pas pub.** Un selfie à la maison, la caméra un peu bougée, une voix qui hésite et qui rit, l'app en coupe franche. Pas de fond studio, de détourage propre ni de texte qui vend. Le CTA s'écrit en légende ou en commentaire épinglé, jamais à la voix.
+- **Une image de téléphone, pas de cinéma.** Pas de lumière dorée ni de ralenti. Si on voit que c'est généré, la vidéo ne sort pas.
+- **Elle se comprend seule**, sans le son et sans contexte.
+- **Annonce le coût total avant tout rendu payant.** Pour choisir un modèle, refais le même clip avec la même photo et la même voix, et montre-les côte à côte.
+
+## Les vidéos de jeu
+Un quiz ou un classement court, auquel on joue en regardant. Tout découle de là : la personne doit comprendre le jeu à la première image, avoir le temps de jouer, et vouloir dire son résultat. Les durées ci-dessous sont celles qui ont tenu après plusieurs séries, à ajuster au format.
+- **L'accroche est entière dès la première image**, sur la meilleure vraie photo de l'épisode. Les mots ne s'écrivent pas au fil du temps.
+- **Un jeu trop facile n'est pas un jeu.** Si la réponse se devine à la première image, la série sort.
+- **Un minuteur visible à chaque manche**, et au moins 3 s pour deviner. On ne raccourcit pas pour « faire nerveux » : si c'est trop long, on retire une manche.
+- **La réponse se montre une fois**, sur un seul écran, tenue au moins 1,5 s. On montre pourquoi avec une vraie donnée dessinée sur l'image.
+- **Le décompte 3-2-1 dure trois vraies secondes.**
+- **Une seule langue par épisode**, à l'écran, en légende et dans le titre.
+- **De vrais sons, pas de musique** : une ambiance réelle en continu, et quatre à six moments sonores au plus.
+- **Sur un jeu à score, la fin donne un rang** (trois paliers) et une seule demande : « dis ton rang en commentaire ».
+
 ## La musique
-Une musique populaire et locale par post : ce qu'écoute la jeunesse du lieu montré (rap, urbain, ce qui marche en ce moment), de l'underground seulement s'il est très connu, idéalement un artiste lié au lieu ou au sujet. Chaque post arrive avec son titre et le passage à prendre.
+Hors vidéos de jeu, une musique populaire et locale par post : ce qu'écoute la jeunesse du lieu montré (rap, urbain, ce qui marche en ce moment), de l'underground seulement s'il est très connu, idéalement un artiste lié au lieu ou au sujet. Chaque post arrive avec son titre et le passage à prendre.
 
 ## Un nouveau format vu ailleurs
 Un fil d'exploration autonome : il lit la source, cherche en ligne, produit ses prototypes seul, puis montre tout avant de programmer quoi que ce soit.

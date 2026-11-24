@@ -1,6 +1,6 @@
-# Agent playbook
+# Skills
 
-Une façon de construire des apps mobiles et des sites avec des agents Claude. Le dépôt est rangé comme un plugin : des **skills** (une tâche chacun, avec ses `references/`), des **agents** prêts à lancer, des **modèles** de départ et des **leçons** courtes pour une mémoire. Il se suffit à lui-même : clone-le et utilise-le tel quel.
+Des skills pour construire des apps mobiles et des sites avec des agents Claude. Le dépôt est rangé comme un plugin : des **skills** (une tâche chacun, avec ses `references/`), des **agents** prêts à lancer, des **modèles** de départ et des **leçons** courtes pour une mémoire. Il se suffit à lui-même : clone-le et utilise-le tel quel.
 
 ## Pour démarrer
 1. Copie les skills et les agents qui te servent dans le `.claude/` de ton projet, ou ajoute ce dépôt comme source de skills.
@@ -18,8 +18,12 @@ Une façon de construire des apps mobiles et des sites avec des agents Claude. L
 | [`write-copy`](skills/write-copy/SKILL.md) | Tout texte qu'une personne lira : la règle des 75 %, les mots de la personne, les promesses |
 | [`design-interface`](skills/design-interface/SKILL.md) | Tout écran, toute animation, tout visuel |
 | [`audience-study`](skills/audience-study/SKILL.md) | Avant d'écrire pour quelqu'un : un produit, un onboarding, une fiche, un site |
+| [`design-backend`](skills/design-backend/SKILL.md) | Avant d'écrire un back-end ou une nouvelle brique : la vision, les questions, un document court, un go |
 | [`pick-stack`](skills/pick-stack/SKILL.md) | Au démarrage d'un projet, ou avant d'ajouter un service |
-| [`social-content`](skills/social-content/SKILL.md) | Les posts réseaux : slideshows, vidéos d'app, UGC, musique, CTA, formats gagnants |
+| [`social-content`](skills/social-content/SKILL.md) | Les posts réseaux : slideshows, vidéos d'app, vidéos de jeu, UGC, musique, CTA, formats gagnants |
+| [`seo-content`](skills/seo-content/SKILL.md) | Un article, un comparatif, le référencement un pas par jour, les citations par les IA |
+| [`product-analytics`](skills/product-analytics/SKILL.md) | Ce qu'on trace : l'onboarding, le paywall, les abonnements, l'acquisition |
+| [`beta-by-sharing`](skills/beta-by-sharing/SKILL.md) | Une fonction nouvelle sort en bêta et se diffuse par le partage |
 | [`memory-first`](skills/memory-first/SKILL.md), [`sync-memory`](skills/sync-memory/SKILL.md) | Lire et tenir à jour les leçons d'une mémoire MCP |
 | [`distill-practice`](skills/distill-practice/SKILL.md) | Chaque jour, extraire des fils ce qui a été demandé ou validé, et le ranger ici |
 
@@ -42,7 +46,8 @@ Une façon de construire des apps mobiles et des sites avec des agents Claude. L
 - [`memory/`](memory/README.md) : les leçons courtes, une par règle, qui renvoient au skill.
 - [`CREDITS.md`](CREDITS.md) : les skills tiers et les créateurs.
 
-## Améliorer le playbook
+## Améliorer ces skills
+0. Vérifie que la règle a sa place ici : un savoir de métier qui dure, pas un contournement d'aujourd'hui ni la suite d'un incident ([`distill-practice`](skills/distill-practice/SKILL.md), « Ce qui mérite d'entrer »).
 1. Écris la règle dans le skill du sujet, avec sa raison. Une règle qui vaut partout va dans un skill général, pas dans celui d'une étape.
 2. Dans la même PR, ajoute, change ou retire la leçon qui correspond dans [`memory/lessons.json`](memory/lessons.json). `python3 scripts/check-lessons.py` vérifie le fichier (aussi en CI).
 3. Après la fusion, lance [`sync-memory`](skills/sync-memory/SKILL.md).

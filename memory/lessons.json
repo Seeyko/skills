@@ -154,6 +154,15 @@
       "source": "playbook:audience/study-first · skills/audience-study"
     },
     {
+      "key": "audience/precise-not-micro-niche",
+      "topic": "audience",
+      "rule": "Choisis un cœur de cible précis, mais pas une micro-niche : un segment où beaucoup de gens ont le problème. Dis sur quoi tu t'appuies pour le croire.",
+      "when": "quand tu désignes le cœur de cible d'un produit ou d'une campagne",
+      "why": "Une cible trop large ne parle à personne, une cible trop étroite ne fait pas vivre le produit.",
+      "check": "L'étude nomme le cœur de cible et ce qui montre que beaucoup de gens ont son problème.",
+      "source": "playbook:audience/precise-not-micro-niche · skills/audience-study"
+    },
+    {
       "key": "app.create/playbook",
       "topic": "app.create",
       "rule": "Pour une nouvelle app, suis le skill new-mobile-app : une maquette d'abord, une conception courte puis un go, l'étude d'audience, l'onboarding avec app-onboarding, le paywall avec app-paywall, la fiche avec app-store-optimization, TestFlight aux proches pendant la review.",
@@ -167,44 +176,44 @@
       "topic": "app.onboarding",
       "rule": "Lis en entier le skill app-onboarding et son étude de cas avant de concevoir ou de changer un onboarding. Il renvoie à write-copy, design-interface et app-paywall pour le texte, l'interface et le paywall.",
       "when": "avant de concevoir, écrire ou changer un onboarding ou un premier lancement",
-      "why": "Le skill porte la séquence, le aha et ce qui a déjà été refusé ; sans lui, on refait un onboarding trop long.",
-      "check": "La conception cite l'étude d'audience, le moment aha choisi et la séquence du skill.",
+      "why": "Le skill porte les principes, les questions à se poser et ce qui a déjà été refusé ; sans lui, on recopie une séquence au lieu de la décider.",
+      "check": "La conception cite l'étude d'audience, le moment aha en une phrase et la raison de la longueur choisie.",
       "source": "playbook:app.onboarding/read-skill · skills/app-onboarding"
     },
     {
       "key": "app.onboarding/aha-early",
       "topic": "app.onboarding",
-      "rule": "Fais vivre le moment aha au 3e écran au plus tard, avant toute question longue. Il marche partout, en moins d'une minute, sans le son : compris en moins de 2 s, une transformation visible, un effort minimal. Le geste est petit, la fête est grande.",
-      "when": "quand on ordonne les écrans d'un onboarding",
+      "rule": "Construis l'onboarding autour d'un moment aha qui fait « waouh » : le plus petit geste qui fait sentir la valeur, avec un vrai résultat. Le paiement vient après. La longueur avant le aha se décide : qui arrive, et ce qu'il faut au produit pour que ce moment marche. Le geste est petit, la fête est grande.",
+      "when": "quand on conçoit ou ordonne un onboarding",
       "why": "Personne ne retient les fonctions montrées à l'accueil ; la valeur se sent, elle ne s'explique pas (Chris Raroque, sound-off test de David Attias).",
-      "check": "Le aha est au 3e écran au plus tard, et se comprend son coupé.",
+      "check": "Le moment aha tient en une phrase, arrive avant le paiement, et la longueur du parcours est justifiée par écrit.",
       "source": "playbook:app.onboarding/aha-early · skills/app-onboarding"
     },
     {
       "key": "app.onboarding/after-paywall",
       "topic": "app.onboarding",
-      "rule": "Après le paywall, ouvre vraiment l'usage (« Ma première séance »), sinon programme un seul rappel choisi selon l'heure (après 17 h, demain). Le tour complet vit dans l'app. Le compte arrive le plus tard possible, « Continuer avec Apple » d'abord.",
+      "rule": "L'onboarding finit quand la personne a fait une première action qui lui apporte de la valeur, pas au dernier écran. Après le paiement, le bouton ouvre vraiment l'usage. Le tour complet vit dans le produit. Le compte et les permissions se demandent au moment où elle comprend à quoi ils servent, le plus tard possible.",
       "when": "quand on conçoit la fin d'un onboarding",
       "why": "Personne ne retient un tour ; repousser l'inscription garde plus de monde (Duolingo, environ +20 %).",
-      "check": "La dernière action ouvre l'usage ; aucun compte n'est demandé avant la fin.",
+      "check": "La dernière action ouvre l'usage ; rien n'est demandé avant d'avoir servi.",
       "source": "playbook:app.onboarding/after-paywall · skills/app-onboarding"
     },
     {
       "key": "app.onboarding/measure",
       "topic": "app.onboarding",
-      "rule": "Pose onboarding_step_completed (step, action) à chaque écran et onboarding_completed à la fin, puis un funnel dans l'ordre réel des étapes, remis à jour quand l'ordre change. Une réponse qui est une donnée de santé ne part pas.",
+      "rule": "Mesure chaque étape d'un onboarding (vue, puis comment elle a été quittée) et pose une date pour relire les chiffres. Le funnel suit l'ordre réel des étapes. Une réponse sensible ne part pas.",
       "when": "quand on livre ou réordonne un onboarding",
-      "why": "L'analytique décide de la suite de l'onboarding.",
-      "check": "Le funnel existe et ses propriétés n'ont rien de médical.",
+      "why": "La bonne longueur et le bon ordre ne se devinent pas : on livre au mieux, puis les chiffres tranchent.",
+      "check": "Le funnel existe, suit l'ordre réel, et une date de relecture est posée.",
       "source": "playbook:app.onboarding/measure · skills/app-onboarding"
     },
     {
       "key": "app.paywall/honest-hard-paywall",
       "topic": "app.paywall",
-      "rule": "Termine l'onboarding par un paywall dur et honnête, sans croix ni freemium : l'annuel présélectionné avec 7 jours d'essai, le mensuel sans essai, une frise qui dit quand on prévient et quand on débite, le prix après l'essai écrit sous le bouton. Des codes à vie pour les premières utilisatrices.",
+      "rule": "Le prix arrive après la valeur, et rien n'est caché : le montant débité est le plus visible, la date du premier paiement est écrite, annuler est simple. Dur ou freemium, essai, offres : c'est un choix par produit, écrit avec sa raison, puis testé. Juge sur ce que les gens paient après l'essai, pas sur les débuts d'essai.",
       "when": "quand on conçoit ou change le paywall d'une app payante",
-      "why": "Le paywall dur convertit bien plus que le freemium (RevenueCat), et la frise répond à la peur du piège à abonnement.",
-      "check": "Le paywall montre l'annuel sélectionné, l'essai, la frise et le prix ; Restaurer et J'ai un code sont là.",
+      "why": "On paie pour garder ce qu'on vient de vivre, et la peur du piège à abonnement est la première raison de partir. Un paywall dur convertit plus quand la valeur se sent dès l'onboarding ; une part gratuite se défend quand la valeur vient avec l'usage.",
+      "check": "Le choix du modèle est écrit avec sa raison ; le prix débité, la date et l'annulation se lisent sans chercher.",
       "source": "playbook:app.paywall/honest-hard-paywall · skills/app-paywall"
     },
     {
@@ -282,7 +291,7 @@
     {
       "key": "social/app-video",
       "topic": "social",
-      "rule": "Une vidéo d'app montre la vraie app, parfaitement fluide (enregistrée image par image sur une horloge simulée), en plein écran sur un fond flouté, sans cadre de téléphone. Pour un post : le parcours réel en accéléré jusqu'à la récompense.",
+      "rule": "Une vidéo d'app montre la vraie app, parfaitement fluide, en plein écran sur un fond flouté, sans cadre de téléphone. Pour un post : le parcours réel en accéléré jusqu'à la récompense.",
       "when": "quand on fait une démo, une vidéo réseau ou une vidéo de PR d'une app",
       "why": "Une démo qui saccade ou un cadre de téléphone font amateur au premier regard.",
       "check": "La vidéo tient 30 à 60 i/s sans saccade et l'app remplit la hauteur.",
@@ -318,7 +327,7 @@
     {
       "key": "app.create/compliance-audit",
       "topic": "app.create",
-      "rule": "Avant chaque soumission, audite toutes les apps du compte avec une checklist de conformité publique : prix facturé visible, PrivacyInfo.xcprivacy par app, lien de confidentialité dans l'app, IA tierce nommée et acceptée avant le premier envoi, conditions d'abonnement dans la description.",
+      "rule": "Avant chaque soumission, audite toutes les apps du compte avec une checklist de conformité publique : prix facturé visible, PrivacyInfo.xcprivacy par app, lien de confidentialité dans l'app, IA tierce nommée et acceptée avant le premier envoi (une ligne à la connexion avec un lien, jamais une alerte), conditions d'abonnement dans la description, qui dit qu'un achat est requis (2.3.2).",
       "when": "avant un envoi en review App Store",
       "why": "Ce qu'Apple vérifie se voit dans le code, et une règle ratée sur une app l'est souvent sur les autres.",
       "check": "Chaque app a son rapport d'audit avant la soumission.",
@@ -363,11 +372,308 @@
     {
       "key": "work.agents/distill-daily",
       "topic": "work.agents",
-      "rule": "Une routine quotidienne relit les fils, les PR et les règles changées depuis le dernier passage, garde ce que l'humain a demandé, partagé ou validé, et le range dans le skill général du sujet (une PR qui s'enrichit) ou dans la mémoire si c'est personnel.",
+      "rule": "Une routine quotidienne relit les fils, les PR et les règles changées depuis le dernier passage. Elle garde seulement un savoir de métier qui dure (produit, marketing, texte, design, code, architecture), validé par l'humain : pas un contournement des limites d'un modèle ou d'un outil, pas la tuyauterie, pas la suite d'un seul incident. Dans le doute, elle n'ajoute rien.",
       "when": "pour garder la façon de travailler à jour sans le demander",
-      "why": "Ce qui est appris dans un fil se perd s'il n'est pas rangé.",
-      "check": "Chaque règle ajoutée cite un signal de validation dans le journal.",
+      "why": "Ce qui est appris dans un fil se perd s'il n'est pas rangé, et une règle faible pollue chaque tâche qui la lit.",
+      "check": "Chaque règle ajoutée cite un signal de validation et passe les quatre questions du skill ; le journal dit ce qui a été jeté.",
       "source": "playbook:work.agents/distill-daily · skills/distill-practice"
+    },
+    {
+      "key": "work.agents/human-input-only",
+      "topic": "work.agents",
+      "rule": "Ne garde comme règle que ce qui vient d'un humain : ce qu'il a dit, corrigé ou choisi, un article ou un skill qu'il a partagé. Jette ce qu'un agent a trouvé seul.",
+      "when": "quand tu décides si une pratique mérite d'entrer dans un skill",
+      "why": "Ce qu'un agent trouve seul, le prochain modèle le refera pareil ou mieux. Ce qui fait la qualité, c'est ce que l'humain apporte.",
+      "check": "Chaque règle ajoutée se rattache à une parole, une correction ou une source partagée par un humain.",
+      "source": "playbook:work.agents/human-input-only · skills/distill-practice"
+    },
+    {
+      "key": "social/person-video",
+      "topic": "social",
+      "rule": "Une vidéo avec une personne fait vrai : selfie à la maison, voix qui hésite, app en coupe franche, CTA écrit en légende. Une image de téléphone, pas de cinéma : si on voit que c'est généré, elle ne sort pas. Fais les deux familles : la drôle et la projection.",
+      "when": "quand on produit une vidéo UGC ou avatar pour un produit",
+      "why": "Une version studio « fait trop pub », et une vidéo qui se voit générée perd la confiance tout de suite.",
+      "check": "La vidéo se comprend sans le son, et personne ne dit qu'elle fait pub ou IA.",
+      "source": "playbook:social/person-video · skills/social-content"
+    },
+    {
+      "key": "social/cost-first",
+      "topic": "social",
+      "rule": "Annonce le coût total avant tout rendu vidéo payant ; compare deux modèles sur le même clip, même photo, même voix, côte à côte.",
+      "when": "avant de lancer une génération vidéo ou voix payante",
+      "why": "L'humain veut savoir ce que ça coûte avant, et choisir sur pièce.",
+      "check": "Le message de lancement donne le coût ; le choix de modèle s'appuie sur un côte à côte.",
+      "source": "playbook:social/cost-first · skills/social-content"
+    },
+    {
+      "key": "design/collection-visible",
+      "topic": "design",
+      "rule": "La progression se voit sans chiffre : gagné en couleur, 2 ou 3 suivants en esquisse, le reste derrière un dézoom ; une chose nouvelle a son mini-tuto puis sa fête.",
+      "when": "quand on dessine une récompense, un carnet, un déblocage",
+      "why": "Une récompense pas encore coloriée n'a pas été comprise ; l'envie de débloquer fait revenir.",
+      "check": "Une testeuse dit ce qu'elle a et ce qui vient, sans explication.",
+      "source": "playbook:design/collection-visible · skills/design-interface"
+    },
+    {
+      "key": "app.create/consent-line",
+      "topic": "app.create",
+      "rule": "L'accord pour une IA tierce tient en une ligne courte à la connexion, avec un lien vers la page de confidentialité qui la nomme. Jamais une alerte avant un geste, jamais toute l'explication à l'écran.",
+      "when": "quand une app envoie des données à un service tiers (IA, transcription, vision)",
+      "why": "Une alerte avant le geste a été refusée net, puis le détail à l'écran jugé « too much » ; la ligne avec un lien a été validée.",
+      "check": "L'écran de connexion montre une ligne et un lien ; la page liée nomme le service et ce qu'il reçoit.",
+      "source": "playbook:app.create/consent-line · skills/new-mobile-app"
+    },
+    {
+      "key": "work.agents/assets-out-of-repo",
+      "topic": "work.agents",
+      "rule": "Le dépôt garde le code, les skills et les images que l'app embarque ; les rendus, essais et visuels de posts vivent hors du dépôt.",
+      "when": "avant de committer des images générées",
+      "why": "Le code source ne doit contenir que le code et les skills.",
+      "check": "git status ne montre aucun rendu de post ni essai.",
+      "source": "playbook:work.agents/assets-out-of-repo · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/zero-flaky",
+      "topic": "work.agents",
+      "rule": "Zéro test instable : corrige sa cause, jamais de relance automatique, de délai plus long ni de skip. Un rouge se lit dans le résumé du job. Un réglage de diagnostic temporaire porte sa date de fin dans le code.",
+      "when": "quand un test passe et échoue sans changement",
+      "why": "« Un test instable n'est pas un test déterministe. »",
+      "check": "Le test passe dix fois de suite et casse quand on casse le produit.",
+      "source": "playbook:work.agents/zero-flaky · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/merged-is-shipped",
+      "topic": "work.agents",
+      "rule": "Une fonction est livrée quand sa PR est fusionnée : l'agent qui l'a ouverte la fusionne dès qu'elle est verte, sans la confier à un autre ; au début d'une tâche, liste les PR ouvertes et fusionne ou ferme les anciennes.",
+      "when": "quand une PR est verte, et au début de chaque tâche",
+      "why": "Une PR confiée à un autre est restée ouverte 13 jours ; l'humain la croyait en ligne.",
+      "check": "Aucune PR verte de plus d'un jour sans verdict.",
+      "source": "playbook:work.agents/merged-is-shipped · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/prod-switch",
+      "topic": "work.agents",
+      "rule": "Une bascule de prod se répète d'abord sur une copie, avec le retour arrière et sa garde prêts, puis se vérifie de bout en bout.",
+      "when": "avant une migration de base, un changement de version ou d'hébergeur en prod",
+      "why": "« Faut tout full tester et prévoir rollback. »",
+      "check": "Le journal de la répétition et le retour arrière testé sont dans la PR.",
+      "source": "playbook:work.agents/prod-switch · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "work.agents/broadcast-rules",
+      "topic": "work.agents",
+      "rule": "Une consigne nouvelle part à tous les agents qu'elle touche, tâches planifiées comprises.",
+      "when": "quand l'humain change une règle qui touche plusieurs agents ou routines",
+      "why": "Une routine qui garde l'ancien texte refait l'ancienne erreur chaque jour.",
+      "check": "Chaque tâche planifiée concernée porte le nouveau texte.",
+      "source": "playbook:work.agents/broadcast-rules · skills/work-with-agents/references/orchestration.md"
+    },
+    {
+      "key": "work.agents/release-by-ci",
+      "topic": "work.agents",
+      "rule": "Une version se publie par la CI de main, jamais à la main depuis une branche ou une session.",
+      "when": "quand on publie un paquet, un registre, une CLI ou un serveur MCP",
+      "why": "Demande de l'humain : « c'est la CI sur main qui publie, comme pour la CLI ».",
+      "check": "Le workflow de publication part d'un push sur main ; aucune commande de publication dans le fil.",
+      "source": "playbook:work.agents/release-by-ci · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "app.aso/animated-header",
+      "topic": "app.aso",
+      "rule": "Anime l'en-tête et l'image de recherche (scène dessinée image par image, encodée en vidéo) et montre-les avant l'envoi.",
+      "when": "quand on prépare l'en-tête ou l'image de recherche d'une fiche App Store",
+      "why": "Validé : « la recherche animée, c'est une masterclass ».",
+      "check": "Les deux placements portent une vidéo validée par l'auteur.",
+      "source": "playbook:app.aso/animated-header · skills/app-store-optimization/SKILL.md"
+    },
+    {
+      "key": "app.aso/real-demo-photos",
+      "topic": "app.aso",
+      "rule": "Les captures ont un décor stylé, jamais un fond uni, et de vraies photos libres d'usage commercial, créditées, jamais le contenu d'un compte réel.",
+      "when": "quand on génère les captures d'une fiche",
+      "why": "Correction : le fond uni est refusé, « trop laid » ; les vraies photos ont été validées.",
+      "check": "Les crédits des photos sont dans les métadonnées ; aucun fond uni.",
+      "source": "playbook:app.aso/real-demo-photos · skills/app-store-optimization/SKILL.md"
+    },
+    {
+      "key": "analytics/funnel-events",
+      "topic": "analytics",
+      "rule": "Branche la mesure avant la première vraie utilisatrice, pour que les choix se fassent sur des chiffres : chaque parcours qui compte est tracé étape par étape, chaque changement est un pari écrit (ce qu'on change, le chiffre attendu, la date de relecture), et un agent peut lire les résultats seul. Pour un abonnement, couvre le cycle entier, de l'écran de prix au renouvellement et au départ.",
+      "when": "quand on branche l'analytique d'un produit, ou qu'on change un onboarding, un prix ou un parcours",
+      "why": "Sans mesure, chaque choix de produit reste une opinion. Avec, un agent peut tester, relire une semaine après et garder ce qui gagne.",
+      "check": "Un agent lit les chiffres seul ; chaque changement en cours a son chiffre attendu et sa date de relecture.",
+      "source": "playbook:analytics/funnel-events · skills/product-analytics"
+    },
+    {
+      "key": "analytics/one-person",
+      "topic": "analytics",
+      "rule": "Une personne se compte une fois : un seul identifiant aléatoire par humain, de la même forme sur le site, le serveur et l'app, verrouillée par un test. Jamais d'e-mail en propriété. Une tâche sans humain a son propre acteur nommé.",
+      "when": "quand on ajoute un émetteur d'événements ou une surface (app, serveur, outil)",
+      "why": "Une forme qui change sur une seule surface dédouble les personnes sans que rien ne le dise.",
+      "check": "Une personne de test donne une seule ligne dans l'outil.",
+      "source": "playbook:analytics/one-person · skills/product-analytics"
+    },
+    {
+      "key": "analytics/acquisition",
+      "topic": "analytics",
+      "rule": "Demande « Comment nous as-tu connus ? » dans l'onboarding, et donne un lien de campagne à chaque canal. Les régies se lisent en agrégé, par une valeur de conversion qui monte avec le parcours. Jamais d'empreinte d'appareil.",
+      "when": "quand on lance un canal, une campagne ou une pub",
+      "why": "La source déclarée est le seul lien par personne pour les réseaux et le bouche-à-oreille.",
+      "check": "Chaque canal a son lien, et la question est dans l'onboarding.",
+      "source": "playbook:analytics/acquisition · skills/product-analytics"
+    },
+    {
+      "key": "seo/answer-first",
+      "topic": "seo",
+      "rule": "Un article donne la réponse dans le premier écran : un chapeau de 40 à 60 mots avec le nom du premier choix, 3 à 5 puces « l'essentiel », des réponses rapides, un seul tableau à 3 colonnes, puis le détail. Rien d'inventé, rien de provisoire.",
+      "when": "quand on écrit ou réécrit un article, un best of, un guide",
+      "why": "Google et les assistants IA extraient un bloc propre ; la personne pressée repart avec sa réponse.",
+      "check": "Le chapeau répond à la requête, et aucun fait n'est sans source.",
+      "source": "playbook:seo/answer-first · skills/seo-content"
+    },
+    {
+      "key": "seo/versus",
+      "topic": "seo",
+      "rule": "Compare d'abord par usage (la requête que les gens tapent). Un versus ne cite qu'un concurrent, jamais de page groupée, et jamais de victoire du concurrent sur une fonction qu'on prépare : « ça arrive très bientôt ».",
+      "when": "quand on écrit un comparatif, un « X vs Y » ou une page concurrent",
+      "why": "Une page groupée publiée a dû être supprimée ; une page par usage ne vieillit pas à chaque sortie d'un concurrent.",
+      "check": "Un seul concurrent dans le titre et dans le texte.",
+      "source": "playbook:seo/versus · skills/seo-content"
+    },
+    {
+      "key": "seo/one-step-a-day",
+      "topic": "seo",
+      "rule": "Chaque jour, une requête en page 2, les trois premiers résultats lus, le plus petit changement qui comble l'écart, une ligne de journal, un recontrôle 14 jours après. Une requête travaillée depuis moins de 14 jours est sautée.",
+      "when": "quand on met en place ou qu'on fait tourner le suivi du référencement",
+      "why": "Petit et régulier bat gros et rare, et Google a besoin de temps pour réévaluer une page.",
+      "check": "Le journal a une ligne par jour, avec sa date de recontrôle.",
+      "source": "playbook:seo/one-step-a-day · skills/seo-content"
+    },
+    {
+      "key": "seo/ai-citations",
+      "topic": "seo",
+      "rule": "Mesure si les assistants IA citent le produit avec un jeu de requêtes figé, posé à date fixe. Il ne change jamais ; une requête nouvelle s'ajoute avec sa date d'entrée. Les réponses perdues donnent les prochains articles.",
+      "when": "quand on demande si une IA cite le produit, ou après un lot de contenu",
+      "why": "Une requête reformulée rend deux relevés incomparables : on croit mesurer un progrès, on mesure une reformulation.",
+      "check": "Deux relevés portent les mêmes requêtes, mot pour mot.",
+      "source": "playbook:seo/ai-citations · skills/seo-content"
+    },
+    {
+      "key": "product/beta-by-sharing",
+      "topic": "product",
+      "rule": "Sors une fonction nouvelle pour quelques personnes et laisse-la se diffuser par le partage : recevoir un lien ou une invitation ouvre l'accès, et celle qui reçoit peut partager à son tour. Pas pour ce qui n'a rien à partager ni pour ce que tout le monde doit avoir le même jour.",
+      "when": "quand on crée une fonction en bêta ou un lien de partage sur une fonction fermée",
+      "why": "Les gens ne partagent que ce qui leur sert : la bêta grandit là où la fonction est utile, sa vitesse est déjà une mesure, et un défaut touche peu de monde.",
+      "check": "Un lien partagé ouvre l'accès à un compte neuf, qui peut partager à son tour ; un lien faux n'ouvre rien.",
+      "source": "playbook:product/beta-by-sharing · skills/beta-by-sharing"
+    },
+    {
+      "key": "work.agents/no-sequential-ids",
+      "topic": "work.agents",
+      "rule": "Jamais d'id séquentiel dans une URL visible ou partageable : un slug, un pseudo, ou un identifiant aléatoire. Un identifiant mal formé répond comme un objet inconnu.",
+      "when": "quand on crée une route, une page ou un lien de partage",
+      "why": "Un id qui se devine laisse parcourir tout le site, compter son activité et tester les droits ligne par ligne.",
+      "check": "Aucune route publique ne prend un entier de la base.",
+      "source": "playbook:work.agents/no-sequential-ids · skills/work-with-agents/references/rules.md"
+    },
+    {
+      "key": "social/game-video",
+      "topic": "social",
+      "rule": "Une vidéo de jeu a son accroche entière dès la première image, un minuteur visible et au moins 3 s par manche, une réponse montrée une seule fois, un décompte en vraies secondes, une seule langue et de vrais sons. Trop long : on retire une manche, pas du temps.",
+      "when": "quand on fait un quiz, un classement ou un jeu court pour les réseaux",
+      "why": "On doit pouvoir jouer en regardant : un rythme trop serré empêche de deviner.",
+      "check": "Chaque manche laisse 3 s, et la réponse n'apparaît que sur un écran.",
+      "source": "playbook:social/game-video · skills/social-content"
+    },
+    {
+      "key": "architecture/questions-first",
+      "topic": "architecture",
+      "rule": "Avant d'écrire un back-end ou une nouvelle brique, écris la vision en une page avec le propriétaire, puis un document court : ce qui est la vérité et ce qui est un cache, un seul chemin d'écriture, ce que lit l'app, les budgets en millisecondes, les menaces et leurs parades. Les questions ouvertes ont chacune une recommandation. Pas de code avant le go.",
+      "when": "au démarrage d'un back-end, avant une table, un service, un agent ou une dépendance",
+      "why": "Le code va vite ; une mauvaise forme de la donnée coûte cher à défaire.",
+      "check": "Le document existe, dit pourquoi ce modèle et ce qui a été écarté, et le go est écrit.",
+      "source": "playbook:architecture/questions-first · skills/design-backend"
+    },
+    {
+      "key": "architecture/ai-guardrails",
+      "topic": "architecture",
+      "rule": "Le chemin d'un geste n'appelle jamais un modèle : on répond tout de suite, le résultat arrive après. Une exécution n'a jamais ensemble des données privées, du contenu venu d'ailleurs et une sortie vers l'extérieur. Une valeur inconnue s'affiche « inconnue », jamais inventée. Un modèle se choisit par un test sur de vraies phrases.",
+      "when": "quand un produit appelle un modèle ou donne des outils à un agent",
+      "why": "Un modèle est lent, se trompe et obéit à ce qu'il lit.",
+      "check": "Aucun geste n'attend un modèle, et aucun agent n'a les trois à la fois.",
+      "source": "playbook:architecture/ai-guardrails · skills/design-backend"
+    },
+    {
+      "key": "design/friction-is-a-choice",
+      "topic": "design",
+      "rule": "Avant de dessiner, écris à quoi sert l'interface de ce produit : la quantité d'écrans, de champs et de boutons en découle. Quand le produit est une porte vers un système qui comprend (assistant, agents), vise le moins de friction : la personne dit, le système range, l'écran montre ce qui lui sert. Garde de la friction, exprès, là où elle protège ou engage.",
+      "when": "quand on conçoit un produit, un écran ou un bouton de plus",
+      "why": "Chaque champ à remplir rend à la personne un travail que le système pouvait faire ; mais une confirmation ou un parcours plus long peuvent protéger ou construire la confiance. C'est le but du produit qui tranche, pas une habitude.",
+      "check": "Le but de l'interface tient en une phrase, et chaque friction gardée a sa raison.",
+      "source": "playbook:design/friction-is-a-choice · skills/design-interface"
+    },
+    {
+      "key": "work.agents/source-not-reports",
+      "topic": "work.agents",
+      "rule": "La source fait foi, pas un ancien rapport : revérifie dans le code et dans le produit qui tourne, de l'extérieur, comme le verrait une personne. « Inconnu » vaut mieux qu'un fait faux recopié.",
+      "when": "quand tu t'appuies sur un document, une analyse passée ou un commentaire pour affirmer quelque chose",
+      "why": "Les vieux documents et les commentaires deviennent faux sans prévenir, et une erreur recopiée détruit la confiance.",
+      "check": "Chaque affirmation du compte rendu a été vue dans le code ou dans le produit pendant cette tâche.",
+      "source": "playbook:work.agents/source-not-reports · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/adversarial-review",
+      "topic": "work.agents",
+      "rule": "Fais relire un travail important par plusieurs agents adverses au contexte neuf, qui cherchent à invalider : est-ce vrai, est-ce ce qui était demandé, est-ce vraiment nécessaire ?",
+      "when": "avant de livrer une série de correctifs, un diagnostic ou une analyse",
+      "why": "Un agent se croit sur parole ; un relecteur qui cherche la faille trouve ce que l'auteur ne voit plus.",
+      "check": "Le compte rendu dit ce que les relecteurs ont invalidé ou retiré.",
+      "source": "playbook:work.agents/adversarial-review · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/light-delegation",
+      "topic": "work.agents",
+      "rule": "Une consigne de délégation dit quoi faire et pourquoi, sans avis technique préformé. Le plus fort décide comment une fois, les autres appliquent partout pareil. Trop de contraintes rendent un agent créatif conforme.",
+      "when": "quand tu écris la consigne d'un sous-agent ou d'un autre fil",
+      "why": "Un avis préformé empêche l'agent d'explorer, et un grand chantier ne reste cohérent que si la façon de faire est décidée une seule fois.",
+      "check": "La consigne tient en quelques lignes et ne dicte pas la solution.",
+      "source": "playbook:work.agents/light-delegation · skills/work-with-agents"
+    },
+    {
+      "key": "work.agents/one-code-one-thing",
+      "topic": "work.agents",
+      "rule": "Une même chose, un seul code : un composant, un format de données, un chemin pour une règle du métier. Ce qui est remplacé est supprimé. Le diff d'une mission ne contient que la mission.",
+      "when": "quand tu ajoutes un composant, une route ou une règle qui ressemble à une autre",
+      "why": "Deux versions de la même chose finissent par se contredire, et chaque changement coûte double.",
+      "check": "Aucun doublon ajouté ; l'ancien chemin est supprimé dans la même PR.",
+      "source": "playbook:work.agents/one-code-one-thing · skills/work-with-agents"
+    },
+    {
+      "key": "design/waiting-and-motion",
+      "topic": "design",
+      "rule": "Rapide, on ne montre rien ; un indicateur qui apparaît finit son cycle. Jamais un écran faux pendant l'attente. On anime l'apparition, pas le repos, sans coupure entre deux états, et ce qui suit le doigt ne rebondit pas.",
+      "when": "quand tu conçois un chargement, une transition ou un élément qu'on déplace",
+      "why": "Un indicateur qui clignote ou un écran faux font paraître le produit lent et cassé ; un rebond sur ce qu'on tient empêche de viser.",
+      "check": "Sous une demi-seconde rien ne s'affiche, et aucun élément ne bouge en boucle au repos.",
+      "source": "playbook:design/waiting-and-motion · skills/design-interface"
+    },
+    {
+      "key": "design/felt-on-real-render",
+      "topic": "design",
+      "rule": "Juge un écran au ressenti, sur le vrai rendu, en boucle jusqu'à ce que ce soit beau. « Presque » la référence n'est pas fini. La même chose a le même visage partout, et le contenu passe avant les contrôles.",
+      "when": "quand tu livres ou relis un écran",
+      "why": "Une liste cochée ne dit pas si c'est beau, et un rendu générique ne se distingue de rien.",
+      "check": "L'agent a regardé l'écran qui tourne à côté de la référence avant de livrer.",
+      "source": "playbook:design/felt-on-real-render · skills/design-interface"
+    },
+    {
+      "key": "analytics/decide-on-real-usage",
+      "topic": "analytics",
+      "rule": "Juge une idée sur la part réelle des usages, pas sur l'intuition. Mesure l'intention au clic, garde un avant et un après simples pour pouvoir revenir en arrière, et ne montre à chacun que les chiffres qui comptent pour lui.",
+      "when": "quand tu proposes une fonction, une langue, un marché, ou que tu construis un tableau de bord",
+      "why": "Une bonne idée qui vise 5 % des usages ne sert à rien, et un tableau de bord qui montre tout ne se lit pas.",
+      "check": "La proposition cite la part d'usage mesurée, et le changement a son avant et son après.",
+      "source": "playbook:analytics/decide-on-real-usage · skills/product-analytics"
     }
   ]
 }

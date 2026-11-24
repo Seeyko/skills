@@ -10,9 +10,9 @@ Avant tout : skill [`memory-first`](../memory-first/SKILL.md) (sujets `work.agen
 ## 1. Décider vite
 - **Une phrase fixe tout** : l'app, le public, la stack, l'hébergement. Pose seulement les questions dont tu ne peux pas trouver la réponse, toutes ensemble, au début.
 - **Une maquette d'abord** : une page HTML jouable, essayée sur un téléphone. L'app suit la maquette exactement.
-- **Une conception courte, puis un go** : le modèle de données, l'écran, le geste, les budgets de performance, les questions ouvertes. Pas de code avant le go.
+- **Une conception courte, puis un go** ([`design-backend`](../design-backend/SKILL.md)) : le modèle de données, l'écran, le geste, les budgets de performance, les questions ouvertes. Pas de code avant le go.
 - **Pour qui ?** L'étude d'audience d'abord ([`audience-study`](../audience-study/SKILL.md)).
-- **L'interface** suit [`design-interface`](../design-interface/SKILL.md) (une app minimale, le design par le modèle le plus fort), **le texte** suit [`write-copy`](../write-copy/SKILL.md).
+- **L'interface** suit [`design-interface`](../design-interface/SKILL.md) (combien d'interface et de friction pour ce produit, le design par le modèle le plus fort), **le texte** suit [`write-copy`](../write-copy/SKILL.md).
 
 ## 2. Le dépôt
 Pars de [`../../templates/mobile-app/`](../../templates/mobile-app/) : `CLAUDE.md`, `DESIGN.md`, `.claude/rules/front.md`, `SECRETS.md`.
@@ -33,7 +33,7 @@ Pars de [`../../templates/mobile-app/`](../../templates/mobile-app/) : `CLAUDE.m
 
 ## 4. Sortir
 - Avant le premier envoi, relis les raisons de refus déjà vues (garde-les dans un skill `app-store-release` du projet, et ajoutes-y chaque nouveau refus).
-- Avant chaque soumission, un audit de conformité de **toutes** les apps du compte, avec une checklist publique (voir [`../../CREDITS.md`](../../CREDITS.md)) prise comme liste, pas copiée : le prix facturé le plus visible, chaque app avec son `PrivacyInfo.xcprivacy` et un lien vers la confidentialité dans l'app, une IA tierce nommée et acceptée une fois avant le premier envoi de données (5.1.2(i)), l'abonnement et ses conditions dans la description, le statut de commerçant déclaré dans l'UE.
+- Avant chaque soumission, un audit de conformité de **toutes** les apps du compte, avec une checklist publique (voir [`../../CREDITS.md`](../../CREDITS.md)) prise comme liste, pas copiée : le prix facturé le plus visible, chaque app avec son `PrivacyInfo.xcprivacy` et un lien vers la confidentialité dans l'app, une IA tierce nommée et acceptée avant le premier envoi de données (5.1.2(i)) par une seule ligne courte à la connexion, avec un lien vers la page de confidentialité qui la nomme, jamais par une alerte avant un geste ni par toute l'explication à l'écran, l'abonnement et ses conditions dans la description, qui dit qu'un achat est requis dès qu'elle en parle (2.3.2), le statut de commerçant déclaré dans l'UE.
 - Les étiquettes de confidentialité ne passent pas par l'API publique : `asc web privacy` les gère après une connexion web que l'humain fait une fois (Apple ID et 2FA). Elles suivent le code réel.
 - La fiche : skill [`app-store-optimization`](../app-store-optimization/SKILL.md). Les captures, l'en-tête et l'image de recherche sont prêts avant la review.
 - Tout passe par le CLI `asc` ou l'API App Store Connect, en dernier recours par le navigateur. Jamais un copier-coller pour l'humain.

@@ -8,12 +8,11 @@
 - **Demande tous les accès en une fois**, tôt, par écrit.
 - **Pas de question dont la réponse est « oui » ou « l'option recommandée ».** Prends le défaut recommandé, dis-le en une ligne, continue.
 - **N'impose jamais une manipulation impossible** (« choisis un exécutable dans le Finder »). Si une action ne peut venir que de l'humain (un accord, une connexion), donne-lui un lien qui la fait en un clic, ou la phrase exacte à envoyer.
-- Les règles d'autorisation de la machine de build (xcodebuild, xcodegen, xcrun, les scripts App Store, `gh pr create/merge`, `git push`, docker, `ssh` vers le serveur) sont ajoutées une fois pour toutes dans les réglages, pas demandées à chaque build. Explique clairement ce que la garde refuse.
 - **Avant de dire « impossible », essaie pour de vrai** par l'API ou le CLI, et cite la réponse exacte reçue.
 - **Cherche la méthode qui existe déjà** (un skill d'un autre dépôt, une leçon de la mémoire) avant d'en inventer une.
 - **Une réponse groupée vaut pour chaque recommandation telle qu'elle a été posée**, « non » compris (« oui go » sur une liste de cinq). Note chaque refus dans la mémoire pour ne plus le reproposer.
 - **« Arrête » veut dire arrête** : rien de nouveau ne se lance, surtout pas une génération payante, tant que l'humain n'a pas fait sa part.
-- Un gestionnaire de mots de passe peut remplir un champ par son extension. L'agent ne lit jamais un mot de passe.
+- L'agent ne lit jamais un mot de passe : un gestionnaire le remplit à sa place.
 
 ## Ce qui attend l'accord écrit du propriétaire
 - Une écriture en production, un déploiement manuel, une suppression en masse.
@@ -24,9 +23,16 @@
 ## Les PR et le code
 - Une branche dédiée, une PR par étape. Jamais de commit sur `main`.
 - Fusionne une petite PR quand la CI est verte et que les gros tests passent, sauf une surface sensible (voir ci-dessus). Jamais sur un rouge, même « connu ».
+- **Une fonction est livrée quand sa PR est fusionnée.** L'agent qui l'a ouverte la fusionne dès qu'elle est verte, sans la confier à un autre. Au début d'une tâche, liste les PR ouvertes : une vieille PR est fusionnée, ou fermée avec sa raison.
+- **Une version se publie par la CI de `main`** (paquet, registre, CLI, serveur MCP), jamais à la main depuis une branche ou une session : la fusion suffit à la sortir.
 - Le code d'un build envoyé au store est sur `main`.
 - **Pas de commentaires dans le code** : un nom clair, une petite fonction, un test.
-- **Des tests qui prouvent** : e2e fullstack (build de prod, API, vraie base), intégration, golden. Les tests unitaires seulement là où ils prouvent quelque chose.
+- **Des tests qui prouvent** : e2e fullstack (build de prod, API, vraie base), intégration, golden. Pas de test unitaire : des milliers de tests verts sur un faux service ont caché des dizaines de vrais défauts, que les premiers vrais e2e ont trouvés.
+- **Jamais d'id séquentiel dans une URL** qu'une personne peut voir ou partager : un slug pour un contenu public, un pseudo pour une personne, un identifiant aléatoire pour le reste. Un id qui se devine laisse parcourir et compter tout le site. Un identifiant mal formé répond comme un objet inconnu.
+- **Le dépôt garde le code, les skills et les images que l'app embarque.** Les rendus, essais et visuels de posts vivent hors du dépôt.
+- **Une même chose, un seul code.** Un composant, un format de données, un chemin pour une règle du métier. Deux versions de la même carte ou deux façons de modérer finissent par se contredire, et chaque changement coûte double.
+- **Le diff d'une mission ne contient que la mission.** Pas de réécriture annexe, pas de dépendance ni de réglage ajoutés « au passage ».
+- **Un plan ou une doc ne se fusionne pas seul.** Ce qui est sur `main` est lu par tous les agents suivants : un plan qui n'est pas devenu du code les trompe.
 - **Pas de code mort** ni de « version 2 » : construis moins et finis-le. Git garde l'histoire.
 - **La performance est une règle** : un geste en une frame, une ouverture en moins de 100 ms, une lecture serveur en moins de 10 ms, chaque budget mesuré.
 - **Parité web et iOS** quand une app a les deux clients.
@@ -34,10 +40,16 @@
 
 ## Les tests et les preuves
 - Un test vert doit prouver quelque chose. Si un test passe alors que la fonction manque, le test est faux.
+- **Zéro test instable** : un test instable n'est pas déterministe. Corrige sa cause, jamais de relance automatique, de délai plus long ni de skip. Un rouge se lit dans le résumé du job, sans artefact à télécharger. Un réglage de diagnostic temporaire porte sa date de fin dans le code.
+- **Une bascule de prod se répète d'abord** sur une copie, avec le retour arrière et sa garde prêts, puis se vérifie de bout en bout.
+- **La source fait foi, pas un ancien rapport.** Un vieux document, une analyse passée ou un commentaire peuvent être faux : revérifie dans le code et dans le produit qui tourne. « Inconnu » vaut mieux qu'un fait faux recopié.
+- **Vérifie de l'extérieur**, comme le verrait une personne ou un client, pas en relisant ta propre configuration.
+- **Une relecture adverse cherche à invalider** : ce qui est affirmé est-il vrai, ce qui était demandé est-il fait, et ce changement est-il vraiment nécessaire ? Plusieurs relecteurs, chacun avec un contexte neuf.
+- **Un changement risqué se livre bloc par bloc**, avec la commande de retour arrière prête avant de commencer. On ne coupe l'ancien chemin qu'une fois le nouveau prouvé.
+- **Une refonte garde le comportement** : les tests s'écrivent sur l'ancien système, puis le nouveau les passe sans qu'on y touche. Avant la bascule, cherche ce qui ferait perdre des utilisateurs ou du référencement, y compris ce que personne n'a pensé à demander.
 - Mesure avant de toucher. Corrige la cause, pas le symptôme. N'affaiblis jamais un garde-fou pour passer.
 - Ne te fie jamais à ta mémoire pour un outil, un prix ou du matériel : cherche en ligne.
 - Vérifie tes affirmations dans l'app avant de les envoyer.
-- Utilise la bonne source, pas un homonyme (le bon dépôt, le bon auteur).
 
 ## Les références partagées
 - Une vidéo, un article ou un post partagé par l'humain : trouve son **idée centrale** et applique-la, relis la source avant de proposer. Rater l'idée pour un détail voisin est l'erreur à éviter.
@@ -65,4 +77,5 @@
 - Une proposition de design ou de contenu arrive avec son visuel et son coût s'il y a des générations payantes.
 - Dans sa langue. Les identifiants de code, les règles et les skills en anglais.
 - Préviens-le de chaque sortie sur les stores.
+- Un incident public se raconte sans détail technique : ce qui ne marchait pas pour les gens, depuis quand, et que c'est réparé. Le détail va dans la PR.
 - Quand il ajoute un outil, note-le en une ligne dans le `CLAUDE.md`.
