@@ -18,7 +18,7 @@ Sans elle, on n'écrit pas une ligne d'onboarding, de fiche ou de site. Un exemp
 2. **Les problèmes** : un tableau « problème · leurs mots · ce que le produit apporte vraiment ».
 3. **Leur état d'esprit quand elles tombent sur le produit** : le moment qui les fait chercher, leurs émotions (une citation chacune), ce qu'elles veulent.
 4. **Leurs méfiances avant de payer**, et la réponse du produit à chacune.
-5. **Les profils** : qui, son état, qui elle veut devenir, ce qu'on lui dit, ce qu'on ne lui dit pas, ce que dit la science. Désigne le cœur de cible.
+5. **Les profils** : qui, son état, qui elle veut devenir, ce qu'on lui dit, ce qu'on ne lui dit pas, ce que dit la science. Désigne le cœur de cible. Précis, mais pas une micro-niche : choisis un segment où beaucoup de gens ont le problème, et dis sur quoi tu t'appuies pour le croire.
 6. **Ce qu'on promet** : vert, orange, rouge (voir [`write-copy`](../write-copy/SKILL.md)). Les mots réglementés.
 7. **Les moments d'ego** : quand le produit la nourrit.
 8. **Le ton et les mots** : un tableau « on dit · on ne dit pas · pourquoi ».
@@ -26,6 +26,7 @@ Sans elle, on n'écrit pas une ligne d'onboarding, de fiche ou de site. Un exemp
 10. **Les sources et le niveau de confiance** : ce qui a été lu, ce qui ne l'a pas été.
 
 ## Vérifier
+- [ ] Le cœur de cible est précis, et assez de gens ont son problème pour faire vivre le produit : l'étude dit ce qui le montre.
 - [ ] Chaque profil dit qui elle veut devenir, avec ses mots à elle.
 - [ ] Chaque méfiance a une réponse que le produit fait vraiment.
 - [ ] La liste rouge existe, et aucun texte du produit ne l'enfreint.

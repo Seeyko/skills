@@ -154,6 +154,15 @@
       "source": "playbook:audience/study-first · skills/audience-study"
     },
     {
+      "key": "audience/precise-not-micro-niche",
+      "topic": "audience",
+      "rule": "Choisis un cœur de cible précis, mais pas une micro-niche : un segment où beaucoup de gens ont le problème. Dis sur quoi tu t'appuies pour le croire.",
+      "when": "quand tu désignes le cœur de cible d'un produit ou d'une campagne",
+      "why": "Une cible trop large ne parle à personne, une cible trop étroite ne fait pas vivre le produit.",
+      "check": "L'étude nomme le cœur de cible et ce qui montre que beaucoup de gens ont son problème.",
+      "source": "playbook:audience/precise-not-micro-niche · skills/audience-study"
+    },
+    {
       "key": "app.create/playbook",
       "topic": "app.create",
       "rule": "Pour une nouvelle app, suis le skill new-mobile-app : une maquette d'abord, une conception courte puis un go, l'étude d'audience, l'onboarding avec app-onboarding, le paywall avec app-paywall, la fiche avec app-store-optimization, TestFlight aux proches pendant la review.",
@@ -368,6 +377,15 @@
       "why": "Ce qui est appris dans un fil se perd s'il n'est pas rangé, et une règle faible pollue chaque tâche qui la lit.",
       "check": "Chaque règle ajoutée cite un signal de validation et passe les quatre questions du skill ; le journal dit ce qui a été jeté.",
       "source": "playbook:work.agents/distill-daily · skills/distill-practice"
+    },
+    {
+      "key": "work.agents/human-input-only",
+      "topic": "work.agents",
+      "rule": "Ne garde comme règle que ce qui vient d'un humain : ce qu'il a dit, corrigé ou choisi, un article ou un skill qu'il a partagé. Jette ce qu'un agent a trouvé seul.",
+      "when": "quand tu décides si une pratique mérite d'entrer dans un skill",
+      "why": "Ce qu'un agent trouve seul, le prochain modèle le refera pareil ou mieux. Ce qui fait la qualité, c'est ce que l'humain apporte.",
+      "check": "Chaque règle ajoutée se rattache à une parole, une correction ou une source partagée par un humain.",
+      "source": "playbook:work.agents/human-input-only · skills/distill-practice"
     },
     {
       "key": "social/person-video",

@@ -40,6 +40,7 @@ Les skills tiers que ce dépôt utilise, et les créateurs dont il s'inspire. Un
 | **Superwall** (vidéo sur X) | Laisser choisir l'essai de l'abonnement annuel : gratuit et court, ou un premier mois payant. |
 | **revmp.studio, étude de cas Plantspace** | Le découpage des animations de série et de badges : beaucoup de temps courts, de l'impact. |
 | **César Álvarez** (X @cesaralvarezll) | Le format UGC « can't believe I was like this » (une réaction, puis la démo de l'app) et les avatars IA pour tester beaucoup de hooks. |
+| **Michael Dawn** (X @michaelonx_, x.com/michaelonx_/status/2124696299677372692) | Choisir sa cible : un segment précis où beaucoup de gens ont le problème, pas une micro-niche. |
 | **Alysha** (X @alyshadotmd) | Les carrousels « matrice » : des personnages découpés sur deux axes. |
 | **LegWork** (studio) | Le niveau d'animation d'un parcours d'accueil : une seule caméra qui descend du plus large au plus précis. On en garde le mouvement, pas l'ambiance. |
 | Le dessin animé fait main (Cuphead) | L'âme d'une mascotte qui bouge : image par image, jamais un pantin vectoriel articulé. |

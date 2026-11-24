@@ -61,6 +61,7 @@ Ce qu'on a fait dans un produit mélange trois choses. Sépare-les avant d'écri
 - Un skill tiers dit déjà bien une chose ? Renvoie vers lui au lieu de le réécrire.
 - Une règle qui dit seulement « fais ce que l'humain demande » n'apprend rien : jette-la.
 - Un « jamais » vient souvent d'un seul refus. Écris ce que la personne voulait obtenir, pas le moyen qu'elle a refusé ce jour-là.
+- Garde ce qui vient d'un humain : ce qu'il a dit, corrigé ou choisi, un article ou un skill qu'il a partagé. Jette ce qu'un agent a trouvé seul : le prochain modèle le refera pareil, ou mieux. Ce qui fait la qualité, c'est ce que l'humain apporte.
 - Dans le doute, n'ajoute pas. Une règle faible coûte plus qu'une règle absente : chaque agent la lira à chaque tâche.
 
 ## 5. Distiller
