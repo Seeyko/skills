@@ -21,7 +21,7 @@ Un onboarding n'est pas une visite. Il amène la personne, le plus vite possible
 3. **On accompagne jusqu'à la première action qui lui apporte de la valeur.** L'onboarding finit quand elle a fait cette action, pas quand elle a vu le dernier écran. Après le paiement, le bouton ouvre vraiment l'usage.
 4. **La longueur se décide, elle ne se recopie pas.** Elle dépend de qui arrive et de ce qu'il faut pour que le moment magique marche. Voir les questions ci-dessous.
 5. **Chaque étape sert le aha, la personnalisation réelle ou la suite.** Une question qui ne change rien à ce qu'elle va vivre sort du chemin. Une question qui change son plan reste, et dit pourquoi : la couper pour faire court fait baisser la conversion.
-6. **Demander au bon moment.** Une permission (rappels, micro, photos) se demande quand elle vient de comprendre à quoi elle sert, en montrant le vrai résultat. Le compte arrive le plus tard possible, ou jamais.
+6. **Demander au bon moment.** Une permission (rappels, micro, photos) se demande quand elle vient de comprendre à quoi elle sert, en montrant le vrai résultat. Le compte arrive le plus tard possible, ou jamais. Avant lui, on voit déjà la vie publique du produit (ce que font les autres), partout où elle apparaît, jamais le privé : c'est ce qui donne envie d'entrer.
 
 ## Les questions à te poser avant de dessiner
 Réponds par écrit, à partir de l'étude d'audience. Ce sont elles qui donnent la séquence, pas un gabarit.

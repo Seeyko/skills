@@ -34,6 +34,7 @@ Si le code, une règle ou une spec contredit la vision ou l'architecture, on s'a
 - Y a-t-il un seul chemin d'écriture, avec ses droits, sa trace et son annulation ?
 - Que lit l'app : une vue déjà calculée, ou des tables qu'elle assemble ?
 - Que voit la personne hors ligne, et que devient son geste ?
+- Plusieurs produits partagent-ils une connexion ? La personne ne doit pas le voir : la connexion porte le nom et le style du produit d'où elle vient, et la déconnexion ferme toutes les sessions.
 - Quel est le budget de chaque geste, en millisecondes, et qui le mesure ? Le banc de mesure existe dès la première table.
 
 **L'IA**

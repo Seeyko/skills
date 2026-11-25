@@ -22,7 +22,7 @@ Sans elle, on n'écrit pas une ligne d'onboarding, de fiche ou de site. Un exemp
 6. **Ce qu'on promet** : vert, orange, rouge (voir [`write-copy`](../write-copy/SKILL.md)). Les mots réglementés.
 7. **Les moments d'ego** : quand le produit la nourrit.
 8. **Le ton et les mots** : un tableau « on dit · on ne dit pas · pourquoi ».
-9. **Ce que ça change** dans le produit, l'onboarding, la fiche et le site : un tableau « où · aujourd'hui · proposition ».
+9. **Ce que ça change** dans le produit, l'onboarding, la fiche et le site : un tableau « où · aujourd'hui · proposition ». Quand la cible change, toutes les surfaces changent dans la même livraison (fiche, captures, onboarding, site, textes des assistants), et on cherche les traces de l'ancienne.
 10. **Les sources et le niveau de confiance** : ce qui a été lu, ce qui ne l'a pas été.
 
 ## Vérifier

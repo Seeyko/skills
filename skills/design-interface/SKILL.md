@@ -21,7 +21,7 @@ Ce skill vaut pour tous les projets. Le `DESIGN.md` du projet donne le style (co
 6. **Pas de réglage lourd sur un écran d'expérience.** Ni interrupteur ni formulaire là où la personne vit le produit : un petit bouton rond (un haut-parleur) suffit. Les réglages vivent ailleurs.
 7. **Chaque geste se sent.** Haptique sur chaque bouton, chaque choix, chaque temps d'un rythme.
 8. **La friction se décide.** Le moins possible quand le produit est une porte vers un système qui comprend, exprès là où elle protège ou engage. Voir plus bas.
-9. **Natif.** Le composant de la plateforme avant tout contrôle maison : la personne le connaît déjà, il suit le système (accessibilité, gestes, mises à jour) et il coûte moins à tenir. Sur iOS aujourd'hui : SwiftUI, et le verre du système pour ce qui flotte au-dessus du contenu, jamais pour le contenu lui-même.
+9. **Natif.** Le composant de la plateforme avant tout contrôle maison : la personne le connaît déjà, il suit le système (accessibilité, gestes, mises à jour) et il coûte moins à tenir. Natif ne veut pas dire générique : le composant porte le style de l'app (son `DESIGN.md`), jamais l'apparence par défaut de la plateforme ou de la bibliothèque. Sur iOS aujourd'hui : SwiftUI, et le verre du système pour ce qui flotte au-dessus du contenu, jamais pour le contenu lui-même.
 10. **Un univers fort.** Une direction artistique qui se démarque (par exemple une aquarelle « faite main », jamais enfantine ni vectorielle plate). Les icônes et mascottes de l'auteur ne sont jamais redessinées sans qu'il le demande. Quand il le demande, le niveau à atteindre est celui d'un de ses dessins de référence.
 11. **Les moments de réussite font « wow ».** C'est la seule exception au calme : voir plus bas.
 
