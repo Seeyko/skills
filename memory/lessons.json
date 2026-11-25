@@ -674,6 +674,42 @@
       "why": "Une bonne idée qui vise 5 % des usages ne sert à rien, et un tableau de bord qui montre tout ne se lit pas.",
       "check": "La proposition cite la part d'usage mesurée, et le changement a son avant et son après.",
       "source": "playbook:analytics/decide-on-real-usage · skills/product-analytics"
+    },
+    {
+      "key": "design/native-in-app-style",
+      "topic": "design",
+      "rule": "Le composant de la plateforme avant tout contrôle maison, mais habillé au style de l'app, jamais avec l'apparence par défaut.",
+      "when": "quand on construit un écran avec une bibliothèque de composants ou les composants du système",
+      "why": "L'humain a refusé un écran « trop générique » : chaque app a son propre style.",
+      "check": "L'écran se reconnaît à l'app sans son logo ; aucun composant maison là où la plateforme en a un.",
+      "source": "playbook:design/native-in-app-style · skills/design-interface"
+    },
+    {
+      "key": "app.onboarding/public-before-account",
+      "topic": "app.onboarding",
+      "rule": "Avant le compte, on voit la vie publique du produit (ce que font les autres), partout où elle apparaît, jamais le privé.",
+      "when": "quand on décide ce qu'un visiteur sans compte voit",
+      "why": "Correction : un visiteur qui ne voit pas l'activité des autres « n'aura pas envie » d'entrer.",
+      "check": "Un test sans compte voit l'activité publique sur chaque écran où elle apparaît, et rien de privé.",
+      "source": "playbook:app.onboarding/public-before-account · skills/app-onboarding"
+    },
+    {
+      "key": "audience/reposition-everywhere",
+      "topic": "audience",
+      "rule": "Quand la cible change, toutes les surfaces changent dans la même livraison, et on cherche les traces de l'ancienne.",
+      "when": "quand on change de cible ou de positionnement",
+      "why": "Décision de l'humain : une version qui refait tout pour la nouvelle cible plutôt qu'une sortie à moitié alignée.",
+      "check": "Une recherche des mots de l'ancienne cible ne trouve plus rien (fiche, captures, onboarding, site).",
+      "source": "playbook:audience/reposition-everywhere · skills/audience-study"
+    },
+    {
+      "key": "architecture/invisible-shared-login",
+      "topic": "architecture",
+      "rule": "Une connexion partagée entre produits porte le nom et le style du produit d'où l'on vient ; la déconnexion ferme toutes les sessions.",
+      "when": "quand plusieurs produits partagent la même connexion",
+      "why": "Correction : voir le nom du service commun à la connexion « c'est biz », et un retour arrière reconnectait après la déconnexion.",
+      "check": "Depuis chaque produit, la connexion ne montre que lui ; après la déconnexion, le retour arrière ne reconnecte pas.",
+      "source": "playbook:architecture/invisible-shared-login · skills/design-backend"
     }
   ]
 }
